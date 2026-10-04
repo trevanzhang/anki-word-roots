@@ -1,21 +1,24 @@
 # Word Roots for Anki
 
 An Anki deck of the Greek and Latin prefixes, roots and suffixes that build English words,
-including the ones medicine uses. It's ordered by usefulness: the morphemes inside everyday words
-come first, and obscure ones aren't included at all.
+including the ones medicine uses. It starts with a core of the most productive, easy-to-spot
+morphemes, then continues in order of usefulness; obscure ones aren't included at all.
 
 **[Download Word_Roots.apkg](https://github.com/jupsh/anki-word-roots/releases/latest/download/Word_Roots.apkg)**,
 then in Anki choose **File → Import**.
 
 ## What's in it
 
-- **699 morphemes:** 569 roots, 76 prefixes and 54 suffixes (437 Latin, 251 Greek). 231 are
-  tagged medical.
-- **160 decode words**, half everyday and half medical, for practising taking words apart.
-- **77 etymology stories** for the roots with a good one, such as why *muscle* means "little mouse".
+- **699 morphemes:** 569 roots, 76 prefixes and 54 suffixes (437 Latin, 251 Greek). The first
+  123 are the core: *re-*, *pre-*, *trans-*, *-able*, *-ity*, *graph*, *phon*, *port*, *dict*…
+- **222 decode words** (102 medical) for practising taking words apart. 87 of them never appear
+  among the morphemes' example words, so they test the roots rather than recognition.
+- **77 etymology stories** for the roots with a good one, such as why *muscle* means "little
+  mouse", each with a link to its source.
 
 Each morpheme is taught through words you already know, with the morpheme highlighted. Decode
-cards come after you've met all of their parts.
+cards break a word into parts, giving the meaning each part has in that word (*-logy* → "study
+of") with the root's broader meaning underneath.
 
 <table>
   <tr><th scope="col" colspan="2">Morpheme</th></tr>
@@ -44,25 +47,51 @@ cards come after you've met all of their parts.
   </tr>
 </table>
 
-### Custom study
+## Studying
 
-Tags let you build [filtered decks](https://docs.ankiweb.net/filtered-decks.html) or suspend what
-you don't need:
+**Settings.** The deck is designed to be studied in order: core morphemes first, and each decode
+card a few cards after the last morpheme it uses. To keep that order, open the deck's options
+and, under *Display Order*, set:
 
-- `-tag:WR::Medical` to skip the medical vocabulary;
-- `tag:WR::Medical` to focus on it, e.g. for anatomy or nursing courses;
-- `tag:WR::Prefix or tag:WR::Suffix` for the affixes only;
-- `tag:WR::Greek` or `tag:WR::Latin` for one language;
-- `tag:WR::Decode` for the decode cards only.
+- **New card gather order:** *Ascending position*
+- **New card sort order:** *Order gathered* (the default, *Card type, then order gathered*,
+  would show all of a day's morpheme cards before its decode cards)
+
+Placement only controls when a decode card is first shown: it doesn't wait until you've
+mastered its parts.
+
+**Grading.** Count an answer as right if you recall the essential meaning: "see" for *vid-/vis-*,
+or "inflammation of the sac around the heart" for *pericarditis*. Exact wording, the root's other
+senses and the stories are extras.
+
+**Tags** for [filtered decks](https://docs.ankiweb.net/filtered-decks.html), or for suspending
+what you don't need:
+
+| Tag | What it marks |
+|---|---|
+| `WR::Core` | the first 123 morphemes |
+| `WR::Medical` | specialist medical vocabulary: anatomy, diseases, procedures |
+| `WR::Medical_Related` | general morphemes medicine also uses heavily (*hyper-*, *-itis*, *neo-*) |
+| `WR::Prefix`, `WR::Root`, `WR::Suffix` | the kind of morpheme |
+| `WR::Latin`, `WR::Greek` | the language |
+| `WR::Decode`, `WR::Story` | decode cards; morphemes with a story |
+
+To skip the specialist medical vocabulary, search `deck:"Word Roots" tag:WR::Medical` and suspend
+the results. Everyday decode cards never rely on a specialist morpheme, so nothing else breaks.
 
 ## Where the content comes from
 
 The morphemes started from Wikipedia's *List of Greek and Latin roots in English* and *List of
 medical roots, suffixes and prefixes*. Entries were kept only if their example words are common
-in English, measured with [wordfreq](https://github.com/rspeer/wordfreq). Then every entry was
-reviewed by hand: wrong meanings and false etymologies fixed, duplicates merged, better example
-words chosen, and missing suffixes, prefixes and medical roots added. The stories and decode
-words were written for this deck.
+in English, measured with [wordfreq](https://github.com/rspeer/wordfreq), and then reviewed by
+hand: wrong meanings fixed, duplicates merged, better example words chosen, and missing suffixes,
+prefixes and medical roots added.
+
+Every example word and decode word is also checked against its Wiktionary etymology with
+`tools/check_etymology.py`, which flags words whose recorded origin doesn't include the
+morpheme's source word. That check caught false connections such as *tribulation* (from
+*tribulum*, a threshing sledge, not *tribuere* "to pay") and *ferry* (Germanic, not Latin
+*ferre*). Flags are reviewed by hand, since some are the tool's limits rather than errors.
 
 ## Building it yourself
 
@@ -71,12 +100,14 @@ Needs [uv](https://docs.astral.sh/uv/).
 ```sh
 uv run python word_roots/build.py                 # writes dist/Word_Roots.apkg
 uv run python word_roots/build.py --html out.html # plus an HTML preview of every note
+uv run python tools/check_etymology.py            # check example words against Wiktionary
 ```
 
 The content is three CSV files in `word_roots/data/`: `morphemes.csv` (in study order),
-`stories.csv` and `decode.csv`. `tools/import_wikipedia.py` generated the first version of
-`morphemes.csv`. It has been hand-edited since, so edit the CSV directly. Note GUIDs come from each
-morpheme's `id` and each decode word, so keep ids stable.
+`stories.csv` and `decode.csv`; see [CONTRIBUTING.md](CONTRIBUTING.md) for their formats.
+`tools/import_wikipedia.py` generated the first version of `morphemes.csv`. It has been
+hand-edited since, so edit the CSV directly. Note GUIDs come from each morpheme's `id` and each
+decode word, so keep ids stable.
 
 ## Contributing
 

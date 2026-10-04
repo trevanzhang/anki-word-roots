@@ -9,26 +9,40 @@ All content is in `word_roots/data/`:
 
 - **`morphemes.csv`:** one row per morpheme, in study order. `front` holds three familiar words
   with the morpheme in brackets, e.g. `[aud]ience; [aud]io; [aud]it`; `more` holds extra examples
-  in the same format. Keep `id` stable: it identifies the note in people's collections.
-- **`stories.csv`:** an optional story per morpheme `id`. HTML is allowed.
-- **`decode.csv`:** `parts` splits the word into segments, each with the `id` of its morpheme,
-  e.g. `peri=peri-around + card=cardi-heart + itis=itis-inflammation`. Leave the id empty for a
-  segment that isn't in the deck (`tonsill=`). The segments must spell the whole word.
+  in the same format. `core` is `y` for the opening core. `medical` is empty for general
+  morphemes, `related` for general ones medicine uses heavily, and `y` for specialist medical
+  vocabulary. Keep `id` stable: it identifies the note in people's collections.
+- **`stories.csv`:** an optional story per morpheme `id`, with a `source` link (usually the
+  Wiktionary etymology of the word the story is about). HTML is allowed in the story.
+- **`decode.csv`:** `parts` splits the word into segments joined by ` + `. Each is
+  `segment=morpheme-id:gloss`, where the gloss is what the part means *in this word*
+  (`logy=log-word-reason:study of`); leave the gloss out to show the morpheme's own meaning. A
+  segment that isn't in the deck has no id but needs a gloss (`tonsill=:tonsils`). The segments
+  must spell the whole word. `medical` is `y` for medical vocabulary.
 
 Build with `uv run python word_roots/build.py --html out.html` and check your change in
-`out.html`. The build stops on unknown ids and on example words without a marked morpheme. Every
-push and pull request is also built on GitHub.
+`out.html`. The build stops on unknown ids, segments that don't spell the word, unexplained
+segments, duplicate stories or decode words, example words without a marked morpheme, and
+everyday decode words that use a specialist medical morpheme. Every push and pull request is also
+built on GitHub.
+
+Then run `uv run python tools/check_etymology.py`, which flags example and decode words whose
+Wiktionary etymology doesn't mention the morpheme's source word. Look at each new flag: either
+the word is wrong for that morpheme, or the tool missed a step (short prefixes and suffixes often
+trip it).
 
 ## Content rules
 
 - **Only real etymology.** Every example word must actually come from the morpheme, not just
   contain its letters (*ballistic* is from Greek *ballein* "throw"; *ball* is not). Stories must be
-  well documented; leave out popular myths such as *sincere* "without wax".
+  well documented and sourced; leave out popular myths such as *sincere* "without wax".
 - **Familiar examples first.** The front should use words a general reader knows; save rare or
   technical words for `more`.
 - **Useful morphemes only.** A morpheme earns its place if it appears in several words people
   actually meet. Medical morphemes count if they appear in common medical vocabulary.
 - **Short meanings.** "hear", not "of or pertaining to hearing".
+- **Fresh decode words.** Prefer decode words that aren't already examples, so the card tests the
+  roots rather than recognition.
 
 ## Versioning and releases
 

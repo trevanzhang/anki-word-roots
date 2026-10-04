@@ -60,6 +60,9 @@ table.parts { margin: 6px auto 10px; border-collapse: collapse; font-size: .95em
 table.parts td { padding: 3px 10px; text-align: left; }
 table.parts td.seg { font-weight: 700; color: var(--accent); text-align: right; }
 table.parts td.plain { color: #9ca3af; text-align: right; }
+table.parts td.plain-gloss { color: #6b7280; font-style: italic; }
+.rootm { font-size: .75em; color: #9ca3af; }
+a.src { font-size: .8em; color: #9ca3af; }
 .literal { font-style: italic; color: #4b5563; }
 .definition { font-size: 1.1em; font-weight: 600; margin-top: 6px; }
 
@@ -73,6 +76,7 @@ table.parts td.plain { color: #9ca3af; text-align: right; }
 .nightMode .label .med, .night_mode .label .med { color: #9ca3af; }
 .nightMode .story, .night_mode .story { background: #27272a; color: #d4d4d8; }
 .nightMode .literal, .night_mode .literal { color: #d4d4d8; }
+.nightMode td.plain-gloss, .night_mode td.plain-gloss { color: #9ca3af; }
 .nightMode hr#answer, .night_mode hr#answer { border-top-color: #3f3f46; }
 """
 
@@ -119,10 +123,14 @@ DECODE_MODEL = genanki.Model(
 
 DECK_DESCRIPTION = (
     "The Greek and Latin prefixes, roots and suffixes that build English words, including the "
-    "medical ones, ordered by how useful they are. Each morpheme is taught through familiar "
-    "words, and Decode cards practise taking whole words apart. Root data adapted from "
-    "Wikipedia's <i>List of Greek and Latin roots in English</i> and <i>List of medical roots, "
-    "suffixes and prefixes</i> (CC BY-SA 4.0); this deck is shared under the same license."
+    "medical ones: a core of the most useful morphemes first, then the rest by usefulness. Each "
+    "morpheme is taught through familiar words, and Decode cards practise taking words apart. "
+    "<b>Grading:</b> count an answer as right if you recall the essential meaning; exact wording "
+    "and the stories are extras. <b>Settings:</b> to keep the intended order, set New card gather "
+    "order to <i>Ascending position</i> and New card sort order to <i>Order gathered</i>. "
+    "Skip specialist medical vocabulary with <code>-tag:WR::Medical</code>. Root data adapted "
+    "from Wikipedia's <i>List of Greek and Latin roots in English</i> and <i>List of medical "
+    "roots, suffixes and prefixes</i> (CC BY-SA 4.0); this deck is shared under the same license."
 )
 
 
@@ -151,15 +159,77 @@ def deck_id(name):
 
 # --------------------------------------------------------------------------- build
 
-def build(html_out=None, only=None):
-    morphemes = read("morphemes.csv")
-    stories = {r["id"]: r["story"] for r in read("stories.csv")}
-    decode = read("decode.csv")
-    index = {m["id"]: i for i, m in enumerate(morphemes)}
+def parse_parts(d, index):
+    """'peri=peri-around + card=cardi-heart:heart + tonsill=:tonsils' ->
+    [(segment, morpheme id or "", gloss or "")]; checks the parts against the word."""
+    parts = []
+    for part in d["parts"].split(" + "):
+        seg, _, rest = part.partition("=")
+        mid, _, gloss = rest.partition(":")
+        if mid and mid not in index:
+            raise SystemExit(f"decode {d['word']}: unknown morpheme {mid}")
+        if not mid and not gloss:
+            raise SystemExit(f"decode {d['word']}: segment {seg!r} has neither a morpheme nor a gloss")
+        parts.append((seg, mid, gloss))
+    if "".join(seg for seg, _, _ in parts) != d["word"]:
+        raise SystemExit(f"decode {d['word']}: segments spell {''.join(s for s, _, _ in parts)!r}")
+    return parts
+
+
+def story_html(row):
+    link = f' <a class="src" href="{html.escape(row["source"])}">source</a>' if row.get("source") else ""
+    return row["story"] + link
+
+
+def decode_fields(d, morphemes, index):
+    """A decode note's fields, and the study position of the last morpheme it uses."""
+    rows, last = [], 0
+    for seg, mid, gloss in parse_parts(d, index):
+        if mid:
+            last = max(last, index[mid])
+            meaning = morphemes[index[mid]]["meaning"]
+            root = (f'<div class="rootm">{html.escape(morphemes[index[mid]]["forms"])} '
+                    f'{html.escape(meaning)}</div>') if gloss and gloss != meaning else ""
+            rows.append(f'<tr><td class="seg">{html.escape(seg)}</td>'
+                        f'<td>{html.escape(gloss or meaning)}{root}</td></tr>')
+        else:
+            rows.append(f'<tr><td class="plain">{html.escape(seg)}</td>'
+                        f'<td class="plain-gloss">{html.escape(gloss)}</td></tr>')
+    fields = [d["word"], "".join(rows), html.escape(d["literal"]), html.escape(d["definition"]),
+              "y" if d["medical"] else ""]
+    return fields, last
+
+
+def validate(morphemes, stories, decode, index):
     if len(index) != len(morphemes):
         raise SystemExit("duplicate morpheme ids")
-    if unknown := set(stories) - set(index):
+    story_ids = [r["id"] for r in stories]
+    if len(set(story_ids)) != len(story_ids):
+        raise SystemExit("duplicate story ids")
+    if unknown := set(story_ids) - set(index):
         raise SystemExit(f"stories for unknown ids: {sorted(unknown)}")
+    words = [d["word"] for d in decode]
+    if len(set(words)) != len(words):
+        raise SystemExit("duplicate decode words")
+    for m in morphemes:
+        if m["medical"] not in ("", "related", "y"):
+            raise SystemExit(f"{m['id']}: medical must be empty, 'related' or 'y'")
+    specialist = {m["id"] for m in morphemes if m["medical"] == "y"}
+    for d in decode:
+        used = {mid for _, mid, _ in parse_parts(d, index) if mid}
+        # skipping specialist vocabulary (-tag:WR::Medical) must not strand an everyday decode card
+        if not d["medical"] and used & specialist:
+            raise SystemExit(f"decode {d['word']}: everyday word uses specialist morphemes "
+                             f"{sorted(used & specialist)}")
+
+
+def build(html_out=None, only=None):
+    morphemes = read("morphemes.csv")
+    story_rows = read("stories.csv")
+    stories = {r["id"]: story_html(r) for r in story_rows}
+    decode = read("decode.csv")
+    index = {m["id"]: i for i, m in enumerate(morphemes)}
+    validate(morphemes, story_rows, decode, index)
 
     deck = genanki.Deck(deck_id(DECK_NAME), DECK_NAME, description=DECK_DESCRIPTION)
     notes, preview = [], []
@@ -172,10 +242,14 @@ def build(html_out=None, only=None):
         fields = [html.escape(m["forms"]), html.escape(m["meaning"]), m["kind"], m["kind"], lang,
                   html.escape(m["origin"]), word_list(m["front"]),
                   word_list(m["more"]) if m["more"] else "", stories.get(m["id"], ""),
-                  "y" if m["medical"] else ""]
+                  "y" if m["medical"] == "y" else ""]
         tags = [f"WR::{kind}", f"WR::{lang.replace(' ', '_').replace('/', '_')}"]
-        if m["medical"]:
+        if m["core"]:
+            tags.append("WR::Core")
+        if m["medical"] == "y":
             tags.append("WR::Medical")
+        elif m["medical"] == "related":
+            tags.append("WR::Medical_Related")
         if m["id"] in stories:
             tags.append("WR::Story")
         notes.append((i * 10, genanki.Note(model=ROOT_MODEL, fields=fields, tags=tags,
@@ -185,19 +259,7 @@ def build(html_out=None, only=None):
     for d in decode:
         if only and not re.search(only, d["word"], re.I):
             continue
-        rows, last = [], 0
-        for part in d["parts"].split(" + "):
-            seg, mid = part.split("=")
-            if mid:
-                if mid not in index:
-                    raise SystemExit(f"decode {d['word']}: unknown morpheme {mid}")
-                last = max(last, index[mid])
-                meaning = html.escape(morphemes[index[mid]]["meaning"])
-                rows.append(f'<tr><td class="seg">{html.escape(seg)}</td><td>{meaning}</td></tr>')
-            else:
-                rows.append(f'<tr><td class="plain">{html.escape(seg)}</td><td></td></tr>')
-        fields = [d["word"], "".join(rows), html.escape(d["literal"]), html.escape(d["definition"]),
-                  "y" if d["medical"] else ""]
+        fields, last = decode_fields(d, morphemes, index)
         tags = ["WR::Decode"] + (["WR::Medical"] if d["medical"] else [])
         notes.append(((last + DECODE_DELAY) * 10 + 5,
                       genanki.Note(model=DECODE_MODEL, fields=fields, tags=tags,
