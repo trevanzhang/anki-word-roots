@@ -1,0 +1,38 @@
+name: Build
+
+# Builds the deck on every push and pull request (like Ultimate Geography's integrity check).
+# Pushing a version tag (v1.1, ...) also creates a draft release with the .apkg attached;
+# write the release notes on GitHub, then publish it.
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Build deck
+        run: uv run --no-dev python word_roots/build.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Word_Roots
+          path: dist/Word_Roots.apkg
+
+      - name: Create draft release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf '### New morphemes\n\n### Corrected morphemes\n\n### Stories and decode words\n\n### Other changes\n' > notes.md
+          gh release create "$GITHUB_REF_NAME" dist/Word_Roots.apkg --draft --title "$GITHUB_REF_NAME" --notes-file notes.md

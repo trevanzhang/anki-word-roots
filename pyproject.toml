@@ -1,0 +1,15 @@
+[project]
+name = "anki-word-roots"
+version = "1.0"
+description = "Anki deck of Greek and Latin word roots, prefixes and suffixes, ordered by usefulness"
+requires-python = ">=3.12"
+dependencies = [
+    "genanki>=0.13.1",
+]
+
+[dependency-groups]
+# only for tools/import_wikipedia.py, which generated the data files
+tools = [
+    "beautifulsoup4>=4.12",
+    "wordfreq>=3.1",
+]
