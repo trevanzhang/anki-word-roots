@@ -1,6 +1,6 @@
 [project]
 name = "anki-word-roots"
-version = "1.1"
+version = "1.2"
 description = "Anki deck of Greek and Latin word roots, prefixes and suffixes, ordered by usefulness"
 requires-python = ">=3.12"
 dependencies = [

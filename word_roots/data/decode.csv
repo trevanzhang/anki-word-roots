@@ -141,7 +141,7 @@ dyspnea,"dys=dys-bad-difficult:bad, difficult + pnea=pne-blow-breathe:breathing"
 endocrine,endo=endo-inside-within + crine=crine-secrete:secrete,secreting within,(glands) that release hormones directly into the blood,y
 colonoscopy,colono=col-colon + scopy=scept-look-at:viewing,looking at the colon,an examination of the large intestine with a camera,y
 biopsy,"bi=bio-life:life, living tissue + opsy=opsy-examination-inspection:viewing",viewing of the living,removal of a tissue sample for examination,y
-autopsy,aut=aut-self-directed:self + opsy=ops-eye:seeing,seeing for oneself,an examination of a body to find the cause of death,y
+autopsy,aut=aut-self-directed:self + opsy=opsy-examination-inspection:seeing,seeing for oneself,an examination of a body to find the cause of death,y
 diagnosis,dia=dia-apart-through:through + gnosis=gnosis-knowledge-recognition:knowing,knowing through (and apart),identification of an illness,y
 prognosis,pro=pro-before-front:before + gnosis=gnosis-knowledge-recognition:knowing,knowing beforehand,the likely course of an illness,y
 craniotomy,cranio=crani-skull + tomy=tem-cut:cutting,skull-cutting,a surgical opening of the skull,y

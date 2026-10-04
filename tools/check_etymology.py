@@ -11,6 +11,9 @@ flagged under tribu- "pay" (from tribuere).
 This is a heuristic: it flags words for a person to check, and some flags will be fine (an
 etymology that skips a step, or a word Wiktionary barely covers). Decode words are checked
 part by part the same way. Wiktionary pages are cached in build/wiktionary/.
+
+Only words are checked here, not which letters are highlighted: illum[in]ate passes, since
+illuminate does come from in- + lumen. build.py checks the highlights' positions.
 """
 
 import argparse
@@ -32,7 +35,9 @@ UA = "anki-word-roots (https://github.com/jupsh/anki-word-roots)"
 CLASSICAL = re.compile(r"^(la|grc|LL|ML|NL|VL|CL|la-[a-z]+|ecc)\.?$|^la-|^grc-")
 DERIV = {"der", "inh", "bor", "lbor", "uder", "der+", "inh+", "bor+", "lbor+", "learned borrowing",
          "slbor", "obor", "calque", "clq", "cal", "sl", "semantic loan", "psm", "ubor", "dbt",
-         "doublet", "m", "l", "mention", "link", "cog", "noncog", "nc", "m+", "l-lite", "m-lite"}
+         "doublet", "m", "l", "mention", "link", "m+", "l-lite", "m-lite"}
+# not evidence: a cognate shares an ancestor (English "ferry" and Latin "ferre"), and noncog
+# says outright that two words are unrelated
 AFFIX = {"af", "affix", "compound", "com", "prefix", "pre", "suffix", "suf", "confix", "con",
          "blend", "com+", "surf"}
 STOP = {"latin", "greek", "ancient", "from", "and", "of", "to", "the", "see", "also", "via",
@@ -149,8 +154,7 @@ def sources(ety):
                     affixes.add(norm(a).strip("-"))
         elif name in DERIV:
             # der/inh/bor: target lang, source lang, term; m/l/cog: lang, term
-            mention = name in {"m", "l", "mention", "link", "cog", "noncog", "nc", "m+", "l-lite",
-                               "m-lite"}
+            mention = name in {"m", "l", "mention", "link", "m+", "l-lite", "m-lite"}
             lang, term = (args + ["", "", ""])[0:2] if mention else (args + ["", "", ""])[1:3]
             if lang and term and CLASSICAL.match(lang):
                 terms.add(stem(term))

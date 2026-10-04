@@ -200,6 +200,60 @@ def decode_fields(d, morphemes, index):
     return fields, last
 
 
+def bare_forms(m):
+    """'scler(o)-, -sclerosis' -> {'scler', 'sclero', 'sclerosis'}"""
+    out = set()
+    for f in m["forms"].split(","):
+        f = f.strip(" -").lower()
+        out |= {re.sub(r"\((\w+)\)", "", f), re.sub(r"\((\w+)\)", r"\1", f)}
+    return out
+
+
+INFLECTIONS = {"s", "es", "ed", "ing", "ly", "ally"}
+
+
+def check_highlights(morphemes, decode, index):
+    """The etymology check looks at whole words, so check where the highlight sits.
+
+    A prefix's highlight must start the word, after nothing but another morpheme (in[trans]igent);
+    a suffix's must end it, before nothing but another suffix or an inflection. And two
+    morphemes may not claim the same letters of one word: illum[in]ate under in- clashes
+    with il[lumin]ate. Nesting is fine (dia[gno]sis inside dia[gnosis])."""
+    known = set().union(*(bare_forms(m) for m in morphemes))
+    known |= {f + "o" for f in known}
+    errors, spans = [], {}
+    for m in morphemes:
+        for field in ("front", "more"):
+            for w in filter(None, (x.strip() for x in m[field].split(";"))):
+                found = re.fullmatch(r"([^\[\]]*)\[([^\[\]]+)\]([^\[\]]*)", w)
+                if not found:
+                    errors.append(f"{m['id']}: {w!r} needs exactly one [highlight]")
+                    continue
+                pre, seg, post = found.groups()
+                if m["kind"] == "prefix" and pre and pre.lower() not in known:
+                    errors.append(f"{m['id']}: prefix highlighted mid-word in {w!r}")
+                if m["kind"] == "suffix" and post and post.lower() not in known | INFLECTIONS:
+                    errors.append(f"{m['id']}: suffix highlighted mid-word in {w!r}")
+                spans.setdefault((pre + seg + post).lower(), []).append(
+                    (len(pre), len(pre) + len(seg), m["id"], w))
+    for d in decode:
+        at = 0
+        for seg, mid, _ in parse_parts(d, index):
+            if mid:
+                spans.setdefault(d["word"].lower(), []).append((at, at + len(seg), mid, "decode"))
+            at += len(seg)
+    for word, ss in spans.items():
+        for i, (a0, a1, aid, aw) in enumerate(ss):
+            for b0, b1, bid, bw in ss[i + 1:]:
+                overlap = min(a1, b1) - max(a0, b0)
+                nested = (a0 <= b0 and b1 <= a1) or (b0 <= a0 and a1 <= b1)
+                # one shared letter is a connecting vowel or elision: [deca]thlon, dec[athl]on
+                if aid != bid and ((a0, a1) == (b0, b1) or (overlap > 1 and not nested)):
+                    errors.append(f"{word}: {aid} ({aw}) and {bid} ({bw}) highlight the same letters")
+    if errors:
+        raise SystemExit("highlighting:\n  " + "\n  ".join(errors))
+
+
 def validate(morphemes, stories, decode, index):
     if len(index) != len(morphemes):
         raise SystemExit("duplicate morpheme ids")
@@ -221,6 +275,7 @@ def validate(morphemes, stories, decode, index):
         if not d["medical"] and used & specialist:
             raise SystemExit(f"decode {d['word']}: everyday word uses specialist morphemes "
                              f"{sorted(used & specialist)}")
+    check_highlights(morphemes, decode, index)
 
 
 def build(html_out=None, only=None):

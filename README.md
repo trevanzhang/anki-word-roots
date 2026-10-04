@@ -9,7 +9,7 @@ then in Anki choose **File → Import**.
 
 ## What's in it
 
-- **699 morphemes:** 569 roots, 76 prefixes and 54 suffixes (437 Latin, 251 Greek). The first
+- **700 morphemes:** 573 roots, 74 prefixes and 53 suffixes (437 Latin, 252 Greek). The first
   123 are the core: *re-*, *pre-*, *trans-*, *-able*, *-ity*, *graph*, *phon*, *port*, *dict*…
 - **222 decode words** (102 medical) for practising taking words apart. 87 of them never appear
   among the morphemes' example words, so they test the roots rather than recognition.
@@ -91,7 +91,9 @@ Every example word and decode word is also checked against its Wiktionary etymol
 `tools/check_etymology.py`, which flags words whose recorded origin doesn't include the
 morpheme's source word. That check caught false connections such as *tribulation* (from
 *tribulum*, a threshing sledge, not *tribuere* "to pay") and *ferry* (Germanic, not Latin
-*ferre*). Flags are reviewed by hand, since some are the tool's limits rather than errors.
+*ferre*). Flags are reviewed by hand, since some are the tool's limits rather than errors. The
+build separately checks that each highlight sits in the right place, such as a prefix at the start
+of the word.
 
 ## Building it yourself
 

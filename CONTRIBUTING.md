@@ -22,14 +22,17 @@ All content is in `word_roots/data/`:
 
 Build with `uv run python word_roots/build.py --html out.html` and check your change in
 `out.html`. The build stops on unknown ids, segments that don't spell the word, unexplained
-segments, duplicate stories or decode words, example words without a marked morpheme, and
-everyday decode words that use a specialist medical morpheme. Every push and pull request is also
-built on GitHub.
+segments, duplicate stories or decode words, example words without exactly one marked morpheme,
+everyday decode words that use a specialist medical morpheme, and misplaced highlights: a prefix
+marked mid-word (`illum[in]ate` instead of `[il]luminate`), a suffix marked before the end, or
+two morphemes marking the same letters of one word. Every push and pull request is also built on
+GitHub.
 
 Then run `uv run python tools/check_etymology.py`, which flags example and decode words whose
 Wiktionary etymology doesn't mention the morpheme's source word. Look at each new flag: either
 the word is wrong for that morpheme, or the tool missed a step (short prefixes and suffixes often
-trip it).
+trip it). It counts only real derivations as evidence, not cognates, and it checks the whole
+word, so the build's highlight check is what catches a right word with the wrong letters marked.
 
 ## Content rules
 
@@ -41,6 +44,9 @@ trip it).
 - **Useful morphemes only.** A morpheme earns its place if it appears in several words people
   actually meet. Medical morphemes count if they appear in common medical vocabulary.
 - **Short meanings.** "hear", not "of or pertaining to hearing".
+- **One sense per card.** Every example should show the meaning on the card. When a root has a
+  homonym (Latin *porta* "gate" beside *portare* "carry"), leave its words out (*portal*) or give
+  it a card of its own.
 - **Fresh decode words.** Prefer decode words that aren't already examples, so the card tests the
   roots rather than recognition.
 
