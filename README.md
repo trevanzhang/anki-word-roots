@@ -1,122 +1,97 @@
-# Word Roots for Anki
+# Word Roots 中文：英语词根词缀 Anki 牌组
 
-An Anki deck of the Greek and Latin prefixes, roots and suffixes that build English words,
-including the ones medicine uses. It starts with a core of the most productive, easy-to-spot
-morphemes, then continues in order of usefulness; obscure ones aren't included at all.
+以简体中文学习英语中的希腊语、拉丁语词根、前缀和后缀。通过熟悉的英文例词回忆含义，再用完整单词练习拆解。
 
-**[Download Word_Roots.apkg](https://github.com/jupsh/anki-word-roots/releases/latest/download/Word_Roots.apkg)**,
-then in Anki choose **File → Import**.
+本项目基于 [jupsh/anki-word-roots](https://github.com/jupsh/anki-word-roots) 汉化，保留英文释义、词源原文和来源链接，方便对照核查。[English / 原版说明](README.en.md)
 
-## What's in it
+## 汉化范围
 
-- **700 morphemes:** 573 roots, 74 prefixes and 53 suffixes (437 Latin, 252 Greek). The first
-  123 are the core: *re-*, *pre-*, *trans-*, *-able*, *-ity*, *graph*, *phon*, *port*, *dict*…
-- **222 decode words** (102 medical) for practising taking words apart. 87 of them never appear
-  among the morphemes' example words, so they test the roots rather than recognition.
-- **77 etymology stories** for the roots with a good one, such as why *muscle* means "little
-  mouse", each with a link to its source.
+| 内容 | 数量 | 显示方式 |
+|---|---:|---|
+| 词根、前缀、后缀 | 700 | 中文含义为主，英文释义在下方 |
+| 核心词根词缀 | 123 | 保留 `WR::Core` 标签和学习顺序 |
+| 拆词练习 | 222 | 各部分含义、构词直译、现代词义均有中文对照 |
+| 词源故事 | 77 | 中文译文、英文原文和来源链接 |
+| 卡片界面 | 两种卡片 | 中文提示、分类、医学标记与学习说明 |
 
-Each morpheme is taught through words you already know, with the morpheme highlighted. Decode
-cards break a word into parts, giving the meaning each part has in that word (*-logy* → "study
-of") with the root's broader meaning underneath.
+英文例词及高亮保持原样；拉丁语、希腊语词源原文保留。例词列表不额外添加逐词中文释义，练习重点仍是识别词素。拆词卡提供完整单词的中文含义。
 
-<table>
-  <tr><th scope="col" colspan="2">Morpheme</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
-  <tr>
-    <td><img src="doc/root-front.png" width="380"></td>
-    <td><img src="doc/root-back.png" width="380"></td>
-  </tr>
-</table>
+词根卡的正反面：
 
-<table>
-  <tr><th scope="col" colspan="2">Morpheme, with a story</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
-  <tr>
-    <td><img src="doc/story-front.png" width="380"></td>
-    <td><img src="doc/story-back.png" width="380"></td>
-  </tr>
-</table>
+![中文词根卡正反面](doc/zh-root.png)
 
-<table>
-  <tr><th scope="col" colspan="2">Decode</th></tr>
-  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
-  <tr>
-    <td><img src="doc/decode-front.png" width="380"></td>
-    <td><img src="doc/decode-back.png" width="380"></td>
-  </tr>
-</table>
+拆词练习的正反面：
 
-## Studying
+![中文拆词卡正反面](doc/zh-decode.png)
 
-**Settings.** The deck is designed to be studied in order: core morphemes first, and each decode
-card a few cards after the last morpheme it uses. To keep that order, open the deck's options
-and, under *Display Order*, set:
+手机宽度的深色模式：[查看词源故事示例](doc/zh-mobile-dark.png)。这些是生成模板的浏览器预览截图，具体 Anki 客户端的字体可能略有差异。
 
-- **New card gather order:** *Ascending position*
-- **New card sort order:** *Order gathered* (the default, *Card type, then order gathered*,
-  would show all of a day's morpheme cards before its decode cards)
+**请区分“构词直译”和“现代词义”。** 历史构词关系不表示现代词义一定能由各部分直接推导。中文是对原版学习材料的翻译，不是对全部词源的独立审定。有关古代医学的故事描述历史观念。
 
-Placement only controls when a decode card is first shown: it doesn't wait until you've
-mastered its parts.
+## 获取与导入
 
-**Grading.** Count an answer as right if you recall the essential meaning: "see" for *vid-/vis-*,
-or "inflammation of the sac around the heart" for *pericarditis*. Exact wording, the root's other
-senses and the stories are extras.
+文件名为 **`Word_Roots_zh-CN.apkg`**。如果本 fork 的 [Releases](https://github.com/trevanzhang/anki-word-roots/releases) 还没有发布中文版，可从成功的 [Build 工作流](https://github.com/trevanzhang/anki-word-roots/actions/workflows/build.yml) 下载 `Word_Roots` 附件，或按下文在本地生成。GitHub 工作流附件通常需要登录后下载。
 
-**Tags** for [filtered decks](https://docs.ankiweb.net/filtered-decks.html), or for suspending
-what you don't need:
+在桌面版 Anki 中选择 **文件 → 导入**，打开 `.apkg` 文件，再通过 Anki 同步到手机。
 
-| Tag | What it marks |
+中文版的牌组名称为 **Word Roots 中文**。它使用独立的牌组 ID、笔记类型 ID 和笔记 GUID，可与英文版同时存在；导入中文版不会自动迁移英文版的学习进度。后续中文版更新应保留这些标识。
+
+## 建议的学习方式
+
+1. 先学习 `tag:WR::Core` 下的 123 个核心词根词缀。
+2. 不需要专业医学词汇时，在浏览器搜索 `deck:"Word Roots 中文" tag:WR::Medical`，选中结果并暂停。这会同时暂停相关词根卡和医学拆词卡。
+3. 保持学习顺序：新卡片收集顺序选 **位置升序（Ascending position）**，新卡片排序选 **按收集顺序（Order gathered）**。Anki 不同版本的中文界面译名可能略有差异。
+4. 能回忆核心含义即可判对，不必逐字复述英文、其他义项或词源故事。
+
+拆词卡放在它需要的最后一个词素后面若干张；这种位置安排不代表 Anki 会等到你熟练掌握所有词素才显示它。
+
+标签保持原版英文，方便沿用筛选条件：
+
+| 标签 | 用途 |
 |---|---|
-| `WR::Core` | the first 123 morphemes |
-| `WR::Medical` | specialist medical vocabulary: anatomy, diseases, procedures |
-| `WR::Medical_Related` | general morphemes medicine also uses heavily (*hyper-*, *-itis*, *neo-*) |
-| `WR::Prefix`, `WR::Root`, `WR::Suffix` | the kind of morpheme |
-| `WR::Latin`, `WR::Greek` | the language |
-| `WR::Decode`, `WR::Story` | decode cards; morphemes with a story |
+| `WR::Core` | 核心词根词缀 |
+| `WR::Prefix` / `WR::Root` / `WR::Suffix` | 前缀／词根／后缀 |
+| `WR::Medical` | 专业医学词汇 |
+| `WR::Medical_Related` | 医学中也常见的一般词素，例如 hyper- |
+| `WR::Latin` / `WR::Greek` | 语言来源 |
+| `WR::Decode` / `WR::Story` | 拆词卡／带词源故事的卡片 |
 
-To skip the specialist medical vocabulary, search `deck:"Word Roots" tag:WR::Medical` and suspend
-the results. Everyday decode cards never rely on a specialist morpheme, so nothing else breaks.
+## 本地生成
 
-## Where the content comes from
-
-The morphemes started from Wikipedia's *List of Greek and Latin roots in English* and *List of
-medical roots, suffixes and prefixes*. Entries were kept only if their example words are common
-in English, measured with [wordfreq](https://github.com/rspeer/wordfreq), and then reviewed by
-hand: wrong meanings fixed, duplicates merged, better example words chosen, and missing suffixes,
-prefixes and medical roots added.
-
-Every example word and decode word is also checked against its Wiktionary etymology with
-`tools/check_etymology.py`, which flags words whose recorded origin doesn't include the
-morpheme's source word. That check caught false connections such as *tribulation* (from
-*tribulum*, a threshing sledge, not *tribuere* "to pay") and *ferry* (Germanic, not Latin
-*ferre*). Flags are reviewed by hand, since some are the tool's limits rather than errors. The
-build separately checks that each highlight sits in the right place, such as a prefix at the start
-of the word.
-
-## Building it yourself
-
-Needs [uv](https://docs.astral.sh/uv/).
+安装 [uv](https://docs.astral.sh/uv/) 后，在项目目录运行：
 
 ```sh
-uv run python word_roots/build.py                 # writes dist/Word_Roots.apkg
-uv run python word_roots/build.py --html out.html # plus an HTML preview of every note
-uv run python tools/check_etymology.py            # check example words against Wiktionary
+# 默认生成中文版
+uv run python word_roots/build.py
+
+# 同时生成可直接在浏览器打开的全部卡片正反面预览
+uv run python word_roots/build.py --lang zh-CN --html dist/Word_Roots_zh-CN.html
+
+# 仍可生成原版英文牌组
+uv run python word_roots/build.py --lang en --html dist/Word_Roots_en.html
+
+# 检查译文完整性、上游变化、生成包和两种版本的独立标识
+uv run python -m unittest discover -s tests -v
 ```
 
-The content is three CSV files in `word_roots/data/`: `morphemes.csv` (in study order),
-`stories.csv` and `decode.csv`; see [CONTRIBUTING.md](CONTRIBUTING.md) for their formats.
-`tools/import_wikipedia.py` generated the first version of `morphemes.csv`. It has been
-hand-edited since, so edit the CSV directly. Note GUIDs come from each morpheme's `id` and each
-decode word, so keep ids stable.
+完整牌组写入 `dist/`。`--only` 用于局部校对，生成的局部牌组写入 `build/`，避免混入完整发行文件。
 
-## Contributing
+GitHub Actions 会构建中英文两版、运行检查，并上传 `.apkg` 和 HTML 预览。版本标签仍只创建草稿发布，需由维护者检查后发布。
 
-Spotted a mistake? [Open an issue](https://github.com/jupsh/anki-word-roots/issues). To change
-the deck yourself, see [CONTRIBUTING.md](CONTRIBUTING.md).
+## 内容来源与维护
 
-## License
+原版从 Wikipedia 的希腊语、拉丁语及医学词根列表出发，使用 wordfreq 辅助筛选例词，再人工修订；词源检查工具借助 Wiktionary 标记可能的错误。这些过程有助于核查，不保证每条词源都已由专业人员审定。
 
-[CC BY-SA 4.0](LICENSE.md), because the source data comes from Wikipedia. The build code is
-public domain.
+英文数据位于 `word_roots/data/`，中文版采用独立的 `word_roots/locales/zh-CN.json` 覆盖层。每条译文保存对应英文原文，若上游改变释义或故事，中文构建会报错并要求复核，避免沿用过期翻译。
+
+修改和同步方法见 [汉化维护说明](LOCALIZATION.md)；原版内容规范见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## CrowdAnki
+
+本项目用 CSV 和生成脚本维护内容，不是原生 CrowdAnki JSON 仓库。如需 CrowdAnki，可先把 `.apkg` 导入 Anki，再在“文件 → 导出”选择 **CrowdAnki JSON representation**。本次汉化未增加直接生成 CrowdAnki JSON 的功能。
+
+## 许可与署名
+
+原版：jupsh/anki-word-roots。中文改编：trevanzhang/anki-word-roots。
+
+牌组内容和中文译文继续采用 [CC BY-SA 4.0](LICENSE.md)。原版构建代码为公有领域；新增构建与检查代码同样以公有领域方式提供。在分享修改后的内容时，请保留来源、改编说明与相同许可。

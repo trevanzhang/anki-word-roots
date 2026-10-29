@@ -1,0 +1,4602 @@
+{
+  "locale": "zh-CN",
+  "morphemes": {
+    "re-again-back": {
+      "meaning": "again, back",
+      "zh": "再次；向后"
+    },
+    "pre-before": {
+      "meaning": "before",
+      "zh": "在……之前"
+    },
+    "in-not-un": {
+      "meaning": "not, un- (negation)",
+      "zh": "不；非（否定）"
+    },
+    "di-apart-separation": {
+      "meaning": "apart, separation, taking apart",
+      "zh": "分开；分离；拆开"
+    },
+    "ex-outside-out": {
+      "meaning": "outside, out of, from, out",
+      "zh": "外部；向外；从……出来"
+    },
+    "sub-below": {
+      "meaning": "below",
+      "zh": "在……之下"
+    },
+    "super-above-over": {
+      "meaning": "above, over",
+      "zh": "在……之上；超过"
+    },
+    "trans-across": {
+      "meaning": "across",
+      "zh": "横跨；穿过"
+    },
+    "inter-between-among": {
+      "meaning": "between, among",
+      "zh": "在……之间"
+    },
+    "ant-against-opposed": {
+      "meaning": "against, opposed to, preventive",
+      "zh": "反对；对抗；预防"
+    },
+    "post-after-behind": {
+      "meaning": "after, behind",
+      "zh": "在……之后；后面"
+    },
+    "able-able-be": {
+      "meaning": "able to be, worth being",
+      "zh": "可以被……的；值得……的"
+    },
+    "ity-state-quality": {
+      "meaning": "state or quality of",
+      "zh": "……的状态或性质"
+    },
+    "tele-far-at": {
+      "meaning": "far, at a distance",
+      "zh": "远；在远处"
+    },
+    "phon-sound": {
+      "meaning": "sound",
+      "zh": "声音"
+    },
+    "graph-draw-write": {
+      "meaning": "draw, write",
+      "zh": "画；写"
+    },
+    "log-word-reason": {
+      "meaning": "word, reason, speech, thought",
+      "zh": "词语；理性；言语；思想"
+    },
+    "bio-life": {
+      "meaning": "life",
+      "zh": "生命"
+    },
+    "geo-earth": {
+      "meaning": "earth",
+      "zh": "大地；地球"
+    },
+    "aut-self-directed": {
+      "meaning": "self; directed from within",
+      "zh": "自己；由内部驱动"
+    },
+    "micr-small": {
+      "meaning": "small",
+      "zh": "小"
+    },
+    "scept-look-at": {
+      "meaning": "look at, examine, view, observe",
+      "zh": "观看；检查；观察"
+    },
+    "spec-look": {
+      "meaning": "look",
+      "zh": "看"
+    },
+    "vid-see": {
+      "meaning": "see",
+      "zh": "看见"
+    },
+    "aud-hearing-listening": {
+      "meaning": "hearing, listening, sound",
+      "zh": "听觉；听；声音"
+    },
+    "dic-say-speak": {
+      "meaning": "say, speak, proclaim",
+      "zh": "说；讲话；宣告"
+    },
+    "scrib-write": {
+      "meaning": "write",
+      "zh": "写"
+    },
+    "port-carry": {
+      "meaning": "carry",
+      "zh": "搬运；携带"
+    },
+    "duc-lead": {
+      "meaning": "lead",
+      "zh": "引导"
+    },
+    "jac-cast-throw": {
+      "meaning": "cast, throw",
+      "zh": "投；掷"
+    },
+    "rump-break-burst": {
+      "meaning": "break, burst",
+      "zh": "打破；破裂"
+    },
+    "stru-make-up": {
+      "meaning": "to make up, build",
+      "zh": "组成；建造"
+    },
+    "trah-draw-pull": {
+      "meaning": "draw, pull",
+      "zh": "拉；牵引"
+    },
+    "ive-tending-doing": {
+      "meaning": "tending to, doing",
+      "zh": "倾向于……的；做……的"
+    },
+    "ize-make-treat": {
+      "meaning": "to make, to treat as",
+      "zh": "使成为；把……当作"
+    },
+    "ic-relating-like": {
+      "meaning": "relating to, like",
+      "zh": "与……有关的；像……的"
+    },
+    "ment-result-means": {
+      "meaning": "result or means of an action",
+      "zh": "动作的结果或手段"
+    },
+    "ation-act-process": {
+      "meaning": "act, process or result of",
+      "zh": "……的行为、过程或结果"
+    },
+    "al-relating": {
+      "meaning": "relating to",
+      "zh": "与……有关的"
+    },
+    "ous-full-having": {
+      "meaning": "full of, having",
+      "zh": "充满……的；具有……的"
+    },
+    "ist-who-does": {
+      "meaning": "one who does or believes",
+      "zh": "从事……或信奉……的人"
+    },
+    "ism-belief-practice": {
+      "meaning": "belief, practice or condition",
+      "zh": "信仰；实践；状态"
+    },
+    "or-who-does": {
+      "meaning": "one who does",
+      "zh": "做……的人"
+    },
+    "con-with-together": {
+      "meaning": "with, together",
+      "zh": "与……一起；共同"
+    },
+    "uni": {
+      "meaning": "one",
+      "zh": "一"
+    },
+    "bi-two-twice": {
+      "meaning": "two, twice",
+      "zh": "二；两次"
+    },
+    "tri-three": {
+      "meaning": "three",
+      "zh": "三"
+    },
+    "mon-alone-only": {
+      "meaning": "alone, only",
+      "zh": "单独；唯一"
+    },
+    "poly-many": {
+      "meaning": "many",
+      "zh": "许多"
+    },
+    "multi-many-much": {
+      "meaning": "many, much",
+      "zh": "许多；大量"
+    },
+    "semi-half": {
+      "meaning": "half",
+      "zh": "半"
+    },
+    "cent-hundred": {
+      "meaning": "hundred",
+      "zh": "百"
+    },
+    "mill-thousand": {
+      "meaning": "thousand",
+      "zh": "千"
+    },
+    "hemi-half": {
+      "meaning": "half",
+      "zh": "半"
+    },
+    "mega-great-large": {
+      "meaning": "great, large",
+      "zh": "大；巨大"
+    },
+    "hydr-water": {
+      "meaning": "water",
+      "zh": "水"
+    },
+    "therm-heat-warm": {
+      "meaning": "heat, warm",
+      "zh": "热；温暖"
+    },
+    "chron-time": {
+      "meaning": "time",
+      "zh": "时间"
+    },
+    "phos-light": {
+      "meaning": "light",
+      "zh": "光"
+    },
+    "meter-measure": {
+      "meaning": "measure",
+      "zh": "测量"
+    },
+    "aqu-water": {
+      "meaning": "water",
+      "zh": "水"
+    },
+    "terr-earth": {
+      "meaning": "earth",
+      "zh": "大地；地球"
+    },
+    "mar-sea": {
+      "meaning": "sea",
+      "zh": "海"
+    },
+    "ann-year-yearly": {
+      "meaning": "year, yearly",
+      "zh": "年；每年的"
+    },
+    "viv-live": {
+      "meaning": "live",
+      "zh": "活；生存"
+    },
+    "vit-life": {
+      "meaning": "life",
+      "zh": "生命"
+    },
+    "mort-death": {
+      "meaning": "death",
+      "zh": "死亡"
+    },
+    "psych-mind": {
+      "meaning": "mind",
+      "zh": "心智；精神"
+    },
+    "path-feeling-disease": {
+      "meaning": "feeling, disease",
+      "zh": "感受；疾病"
+    },
+    "phil-love-friendship": {
+      "meaning": "love, friendship",
+      "zh": "爱；友爱"
+    },
+    "phob-fear": {
+      "meaning": "fear",
+      "zh": "恐惧"
+    },
+    "dem-people": {
+      "meaning": "people",
+      "zh": "人民；人群"
+    },
+    "cracy-government-rule": {
+      "meaning": "government, rule, authority",
+      "zh": "治理；统治；权力"
+    },
+    "anthrop-human": {
+      "meaning": "human",
+      "zh": "人；人类"
+    },
+    "the-god": {
+      "meaning": "god",
+      "zh": "神"
+    },
+    "ped-foot": {
+      "meaning": "foot",
+      "zh": "脚"
+    },
+    "pod-foot": {
+      "meaning": "foot",
+      "zh": "脚"
+    },
+    "man-hand": {
+      "meaning": "hand",
+      "zh": "手"
+    },
+    "corpor-body": {
+      "meaning": "body",
+      "zh": "身体"
+    },
+    "cred-believe-trust": {
+      "meaning": "believe, trust",
+      "zh": "相信；信任"
+    },
+    "voc-call-voice": {
+      "meaning": "call, voice",
+      "zh": "呼叫；声音"
+    },
+    "vers-turn": {
+      "meaning": "turn",
+      "zh": "转；转向"
+    },
+    "mit-send": {
+      "meaning": "send",
+      "zh": "发送"
+    },
+    "fac-do-make": {
+      "meaning": "do, make",
+      "zh": "做；制造"
+    },
+    "cap-hold-take": {
+      "meaning": "hold, take",
+      "zh": "持有；拿取"
+    },
+    "ven-come": {
+      "meaning": "come",
+      "zh": "来"
+    },
+    "mov-move-motion": {
+      "meaning": "move, motion",
+      "zh": "移动；运动"
+    },
+    "cidal-killing-destroying": {
+      "meaning": "killing, destroying",
+      "zh": "杀死；毁灭"
+    },
+    "itis-inflammation": {
+      "meaning": "inflammation",
+      "zh": "炎症"
+    },
+    "an-not-without": {
+      "meaning": "not, without",
+      "zh": "不；没有"
+    },
+    "syn-with": {
+      "meaning": "with",
+      "zh": "与……一起"
+    },
+    "hyper-extreme-beyond": {
+      "meaning": "extreme or beyond normal",
+      "zh": "过度；超出正常范围"
+    },
+    "hyp-under-below": {
+      "meaning": "under, below normal",
+      "zh": "在……之下；低于正常范围"
+    },
+    "peri-around": {
+      "meaning": "around",
+      "zh": "围绕；周围"
+    },
+    "ep-upon": {
+      "meaning": "upon",
+      "zh": "在……之上"
+    },
+    "dia-apart-through": {
+      "meaning": "apart, through",
+      "zh": "分开；穿过"
+    },
+    "par-beside-near": {
+      "meaning": "beside, near",
+      "zh": "旁边；附近"
+    },
+    "pro-forward-for": {
+      "meaning": "forward, for",
+      "zh": "向前；赞成"
+    },
+    "contra-against": {
+      "meaning": "against",
+      "zh": "反对；对抗"
+    },
+    "circum-around": {
+      "meaning": "around",
+      "zh": "围绕；周围"
+    },
+    "ad-toward-addition": {
+      "meaning": "to, toward; in addition",
+      "zh": "朝向；到；另外"
+    },
+    "ab-away-from": {
+      "meaning": "away from, down, off",
+      "zh": "离开；向下；脱离"
+    },
+    "intra-within": {
+      "meaning": "within",
+      "zh": "在……内部"
+    },
+    "extra-outside-beyond": {
+      "meaning": "outside, beyond",
+      "zh": "在……之外；超出"
+    },
+    "ultra-beyond-excessive": {
+      "meaning": "beyond, excessive",
+      "zh": "超过；过度"
+    },
+    "ante-before-front": {
+      "meaning": "before, in front of",
+      "zh": "在……之前；在前面"
+    },
+    "eu-well-good": {
+      "meaning": "well, good",
+      "zh": "好；良好"
+    },
+    "dys-bad-difficult": {
+      "meaning": "bad, difficult, abnormal",
+      "zh": "不好；困难；异常"
+    },
+    "neo-new": {
+      "meaning": "new",
+      "zh": "新"
+    },
+    "pseud-false-fake": {
+      "meaning": "false or fake",
+      "zh": "假的；伪造的"
+    },
+    "mal-bad-wretched": {
+      "meaning": "bad, wretched",
+      "zh": "坏；恶劣"
+    },
+    "ben-good-well": {
+      "meaning": "good, well",
+      "zh": "好；良好"
+    },
+    "omni-all-every": {
+      "meaning": "all, every",
+      "zh": "所有；每个"
+    },
+    "ance-state-action": {
+      "meaning": "state or action of",
+      "zh": "……的状态或行为"
+    },
+    "ant-who-does": {
+      "meaning": "one who does; doing",
+      "zh": "做……的人；正在做……的"
+    },
+    "ate-make-act": {
+      "meaning": "to make or act on; having",
+      "zh": "使成为；作用于；具有"
+    },
+    "fy-make": {
+      "meaning": "to make",
+      "zh": "使成为；制造"
+    },
+    "ics-field-study": {
+      "meaning": "field of study or practice",
+      "zh": "研究或实践领域"
+    },
+    "sci-know": {
+      "meaning": "know",
+      "zh": "知道"
+    },
+    "nov-new": {
+      "meaning": "new",
+      "zh": "新"
+    },
+    "fin-end": {
+      "meaning": "end",
+      "zh": "末端；结尾"
+    },
+    "form-shape": {
+      "meaning": "shape",
+      "zh": "形状"
+    },
+    "grad-walk-step": {
+      "meaning": "walk, step, go",
+      "zh": "走；迈步；去"
+    },
+    "nasc-born": {
+      "meaning": "born",
+      "zh": "出生"
+    },
+    "st-stand": {
+      "meaning": "stand",
+      "zh": "站立"
+    },
+    "ag-do-go": {
+      "meaning": "do, go, move",
+      "zh": "做；去；移动"
+    },
+    "leg-choose-gather": {
+      "meaning": "choose, gather, read",
+      "zh": "选择；收集；阅读"
+    },
+    "prem-press": {
+      "meaning": "press",
+      "zh": "压"
+    },
+    "ten-hold-keep": {
+      "meaning": "hold, keep",
+      "zh": "持有；保持"
+    },
+    "min-less-smaller": {
+      "meaning": "less, smaller",
+      "zh": "更少；更小"
+    },
+    "soci-group": {
+      "meaning": "group",
+      "zh": "群体"
+    },
+    "fer-bear-carry": {
+      "meaning": "to bear, carry",
+      "zh": "承载；携带"
+    },
+    "spond-promise-pledge": {
+      "meaning": "promise, pledge",
+      "zh": "承诺；保证"
+    },
+    "cur-care-for": {
+      "meaning": "care for",
+      "zh": "照料"
+    },
+    "mod-measure-change": {
+      "meaning": "measure, change",
+      "zh": "测量；改变"
+    },
+    "part-part": {
+      "meaning": "part",
+      "zh": "部分"
+    },
+    "cad-fall": {
+      "meaning": "fall",
+      "zh": "落下"
+    },
+    "caus-cause-motive": {
+      "meaning": "cause or motive",
+      "zh": "原因；动机"
+    },
+    "pon-put": {
+      "meaning": "put",
+      "zh": "放置"
+    },
+    "serv-save-protect": {
+      "meaning": "save, protect, serve",
+      "zh": "拯救；保护；服务"
+    },
+    "rect-straight-direct": {
+      "meaning": "straight, direct",
+      "zh": "直；直接"
+    },
+    "leg-law": {
+      "meaning": "law",
+      "zh": "法律"
+    },
+    "sent-feel": {
+      "meaning": "feel",
+      "zh": "感觉"
+    },
+    "caed-cut-kill": {
+      "meaning": "cut, kill",
+      "zh": "切；杀"
+    },
+    "medi-middle": {
+      "meaning": "middle",
+      "zh": "中间"
+    },
+    "sed-sit": {
+      "meaning": "sit",
+      "zh": "坐"
+    },
+    "tend-stretch-strain": {
+      "meaning": "stretch, strain",
+      "zh": "伸展；拉紧"
+    },
+    "col-cultivate-till": {
+      "meaning": "cultivate, till, inhabit",
+      "zh": "耕作；栽培；居住"
+    },
+    "ut-use": {
+      "meaning": "use",
+      "zh": "使用"
+    },
+    "sign-sign": {
+      "meaning": "sign",
+      "zh": "标记；符号"
+    },
+    "mand-order-commit": {
+      "meaning": "order, commit",
+      "zh": "命令；委托"
+    },
+    "jus-law-justice": {
+      "meaning": "law, justice",
+      "zh": "法律；正义"
+    },
+    "gen-birth-kind": {
+      "meaning": "birth, kind, origin",
+      "zh": "出生；种类；起源"
+    },
+    "poli-city": {
+      "meaning": "city",
+      "zh": "城市"
+    },
+    "de-down-away": {
+      "meaning": "down, away from, removing",
+      "zh": "向下；离开；去除"
+    },
+    "teg-cover": {
+      "meaning": "cover",
+      "zh": "覆盖"
+    },
+    "par-order-prepare": {
+      "meaning": "order, prepare, provide, procure",
+      "zh": "命令；准备；提供；取得"
+    },
+    "ment-mind": {
+      "meaning": "mind",
+      "zh": "心智；精神"
+    },
+    "erg-work": {
+      "meaning": "work",
+      "zh": "工作"
+    },
+    "vari-vary": {
+      "meaning": "vary",
+      "zh": "变化"
+    },
+    "ori-rise": {
+      "meaning": "rise",
+      "zh": "升起"
+    },
+    "vinc-conquer": {
+      "meaning": "conquer",
+      "zh": "征服"
+    },
+    "opt-choose": {
+      "meaning": "choose",
+      "zh": "选择"
+    },
+    "crit-judge-separate": {
+      "meaning": "judge, separate",
+      "zh": "判断；分开"
+    },
+    "ser-attach-join": {
+      "meaning": "attach, join",
+      "zh": "附着；连接"
+    },
+    "quer-search-seek": {
+      "meaning": "search, seek",
+      "zh": "寻找；寻求"
+    },
+    "crea-make": {
+      "meaning": "make",
+      "zh": "制造；使成为"
+    },
+    "merc-reward-wages": {
+      "meaning": "reward, wages, hire",
+      "zh": "报酬；工资；雇用"
+    },
+    "pati-suffer-feel": {
+      "meaning": "suffer, feel, endure, permit",
+      "zh": "遭受；感受；忍受；允许"
+    },
+    "loc-place": {
+      "meaning": "place",
+      "zh": "地方"
+    },
+    "solv-loosen-set": {
+      "meaning": "loosen, set free",
+      "zh": "松开；释放"
+    },
+    "claud-close-shut": {
+      "meaning": "close, shut",
+      "zh": "关闭"
+    },
+    "chem-chemistry-drug": {
+      "meaning": "chemistry, drug",
+      "zh": "化学；药物"
+    },
+    "cor-heart": {
+      "meaning": "heart",
+      "zh": "心脏；心"
+    },
+    "val-strength-worth": {
+      "meaning": "strength, worth",
+      "zh": "力量；价值"
+    },
+    "labor-work": {
+      "meaning": "work",
+      "zh": "工作"
+    },
+    "electr-amber-hence": {
+      "meaning": "amber; hence electricity",
+      "zh": "琥珀；由此引申为电"
+    },
+    "test-witness": {
+      "meaning": "witness",
+      "zh": "见证"
+    },
+    "ur-urine-urinary": {
+      "meaning": "urine, the urinary system",
+      "zh": "尿；泌尿系统"
+    },
+    "sequ-follow": {
+      "meaning": "follow",
+      "zh": "跟随"
+    },
+    "pet-strive-toward": {
+      "meaning": "strive toward",
+      "zh": "努力趋向"
+    },
+    "dent-teeth": {
+      "meaning": "teeth",
+      "zh": "牙齿"
+    },
+    "cern-sift": {
+      "meaning": "sift",
+      "zh": "筛选"
+    },
+    "plac-please": {
+      "meaning": "please",
+      "zh": "使高兴"
+    },
+    "fibr-fiber": {
+      "meaning": "fiber",
+      "zh": "纤维"
+    },
+    "plan-flat": {
+      "meaning": "flat",
+      "zh": "平的"
+    },
+    "hab-have": {
+      "meaning": "have",
+      "zh": "拥有"
+    },
+    "dermat-skin": {
+      "meaning": "skin",
+      "zh": "皮肤"
+    },
+    "st-stand-cause": {
+      "meaning": "stand, cause to stand",
+      "zh": "站立；使站立"
+    },
+    "andr-man": {
+      "meaning": "a man",
+      "zh": "男人"
+    },
+    "priv-own": {
+      "meaning": "own",
+      "zh": "自己的"
+    },
+    "nom-arrangement-law": {
+      "meaning": "arrangement, law, order",
+      "zh": "安排；法律；秩序"
+    },
+    "acr-top-tip": {
+      "meaning": "top, tip, extremity",
+      "zh": "顶端；尖端；末端"
+    },
+    "osis-condition-process": {
+      "meaning": "condition, process or disease",
+      "zh": "状态；过程；疾病"
+    },
+    "bal-throw": {
+      "meaning": "throw",
+      "zh": "投；掷"
+    },
+    "tex-weave": {
+      "meaning": "weave",
+      "zh": "编织"
+    },
+    "oxy-sharp-acid": {
+      "meaning": "sharp, acid, acute; oxygen",
+      "zh": "尖锐；酸；由此引申为氧"
+    },
+    "gen-birth-origin": {
+      "meaning": "birth, origin, kind",
+      "zh": "出生；起源；种类"
+    },
+    "ordin-order": {
+      "meaning": "order",
+      "zh": "秩序"
+    },
+    "camp-field": {
+      "meaning": "field",
+      "zh": "田地"
+    },
+    "cyt-cell": {
+      "meaning": "cell",
+      "zh": "细胞"
+    },
+    "the-put": {
+      "meaning": "put",
+      "zh": "放置"
+    },
+    "prim-first": {
+      "meaning": "first",
+      "zh": "第一；最初"
+    },
+    "arm-weapon": {
+      "meaning": "weapon",
+      "zh": "武器"
+    },
+    "ba-step": {
+      "meaning": "to step",
+      "zh": "迈步"
+    },
+    "plic-fold": {
+      "meaning": "fold",
+      "zh": "折叠"
+    },
+    "civ-citizen": {
+      "meaning": "citizen",
+      "zh": "公民"
+    },
+    "memor-remember": {
+      "meaning": "remember",
+      "zh": "记住"
+    },
+    "sist-cause-stand": {
+      "meaning": "cause to stand",
+      "zh": "使站立"
+    },
+    "gnosis-knowledge-recognition": {
+      "meaning": "knowledge, recognition",
+      "zh": "知识；识别"
+    },
+    "sum-take": {
+      "meaning": "take",
+      "zh": "拿取"
+    },
+    "fa-say-speak": {
+      "meaning": "say, speak",
+      "zh": "说；讲话"
+    },
+    "oma-tumor-mass": {
+      "meaning": "tumor, mass, fluid collection",
+      "zh": "肿瘤；肿块；积液"
+    },
+    "tribu-pay": {
+      "meaning": "pay",
+      "zh": "支付"
+    },
+    "norm-carpenter-square": {
+      "meaning": "carpenter's square",
+      "zh": "木工曲尺"
+    },
+    "pan-bread": {
+      "meaning": "bread",
+      "zh": "面包"
+    },
+    "opsy-examination-inspection": {
+      "meaning": "examination or inspection",
+      "zh": "检查；观察"
+    },
+    "ure-act-process": {
+      "meaning": "act, process or result",
+      "zh": "行为；过程；结果"
+    },
+    "liter-letter": {
+      "meaning": "letter",
+      "zh": "字母"
+    },
+    "flu-flow": {
+      "meaning": "flow",
+      "zh": "流动"
+    },
+    "tang-touch": {
+      "meaning": "touch",
+      "zh": "触碰"
+    },
+    "rhin-nose": {
+      "meaning": "nose",
+      "zh": "鼻"
+    },
+    "simil-likeness-imitating": {
+      "meaning": "likeness, imitating",
+      "zh": "相似；模仿"
+    },
+    "flect-bend": {
+      "meaning": "bend",
+      "zh": "弯曲"
+    },
+    "migr-wander": {
+      "meaning": "wander",
+      "zh": "漫游"
+    },
+    "ac-relating": {
+      "meaning": "relating to",
+      "zh": "与……有关的"
+    },
+    "liber-free": {
+      "meaning": "free",
+      "zh": "自由的"
+    },
+    "mir-wonder-amazement": {
+      "meaning": "wonder, amazement",
+      "zh": "惊奇；惊叹"
+    },
+    "prot-first": {
+      "meaning": "first",
+      "zh": "第一；最初"
+    },
+    "merge-dip-plunge": {
+      "meaning": "dip, plunge",
+      "zh": "浸；蘸"
+    },
+    "exo-outside": {
+      "meaning": "outside",
+      "zh": "外部"
+    },
+    "tude-state-quality": {
+      "meaning": "state, quality",
+      "zh": "状态；性质"
+    },
+    "curr-run-course": {
+      "meaning": "run, course",
+      "zh": "跑；行程"
+    },
+    "journ-day-daily": {
+      "meaning": "day, daily",
+      "zh": "天；每日的"
+    },
+    "therap-treatment": {
+      "meaning": "treatment",
+      "zh": "治疗"
+    },
+    "vac-empty": {
+      "meaning": "empty",
+      "zh": "空"
+    },
+    "ced-move-yield": {
+      "meaning": "move, yield, go, surrender",
+      "zh": "移动；让步；去；屈服"
+    },
+    "ly-loosen-dissolve": {
+      "meaning": "loosen, dissolve",
+      "zh": "松开；溶解"
+    },
+    "domin-master": {
+      "meaning": "master",
+      "zh": "主人"
+    },
+    "ory-place-for": {
+      "meaning": "place for; relating to",
+      "zh": "……的场所；与……有关的"
+    },
+    "hyster-womb-uterus": {
+      "meaning": "womb or the uterus",
+      "zh": "子宫"
+    },
+    "lev-lift-light": {
+      "meaning": "lift, light, raise",
+      "zh": "举起；轻；升起"
+    },
+    "gluco-sweet": {
+      "meaning": "sweet",
+      "zh": "甜"
+    },
+    "sol-alone-only": {
+      "meaning": "alone, only",
+      "zh": "单独；唯一"
+    },
+    "doc-teach": {
+      "meaning": "teach",
+      "zh": "教"
+    },
+    "lact-milk": {
+      "meaning": "milk",
+      "zh": "乳；奶"
+    },
+    "aug-grow-increase": {
+      "meaning": "grow, increase",
+      "zh": "生长；增加"
+    },
+    "lepsis-attack-seizure": {
+      "meaning": "attack, seizure",
+      "zh": "侵袭；发作"
+    },
+    "in-on": {
+      "meaning": "in, on",
+      "zh": "在……内；在……上"
+    },
+    "firm-firm-strong": {
+      "meaning": "firm, strong",
+      "zh": "牢固；强壮"
+    },
+    "gam-marriage-union": {
+      "meaning": "marriage, union",
+      "zh": "婚姻；结合"
+    },
+    "ali-other": {
+      "meaning": "other",
+      "zh": "其他的"
+    },
+    "anim-breath-life": {
+      "meaning": "breath, life, soul, spirit",
+      "zh": "呼吸；生命；灵魂；精神"
+    },
+    "don-give": {
+      "meaning": "give",
+      "zh": "给予"
+    },
+    "gyno-woman": {
+      "meaning": "woman",
+      "zh": "女人"
+    },
+    "ile-able-relating": {
+      "meaning": "able to; relating to",
+      "zh": "能够……的；与……有关的"
+    },
+    "plaud-approve-clap": {
+      "meaning": "approve, clap",
+      "zh": "赞同；鼓掌"
+    },
+    "met-above-among": {
+      "meaning": "above, among, beyond",
+      "zh": "在……之上；在……之中；超出"
+    },
+    "ver-true": {
+      "meaning": "true",
+      "zh": "真实"
+    },
+    "equ-even-equal": {
+      "meaning": "even, equal, level",
+      "zh": "平；相等；均衡"
+    },
+    "leg-send": {
+      "meaning": "send",
+      "zh": "发送"
+    },
+    "line-line": {
+      "meaning": "line",
+      "zh": "线"
+    },
+    "rect-rectum": {
+      "meaning": "rectum",
+      "zh": "直肠"
+    },
+    "quati-shake": {
+      "meaning": "shake",
+      "zh": "摇动"
+    },
+    "san-healthy": {
+      "meaning": "healthy",
+      "zh": "健康的"
+    },
+    "form-shaped-like": {
+      "meaning": "shaped like",
+      "zh": "形状像……的"
+    },
+    "sper-hope": {
+      "meaning": "hope",
+      "zh": "希望"
+    },
+    "dur-hard": {
+      "meaning": "hard",
+      "zh": "坚硬"
+    },
+    "iatry-medical-treatment": {
+      "meaning": "medical treatment",
+      "zh": "医疗；治疗"
+    },
+    "ple-fill": {
+      "meaning": "fill",
+      "zh": "填满"
+    },
+    "pen-punish": {
+      "meaning": "punish",
+      "zh": "惩罚"
+    },
+    "oste-bone": {
+      "meaning": "bone",
+      "zh": "骨"
+    },
+    "nav-ship": {
+      "meaning": "ship",
+      "zh": "船"
+    },
+    "oid-like-resembling": {
+      "meaning": "like, resembling",
+      "zh": "像……的；类似……的"
+    },
+    "nomen-name": {
+      "meaning": "name",
+      "zh": "名字"
+    },
+    "vov-vow": {
+      "meaning": "vow",
+      "zh": "誓言"
+    },
+    "endo-inside-within": {
+      "meaning": "inside, within",
+      "zh": "内部；在……之内"
+    },
+    "fid-faith-trust": {
+      "meaning": "faith, trust",
+      "zh": "信念；信任"
+    },
+    "can-sing": {
+      "meaning": "sing",
+      "zh": "唱"
+    },
+    "nect-join-tie": {
+      "meaning": "join, tie",
+      "zh": "连接；系"
+    },
+    "zym-fermentation": {
+      "meaning": "fermentation",
+      "zh": "发酵"
+    },
+    "here-cling-stick": {
+      "meaning": "cling, stick",
+      "zh": "黏附；粘住"
+    },
+    "cycl-circle": {
+      "meaning": "circle",
+      "zh": "圆"
+    },
+    "pell-drive-push": {
+      "meaning": "drive, push",
+      "zh": "驱动；推"
+    },
+    "loqu-speak": {
+      "meaning": "speak",
+      "zh": "说话"
+    },
+    "her-heir": {
+      "meaning": "heir",
+      "zh": "继承人"
+    },
+    "mening-membrane": {
+      "meaning": "membrane",
+      "zh": "膜"
+    },
+    "und-wave": {
+      "meaning": "wave",
+      "zh": "波"
+    },
+    "arch-ruler-chief": {
+      "meaning": "ruler, chief, first",
+      "zh": "统治者；首领；最初"
+    },
+    "min-jut": {
+      "meaning": "jut",
+      "zh": "突出"
+    },
+    "adren-adrenal-glands": {
+      "meaning": "adrenal glands",
+      "zh": "肾上腺"
+    },
+    "mor-custom-disposition": {
+      "meaning": "custom, disposition",
+      "zh": "习俗；性情"
+    },
+    "ule-small": {
+      "meaning": "small",
+      "zh": "小"
+    },
+    "fil-thread": {
+      "meaning": "thread",
+      "zh": "线；丝"
+    },
+    "sarc-flesh": {
+      "meaning": "flesh",
+      "zh": "肉"
+    },
+    "ob-against": {
+      "meaning": "against",
+      "zh": "反对；对抗"
+    },
+    "put-prune-reckon": {
+      "meaning": "prune, reckon",
+      "zh": "修剪；计算"
+    },
+    "tem-cut": {
+      "meaning": "cut",
+      "zh": "切"
+    },
+    "dyna-power": {
+      "meaning": "power",
+      "zh": "力量"
+    },
+    "dec-ten-tenth": {
+      "meaning": "ten; a tenth",
+      "zh": "十；十分之一"
+    },
+    "spir-breathe": {
+      "meaning": "breathe",
+      "zh": "呼吸"
+    },
+    "typ-stamp-model": {
+      "meaning": "stamp, model",
+      "zh": "印记；模型"
+    },
+    "maj-greater": {
+      "meaning": "greater",
+      "zh": "更大"
+    },
+    "carp-wrist": {
+      "meaning": "wrist",
+      "zh": "手腕"
+    },
+    "cand-glowing-iridescent": {
+      "meaning": "glowing, iridescent",
+      "zh": "发光；呈虹彩"
+    },
+    "frag-break": {
+      "meaning": "break",
+      "zh": "打破"
+    },
+    "du-two": {
+      "meaning": "two",
+      "zh": "二"
+    },
+    "rrhea-flowing-discharge": {
+      "meaning": "flowing, discharge",
+      "zh": "流动；排出"
+    },
+    "pac-peace": {
+      "meaning": "peace",
+      "zh": "和平"
+    },
+    "apo-away-from": {
+      "meaning": "away from",
+      "zh": "离开"
+    },
+    "fix-attach": {
+      "meaning": "attach",
+      "zh": "附着"
+    },
+    "mon-warn": {
+      "meaning": "warn",
+      "zh": "警告"
+    },
+    "pend-hang": {
+      "meaning": "hang",
+      "zh": "悬挂"
+    },
+    "burs-bursa-fluid": {
+      "meaning": "bursa (fluid sac in a joint)",
+      "zh": "滑囊（关节处含液体的囊）"
+    },
+    "vol-will": {
+      "meaning": "will",
+      "zh": "意愿"
+    },
+    "qui-rest": {
+      "meaning": "rest",
+      "zh": "休息"
+    },
+    "feder-treaty-league": {
+      "meaning": "treaty, league",
+      "zh": "条约；联盟"
+    },
+    "pur-pure": {
+      "meaning": "pure",
+      "zh": "纯净"
+    },
+    "turb-disturb": {
+      "meaning": "disturb",
+      "zh": "扰乱"
+    },
+    "escent-becoming-beginning": {
+      "meaning": "becoming, beginning to",
+      "zh": "逐渐成为；开始"
+    },
+    "rog-ask": {
+      "meaning": "ask",
+      "zh": "询问；请求"
+    },
+    "fund-pour": {
+      "meaning": "pour",
+      "zh": "倒；倾注"
+    },
+    "gastr-stomach": {
+      "meaning": "stomach",
+      "zh": "胃"
+    },
+    "dipl-twofold": {
+      "meaning": "twofold",
+      "zh": "两倍；双重"
+    },
+    "plor-cry-out": {
+      "meaning": "cry out, complain",
+      "zh": "喊叫；抱怨"
+    },
+    "greg-flock-herd": {
+      "meaning": "flock, herd",
+      "zh": "群；兽群"
+    },
+    "rap-rob-seize": {
+      "meaning": "rob, seize",
+      "zh": "抢夺；抓取"
+    },
+    "pent-five": {
+      "meaning": "five",
+      "zh": "五"
+    },
+    "grav-heavy": {
+      "meaning": "heavy",
+      "zh": "重"
+    },
+    "jung-join": {
+      "meaning": "join",
+      "zh": "连接"
+    },
+    "men-month-menstrual": {
+      "meaning": "month, menstrual cycle",
+      "zh": "月；月经周期"
+    },
+    "nutri-nourish": {
+      "meaning": "nourish",
+      "zh": "滋养"
+    },
+    "man-stay": {
+      "meaning": "stay",
+      "zh": "停留"
+    },
+    "centr-center": {
+      "meaning": "center",
+      "zh": "中心"
+    },
+    "angi-blood-vessel": {
+      "meaning": "blood vessel",
+      "zh": "血管"
+    },
+    "later-side": {
+      "meaning": "side",
+      "zh": "侧面"
+    },
+    "rrhage-bursting-forth": {
+      "meaning": "bursting forth (of blood)",
+      "zh": "涌出（尤指血液）"
+    },
+    "pater-father": {
+      "meaning": "father",
+      "zh": "父亲"
+    },
+    "my-muscle": {
+      "meaning": "muscle",
+      "zh": "肌肉"
+    },
+    "fort-strong": {
+      "meaning": "strong",
+      "zh": "强壮"
+    },
+    "top-place-location": {
+      "meaning": "place, location",
+      "zh": "地方；位置"
+    },
+    "stenosis-narrowing": {
+      "meaning": "narrowing",
+      "zh": "狭窄"
+    },
+    "err-stray": {
+      "meaning": "stray",
+      "zh": "偏离"
+    },
+    "tempor-time": {
+      "meaning": "time",
+      "zh": "时间"
+    },
+    "qual-what-kind": {
+      "meaning": "of what kind; how much",
+      "zh": "何种；多少"
+    },
+    "mater-mother": {
+      "meaning": "mother",
+      "zh": "母亲"
+    },
+    "cav-hollow": {
+      "meaning": "hollow",
+      "zh": "空心；凹处"
+    },
+    "gram-something-written": {
+      "meaning": "something written or drawn",
+      "zh": "写下或画出的东西"
+    },
+    "urb-city": {
+      "meaning": "city",
+      "zh": "城市"
+    },
+    "onym-name": {
+      "meaning": "name",
+      "zh": "名字"
+    },
+    "rot-wheel": {
+      "meaning": "wheel",
+      "zh": "轮"
+    },
+    "thromb-blood-clot": {
+      "meaning": "a blood clot, clotting of blood",
+      "zh": "血栓；血液凝结"
+    },
+    "judic-judge": {
+      "meaning": "judge",
+      "zh": "判断"
+    },
+    "magn-great-large": {
+      "meaning": "great, large",
+      "zh": "大；巨大"
+    },
+    "par-equal": {
+      "meaning": "equal",
+      "zh": "相等"
+    },
+    "or-mouth": {
+      "meaning": "mouth",
+      "zh": "口；嘴"
+    },
+    "aster-star-star": {
+      "meaning": "star, star-shaped",
+      "zh": "星；星形的"
+    },
+    "phag-eat": {
+      "meaning": "eat",
+      "zh": "吃"
+    },
+    "gubern-govern-pilot": {
+      "meaning": "govern, pilot",
+      "zh": "治理；掌舵"
+    },
+    "drom-running-conduction": {
+      "meaning": "running, conduction, course",
+      "zh": "奔跑；传导；行程"
+    },
+    "ambi-both-on": {
+      "meaning": "both, on both sides",
+      "zh": "两者；两侧"
+    },
+    "gnosc-know": {
+      "meaning": "know",
+      "zh": "知道"
+    },
+    "nerv-nerve": {
+      "meaning": "nerve",
+      "zh": "神经"
+    },
+    "torqu-twist": {
+      "meaning": "twist",
+      "zh": "扭转"
+    },
+    "reg-king": {
+      "meaning": "king",
+      "zh": "国王"
+    },
+    "cry-cold": {
+      "meaning": "cold",
+      "zh": "冷"
+    },
+    "ops-eye": {
+      "meaning": "eye",
+      "zh": "眼"
+    },
+    "hex-six": {
+      "meaning": "six",
+      "zh": "六"
+    },
+    "vir-man": {
+      "meaning": "man",
+      "zh": "男人"
+    },
+    "cit-call-start": {
+      "meaning": "call, start",
+      "zh": "呼叫；开始"
+    },
+    "faci-face": {
+      "meaning": "face",
+      "zh": "脸"
+    },
+    "dens-thick": {
+      "meaning": "thick",
+      "zh": "厚"
+    },
+    "techn-art-skill": {
+      "meaning": "art, skill",
+      "zh": "艺术；技艺"
+    },
+    "not-letter-mark": {
+      "meaning": "letter, mark, note",
+      "zh": "字母；记号；笔记"
+    },
+    "chol-bile": {
+      "meaning": "bile",
+      "zh": "胆汁"
+    },
+    "capit-head": {
+      "meaning": "head",
+      "zh": "头"
+    },
+    "fig-form-shape": {
+      "meaning": "to form, shape",
+      "zh": "形成；塑造"
+    },
+    "lud-play": {
+      "meaning": "play",
+      "zh": "玩；游戏"
+    },
+    "hem-blood": {
+      "meaning": "blood",
+      "zh": "血"
+    },
+    "quart-fourth": {
+      "meaning": "fourth",
+      "zh": "第四"
+    },
+    "sen-old-man": {
+      "meaning": "old man",
+      "zh": "老人"
+    },
+    "ect-outside": {
+      "meaning": "outside",
+      "zh": "外部"
+    },
+    "carn-flesh": {
+      "meaning": "flesh",
+      "zh": "肉"
+    },
+    "hum-ground": {
+      "meaning": "ground",
+      "zh": "地面"
+    },
+    "phan-show-visible": {
+      "meaning": "to show, visible",
+      "zh": "显示；可见的"
+    },
+    "crani-skull": {
+      "meaning": "skull",
+      "zh": "颅骨"
+    },
+    "tachy-fast": {
+      "meaning": "fast",
+      "zh": "快"
+    },
+    "numer-number": {
+      "meaning": "number",
+      "zh": "数；数字"
+    },
+    "grat-thank-please": {
+      "meaning": "thank, please",
+      "zh": "感谢；使高兴"
+    },
+    "vest-clothing-garment": {
+      "meaning": "clothing, garment",
+      "zh": "衣服"
+    },
+    "dom-house": {
+      "meaning": "house",
+      "zh": "房屋"
+    },
+    "kine-movement-motion": {
+      "meaning": "movement, motion",
+      "zh": "移动；运动"
+    },
+    "corn-horn": {
+      "meaning": "horn",
+      "zh": "角"
+    },
+    "nan-dwarf-billionth": {
+      "meaning": "dwarf; a billionth",
+      "zh": "矮小；十亿分之一"
+    },
+    "oct-eight": {
+      "meaning": "eight",
+      "zh": "八"
+    },
+    "volv-roll": {
+      "meaning": "roll",
+      "zh": "滚动"
+    },
+    "chro-color": {
+      "meaning": "color",
+      "zh": "颜色"
+    },
+    "arthr-joints-limbs": {
+      "meaning": "joints, limbs",
+      "zh": "关节；四肢"
+    },
+    "calc-calcium-stone": {
+      "meaning": "calcium, stone",
+      "zh": "钙；石头"
+    },
+    "lax-not-tense": {
+      "meaning": "not tense, slack",
+      "zh": "不紧张；松弛"
+    },
+    "cerebr-brain": {
+      "meaning": "brain",
+      "zh": "脑"
+    },
+    "pasc-feed": {
+      "meaning": "feed",
+      "zh": "喂养"
+    },
+    "phren-mind": {
+      "meaning": "the mind",
+      "zh": "心智；精神"
+    },
+    "cosm-universe": {
+      "meaning": "universe",
+      "zh": "宇宙"
+    },
+    "monstra-show": {
+      "meaning": "show",
+      "zh": "显示"
+    },
+    "schiz-split": {
+      "meaning": "split",
+      "zh": "分裂"
+    },
+    "gran-grain": {
+      "meaning": "grain",
+      "zh": "谷物"
+    },
+    "pot-power": {
+      "meaning": "power",
+      "zh": "力量"
+    },
+    "rad-scrape-shave": {
+      "meaning": "scrape, shave",
+      "zh": "刮；剃"
+    },
+    "pulmon-lungs": {
+      "meaning": "lungs",
+      "zh": "肺"
+    },
+    "troph-nourishment-growth": {
+      "meaning": "nourishment, growth",
+      "zh": "营养；生长"
+    },
+    "ten-stretch": {
+      "meaning": "stretch",
+      "zh": "伸展"
+    },
+    "vir-poison-venom": {
+      "meaning": "poison, venom",
+      "zh": "毒；毒液"
+    },
+    "nas-nose": {
+      "meaning": "nose",
+      "zh": "鼻"
+    },
+    "string-tight-upright": {
+      "meaning": "tight, upright, stiff",
+      "zh": "紧；直立；僵硬"
+    },
+    "idi-own-peculiarity": {
+      "meaning": "own, peculiarity",
+      "zh": "自己的；特有性质"
+    },
+    "neur-nerve-sinew": {
+      "meaning": "nerve, sinew",
+      "zh": "神经；筋"
+    },
+    "prob-worthy-good": {
+      "meaning": "worthy, good",
+      "zh": "值得的；好的"
+    },
+    "son-sound": {
+      "meaning": "sound",
+      "zh": "声音"
+    },
+    "quint-five-fifth": {
+      "meaning": "five, fifth",
+      "zh": "五；第五"
+    },
+    "bacteri-bacteria": {
+      "meaning": "bacteria",
+      "zh": "细菌"
+    },
+    "lab-slide-slip": {
+      "meaning": "slide, slip",
+      "zh": "滑动；滑落"
+    },
+    "scand-climb": {
+      "meaning": "climb",
+      "zh": "攀爬"
+    },
+    "athl-contest": {
+      "meaning": "contest",
+      "zh": "竞赛；争斗"
+    },
+    "ren-kidney": {
+      "meaning": "kidney",
+      "zh": "肾"
+    },
+    "fund-bottom": {
+      "meaning": "bottom",
+      "zh": "底部"
+    },
+    "dog-opinion-tenet": {
+      "meaning": "opinion, tenet",
+      "zh": "意见；信条"
+    },
+    "ag-lead": {
+      "meaning": "lead",
+      "zh": "引导"
+    },
+    "pan-all-every": {
+      "meaning": "all, every",
+      "zh": "所有；每个"
+    },
+    "nem-arrangement-law": {
+      "meaning": "distribute, allot",
+      "zh": "分配"
+    },
+    "lith-stone": {
+      "meaning": "stone",
+      "zh": "石头"
+    },
+    "coron-crown": {
+      "meaning": "crown",
+      "zh": "冠"
+    },
+    "glob-sphere": {
+      "meaning": "sphere",
+      "zh": "球；球体"
+    },
+    "ary-relating": {
+      "meaning": "relating to",
+      "zh": "与……有关的"
+    },
+    "magnet-lodestone": {
+      "meaning": "lodestone",
+      "zh": "磁石"
+    },
+    "poie-make": {
+      "meaning": "make",
+      "zh": "制造；使成为"
+    },
+    "ov-egg": {
+      "meaning": "egg",
+      "zh": "卵；蛋"
+    },
+    "lumin-light": {
+      "meaning": "light",
+      "zh": "光"
+    },
+    "avi-bird": {
+      "meaning": "bird",
+      "zh": "鸟"
+    },
+    "uter-uterus-womb": {
+      "meaning": "uterus or womb",
+      "zh": "子宫"
+    },
+    "pyr-fire-fever": {
+      "meaning": "fire, fever",
+      "zh": "火；发热"
+    },
+    "misc-mix": {
+      "meaning": "mix",
+      "zh": "混合"
+    },
+    "clin-lean-recline": {
+      "meaning": "lean, recline",
+      "zh": "倚靠；斜躺"
+    },
+    "hom-same": {
+      "meaning": "same",
+      "zh": "相同"
+    },
+    "fl-blow": {
+      "meaning": "blow",
+      "zh": "吹"
+    },
+    "sever-stern-strict": {
+      "meaning": "stern, strict, serious",
+      "zh": "严厉；严格；严肃"
+    },
+    "damn-inflict-loss": {
+      "meaning": "to inflict loss upon",
+      "zh": "使遭受损失"
+    },
+    "cruc-cross": {
+      "meaning": "cross",
+      "zh": "十字；交叉"
+    },
+    "fall-false-deceive": {
+      "meaning": "false, deceive",
+      "zh": "虚假；欺骗"
+    },
+    "per-through-thoroughly": {
+      "meaning": "through, thoroughly",
+      "zh": "穿过；彻底"
+    },
+    "ot-ear": {
+      "meaning": "ear",
+      "zh": "耳"
+    },
+    "onco-tumor-bulk": {
+      "meaning": "tumor, bulk, volume",
+      "zh": "肿瘤；块；体积"
+    },
+    "hospit-host": {
+      "meaning": "host",
+      "zh": "主人；宿主"
+    },
+    "carbon-coal": {
+      "meaning": "coal",
+      "zh": "煤"
+    },
+    "mes-middle": {
+      "meaning": "middle",
+      "zh": "中间"
+    },
+    "paed-child": {
+      "meaning": "child",
+      "zh": "儿童"
+    },
+    "circ-circle-ring": {
+      "meaning": "circle, ring",
+      "zh": "圆；环"
+    },
+    "lu-wash": {
+      "meaning": "wash",
+      "zh": "洗"
+    },
+    "orn-decorate": {
+      "meaning": "decorate",
+      "zh": "装饰"
+    },
+    "long-long": {
+      "meaning": "long",
+      "zh": "长"
+    },
+    "cyst-bladder-sac": {
+      "meaning": "bladder, sac",
+      "zh": "膀胱；囊"
+    },
+    "fend-strike": {
+      "meaning": "strike",
+      "zh": "击打"
+    },
+    "art-art-skill": {
+      "meaning": "art, skill",
+      "zh": "艺术；技艺"
+    },
+    "morph-form-shape": {
+      "meaning": "form, shape",
+      "zh": "形状；形态"
+    },
+    "emia-blood-condition": {
+      "meaning": "blood condition (Am. Engl.)",
+      "zh": "血液状态（美式拼写）"
+    },
+    "pand-spread": {
+      "meaning": "spread",
+      "zh": "传播；展开"
+    },
+    "sorb-suck": {
+      "meaning": "suck",
+      "zh": "吸"
+    },
+    "ed-eat": {
+      "meaning": "eat",
+      "zh": "吃"
+    },
+    "ia-condition-especially": {
+      "meaning": "condition, especially a disease",
+      "zh": "状态，尤指疾病"
+    },
+    "oper-work": {
+      "meaning": "work",
+      "zh": "工作"
+    },
+    "ven-vein": {
+      "meaning": "vein",
+      "zh": "静脉"
+    },
+    "pung-prick": {
+      "meaning": "prick",
+      "zh": "刺"
+    },
+    "gno-know": {
+      "meaning": "know",
+      "zh": "知道"
+    },
+    "carcin-cancer": {
+      "meaning": "cancer",
+      "zh": "癌"
+    },
+    "ora-pray-plead": {
+      "meaning": "pray, plead",
+      "zh": "祈祷；恳求"
+    },
+    "orth-straight": {
+      "meaning": "straight",
+      "zh": "直"
+    },
+    "sali-jump": {
+      "meaning": "jump",
+      "zh": "跳"
+    },
+    "sparg-scatter-sprinkle": {
+      "meaning": "scatter, sprinkle",
+      "zh": "散布；洒"
+    },
+    "termin-boundary-limit": {
+      "meaning": "boundary, limit, end",
+      "zh": "边界；界限；末端"
+    },
+    "articul-joint": {
+      "meaning": "joint",
+      "zh": "关节"
+    },
+    "phleb-vein": {
+      "meaning": "vein",
+      "zh": "静脉"
+    },
+    "ger-bear-carry": {
+      "meaning": "bear, carry",
+      "zh": "承载；携带"
+    },
+    "cata-down-against": {
+      "meaning": "down, against, back",
+      "zh": "向下；对抗；向后"
+    },
+    "en-in": {
+      "meaning": "in",
+      "zh": "在……内"
+    },
+    "lun-moon": {
+      "meaning": "moon",
+      "zh": "月亮"
+    },
+    "mor-foolish-dull": {
+      "meaning": "foolish, dull",
+      "zh": "愚蠢；迟钝"
+    },
+    "crine-secrete": {
+      "meaning": "to secrete",
+      "zh": "分泌"
+    },
+    "quot-how-many": {
+      "meaning": "how many, how great",
+      "zh": "多少；多大"
+    },
+    "dors-back": {
+      "meaning": "back",
+      "zh": "背部；后面"
+    },
+    "flig-strike": {
+      "meaning": "strike",
+      "zh": "击打"
+    },
+    "alb-white": {
+      "meaning": "white",
+      "zh": "白"
+    },
+    "arteri-artery": {
+      "meaning": "artery",
+      "zh": "动脉"
+    },
+    "non-not": {
+      "meaning": "not",
+      "zh": "不"
+    },
+    "rid-laugh": {
+      "meaning": "laugh",
+      "zh": "笑"
+    },
+    "spher-ball": {
+      "meaning": "ball",
+      "zh": "球"
+    },
+    "strat-army": {
+      "meaning": "army",
+      "zh": "军队"
+    },
+    "vi-way": {
+      "meaning": "way",
+      "zh": "道路；方式"
+    },
+    "trud-thrust": {
+      "meaning": "thrust",
+      "zh": "推；刺"
+    },
+    "umbilic-navel-umbilicus": {
+      "meaning": "navel, the umbilicus",
+      "zh": "肚脐；脐"
+    },
+    "thorac-chest": {
+      "meaning": "chest",
+      "zh": "胸"
+    },
+    "noc-hurt-harm": {
+      "meaning": "hurt, harm",
+      "zh": "伤害"
+    },
+    "zo-animal-living": {
+      "meaning": "animal, living being",
+      "zh": "动物；生物"
+    },
+    "glauc-grey-bluish": {
+      "meaning": "grey or bluish-grey colour",
+      "zh": "灰色；蓝灰色"
+    },
+    "integr-whole-complete": {
+      "meaning": "whole, complete",
+      "zh": "整体；完整"
+    },
+    "cardi-heart": {
+      "meaning": "heart",
+      "zh": "心脏；心"
+    },
+    "alt-high-deep": {
+      "meaning": "high, deep",
+      "zh": "高；深"
+    },
+    "dra-do": {
+      "meaning": "do",
+      "zh": "做"
+    },
+    "ptosis-falling-drooping": {
+      "meaning": "falling, drooping",
+      "zh": "下落；下垂"
+    },
+    "plur-more": {
+      "meaning": "more",
+      "zh": "更多"
+    },
+    "miser-unhappy-wretched": {
+      "meaning": "unhappy, wretched",
+      "zh": "不幸；悲惨"
+    },
+    "cost-rib": {
+      "meaning": "rib",
+      "zh": "肋骨"
+    },
+    "sacr-sacred": {
+      "meaning": "sacred",
+      "zh": "神圣"
+    },
+    "ophthalm-eye": {
+      "meaning": "eye",
+      "zh": "眼"
+    },
+    "lab-grasp-seize": {
+      "meaning": "grasp, seize, take",
+      "zh": "抓住；夺取；拿取"
+    },
+    "tag-arrange-order": {
+      "meaning": "arrange, order",
+      "zh": "安排；排序"
+    },
+    "somat-body-bodily": {
+      "meaning": "body, bodily",
+      "zh": "身体；身体的"
+    },
+    "pto-fall": {
+      "meaning": "fall",
+      "zh": "落下"
+    },
+    "naut-ship": {
+      "meaning": "ship",
+      "zh": "船"
+    },
+    "nuc-nut": {
+      "meaning": "nut",
+      "zh": "坚果"
+    },
+    "bronch-bronchus": {
+      "meaning": "bronchus",
+      "zh": "支气管"
+    },
+    "haur-draw": {
+      "meaning": "draw",
+      "zh": "拉；牵引"
+    },
+    "cyan-blue": {
+      "meaning": "blue",
+      "zh": "蓝色"
+    },
+    "propri-property-own": {
+      "meaning": "property; one's own",
+      "zh": "财产；自己的"
+    },
+    "soph-wise": {
+      "meaning": "wise",
+      "zh": "明智"
+    },
+    "necr-death": {
+      "meaning": "death",
+      "zh": "死亡"
+    },
+    "id-shape-form": {
+      "meaning": "shape, form, picture",
+      "zh": "形状；形态；图像"
+    },
+    "bibl-book": {
+      "meaning": "book",
+      "zh": "书"
+    },
+    "trep-turn": {
+      "meaning": "turn",
+      "zh": "转；转向"
+    },
+    "pi-kind-devout": {
+      "meaning": "kind, devout, pity",
+      "zh": "善良；虔诚；怜悯"
+    },
+    "luc-bright-light": {
+      "meaning": "bright, light",
+      "zh": "明亮；光"
+    },
+    "gon-corner-angle": {
+      "meaning": "corner, angle, knee",
+      "zh": "角落；角；膝"
+    },
+    "tox-arrow-bow": {
+      "meaning": "arrow, bow, poison",
+      "zh": "箭；弓；毒"
+    },
+    "kerat-horn-cornea": {
+      "meaning": "horn; cornea",
+      "zh": "角；角膜"
+    },
+    "curv-bent": {
+      "meaning": "bent",
+      "zh": "弯曲的"
+    },
+    "home-similar": {
+      "meaning": "similar",
+      "zh": "相似"
+    },
+    "heter-different-other": {
+      "meaning": "different, other",
+      "zh": "不同的；其他的"
+    },
+    "man-madness-obsession": {
+      "meaning": "madness, obsession",
+      "zh": "狂热；痴迷"
+    },
+    "hol-whole": {
+      "meaning": "whole",
+      "zh": "整体"
+    },
+    "sep-rot": {
+      "meaning": "rot",
+      "zh": "腐烂"
+    },
+    "led-hurt-strike": {
+      "meaning": "hurt, strike",
+      "zh": "伤害；击打"
+    },
+    "chir-hand": {
+      "meaning": "hand",
+      "zh": "手"
+    },
+    "plas-mould": {
+      "meaning": "mould",
+      "zh": "霉；霉菌"
+    },
+    "mend-defect-fault": {
+      "meaning": "defect, fault",
+      "zh": "缺陷；过错"
+    },
+    "penia-lack-deficiency": {
+      "meaning": "lack, deficiency",
+      "zh": "缺少；不足"
+    },
+    "isch-restriction": {
+      "meaning": "restriction",
+      "zh": "限制"
+    },
+    "av-desire": {
+      "meaning": "desire",
+      "zh": "欲望"
+    },
+    "melan-black-dark": {
+      "meaning": "black, dark",
+      "zh": "黑；暗"
+    },
+    "hypn-sleep": {
+      "meaning": "sleep",
+      "zh": "睡眠"
+    },
+    "cutane-skin": {
+      "meaning": "skin",
+      "zh": "皮肤"
+    },
+    "sol-sun": {
+      "meaning": "sun",
+      "zh": "太阳"
+    },
+    "mim-repeat": {
+      "meaning": "repeat",
+      "zh": "重复"
+    },
+    "veh-carry": {
+      "meaning": "carry",
+      "zh": "携带"
+    },
+    "ather-gruel-fatty": {
+      "meaning": "gruel; fatty deposit",
+      "zh": "粥；脂肪沉积物"
+    },
+    "gel-freeze": {
+      "meaning": "freeze",
+      "zh": "冻结"
+    },
+    "lingu-language-tongue": {
+      "meaning": "language, tongue",
+      "zh": "语言；舌"
+    },
+    "hal-breathe": {
+      "meaning": "breathe",
+      "zh": "呼吸"
+    },
+    "aur-ear": {
+      "meaning": "ear",
+      "zh": "耳"
+    },
+    "iatr-heal": {
+      "meaning": "heal",
+      "zh": "治愈"
+    },
+    "prehend-grasp": {
+      "meaning": "grasp",
+      "zh": "抓住"
+    },
+    "popul-people": {
+      "meaning": "people",
+      "zh": "人民；人群"
+    },
+    "scler-hard-hardening": {
+      "meaning": "hard, hardening",
+      "zh": "硬；硬化"
+    },
+    "calyp-cover": {
+      "meaning": "cover",
+      "zh": "覆盖"
+    },
+    "liqu-flow": {
+      "meaning": "flow",
+      "zh": "流动"
+    },
+    "chlor-green": {
+      "meaning": "green",
+      "zh": "绿色"
+    },
+    "arbit-judge": {
+      "meaning": "judge",
+      "zh": "判断"
+    },
+    "tum-be-swollen": {
+      "meaning": "be swollen",
+      "zh": "肿胀"
+    },
+    "col-colon": {
+      "meaning": "colon",
+      "zh": "结肠"
+    },
+    "pne-blow-breathe": {
+      "meaning": "blow, breathe, lung",
+      "zh": "吹；呼吸；肺"
+    },
+    "pharmac-drug-medicine": {
+      "meaning": "drug, medicine",
+      "zh": "药；药物"
+    },
+    "sangui-blood": {
+      "meaning": "blood",
+      "zh": "血"
+    },
+    "streph-turn": {
+      "meaning": "turn",
+      "zh": "转；转向"
+    },
+    "crypt-hide-hidden": {
+      "meaning": "hide, hidden",
+      "zh": "隐藏；隐蔽的"
+    },
+    "eth-custom-habit": {
+      "meaning": "custom, habit",
+      "zh": "习俗；习惯"
+    },
+    "stasis-stopping-standing": {
+      "meaning": "stopping, standing",
+      "zh": "停止；站立"
+    },
+    "libr-book": {
+      "meaning": "book",
+      "zh": "书"
+    },
+    "spin-thorn": {
+      "meaning": "thorn",
+      "zh": "刺"
+    },
+    "hod-way": {
+      "meaning": "way",
+      "zh": "道路；方式"
+    },
+    "vigil-watchful": {
+      "meaning": "watchful",
+      "zh": "警觉的"
+    },
+    "vin-wine": {
+      "meaning": "wine",
+      "zh": "葡萄酒"
+    },
+    "eco-house-household": {
+      "meaning": "house, household",
+      "zh": "房屋；家庭"
+    },
+    "speir-sow": {
+      "meaning": "sow",
+      "zh": "播种"
+    },
+    "aesthe-feeling-sensation": {
+      "meaning": "feeling, sensation",
+      "zh": "感觉；知觉"
+    },
+    "vill-country-house": {
+      "meaning": "country house",
+      "zh": "乡间庄园"
+    },
+    "gon-seed-semen": {
+      "meaning": "seed, semen; reproductive",
+      "zh": "种子；精液；生殖的"
+    },
+    "plen-full": {
+      "meaning": "full",
+      "zh": "满"
+    },
+    "gloss-tongue": {
+      "meaning": "tongue",
+      "zh": "舌"
+    },
+    "milit-soldier": {
+      "meaning": "soldier",
+      "zh": "士兵"
+    },
+    "ectomy-surgical-removal": {
+      "meaning": "surgical removal",
+      "zh": "手术切除"
+    },
+    "can-reed-rod": {
+      "meaning": "reed, rod",
+      "zh": "芦苇；杆"
+    },
+    "host-enemy": {
+      "meaning": "enemy",
+      "zh": "敌人"
+    },
+    "mast-breast": {
+      "meaning": "breast",
+      "zh": "乳房"
+    },
+    "maxim-greatest": {
+      "meaning": "greatest",
+      "zh": "最大"
+    },
+    "scen-booth-tent": {
+      "meaning": "booth, tent",
+      "zh": "棚；帐篷"
+    },
+    "scoli-twisted": {
+      "meaning": "twisted",
+      "zh": "扭曲的"
+    },
+    "clam-cry-out": {
+      "meaning": "cry out",
+      "zh": "喊叫"
+    },
+    "prior-former": {
+      "meaning": "former",
+      "zh": "以前的"
+    },
+    "alg-pain": {
+      "meaning": "pain",
+      "zh": "疼痛"
+    },
+    "sanc-holy": {
+      "meaning": "holy",
+      "zh": "神圣"
+    },
+    "aev-age": {
+      "meaning": "age",
+      "zh": "年龄"
+    },
+    "hepat-liver": {
+      "meaning": "liver",
+      "zh": "肝"
+    },
+    "bell-war": {
+      "meaning": "war",
+      "zh": "战争"
+    },
+    "sit-food-grain": {
+      "meaning": "food, grain, wheat",
+      "zh": "食物；谷物；小麦"
+    },
+    "do-give": {
+      "meaning": "give",
+      "zh": "给予"
+    },
+    "schem-plan": {
+      "meaning": "plan",
+      "zh": "计划"
+    },
+    "urg-press-drive": {
+      "meaning": "press, drive",
+      "zh": "压；驱动"
+    },
+    "se-away-apart": {
+      "meaning": "away, apart",
+      "zh": "离开；分开"
+    },
+    "narr-tell": {
+      "meaning": "tell",
+      "zh": "告诉"
+    },
+    "glaci-ice": {
+      "meaning": "ice",
+      "zh": "冰"
+    },
+    "mne-memory": {
+      "meaning": "memory",
+      "zh": "记忆"
+    },
+    "enter-intestine": {
+      "meaning": "intestine",
+      "zh": "肠"
+    },
+    "gymn-nude": {
+      "meaning": "nude",
+      "zh": "裸体"
+    },
+    "sec-cut": {
+      "meaning": "cut",
+      "zh": "切"
+    },
+    "mas-male-man": {
+      "meaning": "male, man",
+      "zh": "男性；男人"
+    },
+    "lip-fat": {
+      "meaning": "fat",
+      "zh": "脂肪"
+    },
+    "digit-finger": {
+      "meaning": "finger",
+      "zh": "手指"
+    },
+    "mechan-machine-instrument": {
+      "meaning": "machine or instrument",
+      "zh": "机器；器具"
+    },
+    "sol-comfort-soothe": {
+      "meaning": "comfort, soothe",
+      "zh": "安慰；抚慰"
+    },
+    "pact-fasten": {
+      "meaning": "fasten",
+      "zh": "系牢"
+    },
+    "ec-out": {
+      "meaning": "out",
+      "zh": "向外"
+    },
+    "myth-story": {
+      "meaning": "story",
+      "zh": "故事"
+    },
+    "salv-save": {
+      "meaning": "save",
+      "zh": "拯救"
+    },
+    "foc-hearth": {
+      "meaning": "hearth",
+      "zh": "炉床；炉边"
+    },
+    "somn-sleep": {
+      "meaning": "sleep",
+      "zh": "睡眠"
+    },
+    "neg-say-no": {
+      "meaning": "say no",
+      "zh": "否认"
+    },
+    "del-erase": {
+      "meaning": "erase",
+      "zh": "擦除"
+    },
+    "dexter-right-hand": {
+      "meaning": "right (hand), skilful",
+      "zh": "右手；灵巧"
+    },
+    "hist-tissue": {
+      "meaning": "tissue",
+      "zh": "组织"
+    },
+    "front-forehead": {
+      "meaning": "forehead",
+      "zh": "前额"
+    },
+    "fug-flee": {
+      "meaning": "flee",
+      "zh": "逃离"
+    },
+    "ampl-large-abundant": {
+      "meaning": "large, abundant",
+      "zh": "大；丰富"
+    },
+    "traum-wound": {
+      "meaning": "wound",
+      "zh": "伤口"
+    },
+    "pred-prey": {
+      "meaning": "prey",
+      "zh": "猎物"
+    },
+    "varic-swollen-twisted": {
+      "meaning": "swollen or twisted vein",
+      "zh": "肿胀或扭曲的静脉"
+    },
+    "acu-sharp-pointed": {
+      "meaning": "sharp, pointed",
+      "zh": "尖锐；尖的"
+    },
+    "ign-fire": {
+      "meaning": "fire",
+      "zh": "火"
+    },
+    "odont-teeth": {
+      "meaning": "teeth",
+      "zh": "牙齿"
+    },
+    "vas-vessel-duct": {
+      "meaning": "vessel, duct",
+      "zh": "容器；血管；导管"
+    },
+    "hort-garden": {
+      "meaning": "garden",
+      "zh": "花园"
+    },
+    "can-dog": {
+      "meaning": "dog",
+      "zh": "狗"
+    },
+    "em-buy": {
+      "meaning": "buy",
+      "zh": "买"
+    },
+    "pen-almost": {
+      "meaning": "almost",
+      "zh": "几乎"
+    },
+    "narc-numb-sleep": {
+      "meaning": "numb, sleep",
+      "zh": "麻木；睡眠"
+    },
+    "van-empty-vain": {
+      "meaning": "empty, vain, idle",
+      "zh": "空；徒劳；闲散"
+    },
+    "rod-gnaw": {
+      "meaning": "gnaw",
+      "zh": "啃咬"
+    },
+    "heres-choose-take": {
+      "meaning": "choose, take",
+      "zh": "选择；拿取"
+    },
+    "mamm-breast": {
+      "meaning": "breast",
+      "zh": "乳房"
+    },
+    "pro-before-front": {
+      "meaning": "before, in front of",
+      "zh": "在……之前；在前面"
+    },
+    "vol-fly": {
+      "meaning": "fly",
+      "zh": "飞"
+    },
+    "verb-word": {
+      "meaning": "word",
+      "zh": "词语"
+    },
+    "retro-backward-behind": {
+      "meaning": "backward, behind",
+      "zh": "向后；在后面"
+    },
+    "aden-gland": {
+      "meaning": "a gland",
+      "zh": "腺体"
+    },
+    "gust-taste": {
+      "meaning": "taste",
+      "zh": "味觉；品尝"
+    },
+    "ping-paint": {
+      "meaning": "paint",
+      "zh": "绘画"
+    },
+    "pir-try": {
+      "meaning": "try",
+      "zh": "尝试"
+    },
+    "macr-large-long": {
+      "meaning": "large, long",
+      "zh": "大；长"
+    },
+    "physi-nature": {
+      "meaning": "nature",
+      "zh": "自然"
+    },
+    "deb-owe": {
+      "meaning": "owe",
+      "zh": "欠"
+    },
+    "cortic-cortex-outer": {
+      "meaning": "cortex, outer region",
+      "zh": "皮质；外层"
+    },
+    "statu-stand": {
+      "meaning": "stand",
+      "zh": "站立"
+    },
+    "infra-below-under": {
+      "meaning": "below, under",
+      "zh": "在……之下"
+    },
+    "mor-pause-delay": {
+      "meaning": "pause, delay",
+      "zh": "暂停；延迟"
+    },
+    "clar-clear": {
+      "meaning": "clear",
+      "zh": "清晰"
+    },
+    "stingu-apart": {
+      "meaning": "prick, mark",
+      "zh": "刺；标记"
+    },
+    "ferv-boil-glow": {
+      "meaning": "boil, glow",
+      "zh": "沸腾；发光"
+    },
+    "kilo-thousand": {
+      "meaning": "thousand",
+      "zh": "千"
+    },
+    "ultim-farthest": {
+      "meaning": "farthest",
+      "zh": "最远"
+    },
+    "stomy-surgical-opening": {
+      "meaning": "surgical opening",
+      "zh": "手术造口"
+    },
+    "radic-root": {
+      "meaning": "root",
+      "zh": "根"
+    },
+    "vacc-cow": {
+      "meaning": "cow",
+      "zh": "牛"
+    },
+    "proxim-nearest": {
+      "meaning": "nearest",
+      "zh": "最近"
+    },
+    "optim-best": {
+      "meaning": "best",
+      "zh": "最好"
+    },
+    "radi-beam-spoke": {
+      "meaning": "beam, spoke",
+      "zh": "光束；辐条"
+    },
+    "stell-star": {
+      "meaning": "star",
+      "zh": "星"
+    },
+    "nephr-kidney": {
+      "meaning": "kidney",
+      "zh": "肾"
+    },
+    "vad-go": {
+      "meaning": "go",
+      "zh": "去"
+    },
+    "glyc-sugar": {
+      "meaning": "sugar",
+      "zh": "糖"
+    },
+    "insul-island": {
+      "meaning": "island",
+      "zh": "岛"
+    },
+    "purg-cleanse": {
+      "meaning": "cleanse",
+      "zh": "清洗"
+    },
+    "frater-brother": {
+      "meaning": "brother",
+      "zh": "兄弟"
+    },
+    "quadr-four": {
+      "meaning": "four",
+      "zh": "四"
+    },
+    "dorm-sleep": {
+      "meaning": "sleep",
+      "zh": "睡眠"
+    },
+    "still-drip": {
+      "meaning": "drip",
+      "zh": "滴"
+    },
+    "viscer-internal-organs": {
+      "meaning": "internal organs, the viscera",
+      "zh": "内脏"
+    },
+    "cephal-head-as": {
+      "meaning": "head (as a whole)",
+      "zh": "头部（整体）"
+    },
+    "leuc-white": {
+      "meaning": "white",
+      "zh": "白"
+    },
+    "gingiv-gums": {
+      "meaning": "gums",
+      "zh": "牙龈"
+    },
+    "plasty-surgical-repair": {
+      "meaning": "surgical repair or reshaping",
+      "zh": "手术修复或整形"
+    },
+    "cis-on-this": {
+      "meaning": "on this side",
+      "zh": "在这一侧"
+    },
+    "ase-enzyme": {
+      "meaning": "enzyme",
+      "zh": "酶"
+    },
+    "milli-thousandth": {
+      "meaning": "thousandth",
+      "zh": "千分之一"
+    },
+    "brady-slow": {
+      "meaning": "slow",
+      "zh": "慢"
+    },
+    "edema-swelling": {
+      "meaning": "swelling",
+      "zh": "肿胀"
+    },
+    "lymph-lymph": {
+      "meaning": "lymph",
+      "zh": "淋巴"
+    },
+    "erythr-red": {
+      "meaning": "red",
+      "zh": "红"
+    },
+    "plegia-paralysis": {
+      "meaning": "paralysis",
+      "zh": "瘫痪"
+    },
+    "pepsia-digestion": {
+      "meaning": "digestion",
+      "zh": "消化"
+    },
+    "lapar-abdominal-wall": {
+      "meaning": "abdominal wall, flank",
+      "zh": "腹壁；胁腹"
+    },
+    "ipsi-same": {
+      "meaning": "same",
+      "zh": "相同"
+    },
+    "iso-equal": {
+      "meaning": "equal",
+      "zh": "相等"
+    },
+    "polio-grey-color": {
+      "meaning": "grey color",
+      "zh": "灰色"
+    }
+  },
+  "stories": {
+    "my-muscle": {
+      "story": "A flexing muscle looked like a mouse moving under the skin: Greek <i>mûs</i> means both mouse and muscle, and Latin <i>musculus</i>, our \"muscle\", means \"little mouse\".",
+      "zh": "肌肉收缩时，样子像一只老鼠在皮下移动：希腊语 <i>mûs</i> 既指“老鼠”，也指“肌肉”；英语 muscle 所源自的拉丁语 <i>musculus</i> 意为“小老鼠”。"
+    },
+    "cand-glowing-iridescent": {
+      "story": "Roman candidates for office wore a toga whitened with chalk, the <i>toga candida</i>, so a <b>cand</b>idate is literally \"one dressed in white\".",
+      "zh": "古罗马竞选公职的人穿着用白垩染白的托加袍，称为 <i>toga candida</i>。因此，<b>cand</b>idate 的字面意思是“身穿白衣的人”。"
+    },
+    "chol-bile": {
+      "story": "<b>Mel</b>an<b>chol</b>y is \"black bile\": ancient medicine blamed sadness on an excess of it, one of the four humours.",
+      "zh": "<b>Mel</b>an<b>chol</b>y 的字面意思是“黑胆汁”。古代医学曾把悲伤归因于黑胆汁过多；黑胆汁是当时所谓“四体液”之一。这是历史观念。"
+    },
+    "electr-amber-hence": {
+      "story": "Rubbed amber attracts light objects. In 1600 William Gilbert coined Latin <i>electricus</i>, \"like amber\", for the effect, from Greek <i>ēlektron</i>, \"amber\".",
+      "zh": "摩擦后的琥珀能吸引轻小物体。1600 年，威廉·吉尔伯特用希腊语 <i>ēlektron</i>（琥珀）造出拉丁语 <i>electricus</i>（像琥珀的），来描述这种现象。"
+    },
+    "pan-bread": {
+      "story": "A <b>com</b><b>pan</b>ion is someone you share bread with (<i>com-</i> \"with\" + <i>panis</i> \"bread\").",
+      "zh": "<b>Com</b><b>pan</b>ion 指“一起分享面包的人”：<i>com-</i> 表示“一起”，<i>panis</i> 表示“面包”。"
+    },
+    "sarc-flesh": {
+      "story": "<b>Sarc</b>asm comes from Greek <i>sarkazein</i>, from <i>sarx</i> \"flesh\": \"to tear flesh\", or to gnash the teeth in anger. A <b>sarco</b>phagus is a \"flesh-eater\": the limestone was believed to consume the bodies laid in it.",
+      "zh": "<b>Sarc</b>asm 来自希腊语 <i>sarkazein</i>，源于 <i>sarx</i>（肉），意为“撕肉”，也指愤怒地咬牙。<b>Sarco</b>phagus（石棺）的字面意思是“食肉者”：当时人们认为，制棺的石灰岩会消蚀放在里面的尸体。"
+    },
+    "vi-way": {
+      "story": "<b>Tri</b><b>vi</b>al comes from <i>trivium</i>, a place where three roads meet, and so something ordinary or commonplace.",
+      "zh": "<b>Tri</b><b>vi</b>al 来自 <i>trivium</i>（三条道路交汇之处），由此引申为“普通的、平常的”。"
+    },
+    "aster-star-star": {
+      "story": "A <b>dis</b><b>aster</b> is literally a \"bad star\": misfortune was once blamed on an unfavourable position of the planets.",
+      "zh": "<b>Dis</b><b>aster</b> 的字面意思是“不好的星”。过去，人们曾把灾祸归咎于不利的星体位置。"
+    },
+    "idi-own-peculiarity": {
+      "story": "An <b>idi</b>ot was originally a \"private person\", a layman who took no part in public life (Greek <i>idiōtēs</i>).",
+      "zh": "<b>Idi</b>ot 最初指“私人、普通人”，即不参与公共生活的外行人，来自希腊语 <i>idiōtēs</i>。"
+    },
+    "lun-moon": {
+      "story": "<b>Lun</b>atic reflects the old belief that madness came and went with the phases of the moon.",
+      "zh": "<b>Lun</b>atic 反映了旧时的一种观念：人们以为精神失常会随月相变化而出现或消退。"
+    },
+    "noc-hurt-harm": {
+      "story": "Someone in<b>noc</b>ent is literally \"not harming\" (<i>in-</i> + <i>nocere</i>).",
+      "zh": "In<b>noc</b>ent 的字面意思是“不伤害”：<i>in-</i> 表示“不”，<i>nocere</i> 表示“伤害”。"
+    },
+    "vill-country-house": {
+      "story": "A <b>vill</b>ain was originally a farm labourer on a <i>villa</i>, a country estate. The meaning slid from \"peasant\" to \"scoundrel\" through upper-class contempt.",
+      "zh": "<b>Vill</b>ain 最初指在 <i>villa</i>（乡间庄园）劳作的农人。由于上层阶级的轻蔑，这个词逐渐从“农民”变成了“恶棍”。"
+    },
+    "dent-teeth": {
+      "story": "The dandelion is named for its jagged leaves: French <i>dent de lion</i>, \"lion's tooth\".",
+      "zh": "Dandelion（蒲公英）因锯齿状叶片得名：法语 <i>dent de lion</i> 意为“狮子的牙齿”。"
+    },
+    "capit-head": {
+      "story": "Wealth was once counted in head of livestock, which is why \"cattle\" and \"chattel\" both come from Latin <i>capitale</i>, from <i>caput</i> \"head\", as does <b>capit</b>al.",
+      "zh": "过去，人们按牲畜的“头数”计算财富。因此，cattle（牛）和 chattel（动产）都来自拉丁语 <i>capitale</i>，再追溯到 <i>caput</i>（头）；<b>capit</b>al 也同源。"
+    },
+    "hyster-womb-uterus": {
+      "story": "<b>Hyster</b>ia was named in the belief that it was caused by a disturbance of the womb.",
+      "zh": "<b>Hyster</b>ia 的命名源于当时的一种误解：人们认为这种病症是由子宫的异常造成的。"
+    },
+    "vacc-cow": {
+      "story": "Edward Jenner protected people against smallpox with cowpox (<i>variolae vaccinae</i>, \"cow pox\"), which gave us the word <b>vacc</b>ine.",
+      "zh": "爱德华·詹纳用牛痘预防天花。牛痘的拉丁语名称是 <i>variolae vaccinae</i>，英语 <b>vacc</b>ine（疫苗）由此得名。"
+    },
+    "calc-calcium-stone": {
+      "story": "Romans counted with small pebbles, <i>calculi</i>, which gave us <b>calc</b>ulate. Doctors still call kidney stones calculi.",
+      "zh": "古罗马人用小石子 <i>calculi</i> 计数，英语 <b>calc</b>ulate 因此得名。医学中现在仍把结石称为 calculi。"
+    },
+    "mon-warn": {
+      "story": "A <b>mon</b>ster was originally a <i>monstrum</i>, a divine omen or warning, from <i>monere</i>, \"to warn\".",
+      "zh": "<b>Mon</b>ster 最初是拉丁语 <i>monstrum</i>，指神示的征兆或警告，源于 <i>monere</i>（警告）。"
+    },
+    "bibl-book": {
+      "story": "Greek <i>biblos</i>, \"papyrus, book\", is named after Byblos, the Phoenician port that exported papyrus to Greece.",
+      "zh": "希腊语 <i>biblos</i> 表示“纸莎草、书”，得名于腓尼基港口比布鲁斯（Byblos）；该港曾向希腊出口纸莎草。"
+    },
+    "gymn-nude": {
+      "story": "Greek athletes trained naked, so a <b>gymn</b>asium was literally a \"place for exercising naked\".",
+      "zh": "古希腊运动员裸体训练，因此 <b>gymn</b>asium 的字面意思是“裸体锻炼的场所”。"
+    },
+    "paed-child": {
+      "story": "A <b>ped</b>agogue was a slave who walked children to school. An encyclo<b>ped</b>ia comes from Greek <i>enkyklios paideia</i>, \"all-round education\".",
+      "zh": "<b>Ped</b>agogue 最初指陪孩子步行上学的奴隶。Encyclo<b>ped</b>ia 则来自希腊语 <i>enkyklios paideia</i>，意为“全面的教育”。"
+    },
+    "naut-ship": {
+      "story": "<b>Nau</b>sea comes from Greek <i>naus</i>, \"ship\": it first meant seasickness.",
+      "zh": "<b>Nau</b>sea 来自希腊语 <i>naus</i>（船），最初的意思是“晕船”。"
+    },
+    "hol-whole": {
+      "story": "A <b>hol</b>ocaust was originally a sacrifice \"burnt whole\" (Greek <i>holos</i> + <i>kaustos</i>).",
+      "zh": "<b>Hol</b>ocaust 最初指“完全焚烧的祭品”，由希腊语 <i>holos</i>（整个）和 <i>kaustos</i>（烧过的）组成。"
+    },
+    "cosm-universe": {
+      "story": "Greek <i>kosmos</i> meant \"order\" and also \"ornament\", which is why the universe (an ordered whole) and <b>cosm</b>etics share a root.",
+      "zh": "希腊语 <i>kosmos</i> 既表示“秩序”，也表示“装饰”。所以，表示有序整体的“宇宙”和 <b>cosm</b>etics（化妆品）共享这个词根。"
+    },
+    "clin-lean-recline": {
+      "story": "<b>Clin</b>ic comes from the related Greek <i>klinē</i>, \"bed\": clinical medicine was taught at the patient's bedside.",
+      "zh": "<b>Clin</b>ic 来自相关的希腊语 <i>klinē</i>（床）；临床医学过去是在病人床边教授的。"
+    },
+    "crit-judge-separate": {
+      "story": "A hypo<b>crit</b>e was originally a stage actor, Greek <i>hypokritēs</i>: someone playing a part.",
+      "zh": "Hypo<b>crit</b>e 最初指舞台演员，来自希腊语 <i>hypokritēs</i>，即“扮演角色的人”。"
+    },
+    "dyna-power": {
+      "story": "Alfred Nobel named his invention <b>dyna</b>mite from Greek <i>dynamis</i>, \"power\". His fortune from it later funded the Nobel Prizes.",
+      "zh": "阿尔弗雷德·诺贝尔用希腊语 <i>dynamis</i>（力量）为他的发明命名：<b>dyna</b>mite（炸药）。后来，他的财富被用于设立诺贝尔奖。"
+    },
+    "avi-bird": {
+      "story": "Roman priests foretold the future by watching birds, so something <b>au</b>spicious was literally \"bird-watched\" and found favourable (<i>avis</i> + <i>specere</i>).",
+      "zh": "古罗马祭司通过观察鸟来占卜。因此，<b>au</b>spicious 最初指“观鸟占卜后发现吉兆的”，由 <i>avis</i>（鸟）和 <i>specere</i>（看）组成。"
+    },
+    "vir-man": {
+      "story": "<b>Vir</b>tue first meant \"manliness\" or valour, from Latin <i>vir</i>, \"man\".",
+      "zh": "<b>Vir</b>tue 最初表示“男子气概”或“勇武”，来自拉丁语 <i>vir</i>（男人）。"
+    },
+    "vir-poison-venom": {
+      "story": "Latin <i>virus</i> meant \"poison\" or \"slimy liquid\" long before anyone could see the particles we now call viruses.",
+      "zh": "在人类能够看见今天所说的病毒颗粒之前很久，拉丁语 <i>virus</i> 就已经表示“毒物”或“黏液”。"
+    },
+    "greg-flock-herd": {
+      "story": "E<b>greg</b>ious means \"out of the flock\". It first meant \"outstanding\" in a good way, and only later took on its bad sense.",
+      "zh": "E<b>greg</b>ious 的字面意思是“出众于群”。它起初是褒义的“杰出”，后来才有了贬义。"
+    },
+    "cor-heart": {
+      "story": "To re<b>cor</b>d is literally to \"bring back to the heart\": Latin <i>recordari</i>, \"to remember\". We still learn things \"by heart\".",
+      "zh": "Re<b>cor</b>d 的字面意思是“带回心中”：拉丁语 <i>recordari</i> 表示“记起”。英语现在仍用 learn by heart 表示“熟记”。"
+    },
+    "mort-death": {
+      "story": "A <b>mort</b>gage is literally a \"dead pledge\" (Old French <i>mort gage</i>, translating Medieval Latin <i>mortuum vadium</i>).",
+      "zh": "<b>Mort</b>gage 的字面意思是“死的抵押”，来自古法语 <i>mort gage</i>，是对中世纪拉丁语 <i>mortuum vadium</i> 的翻译。"
+    },
+    "ped-foot": {
+      "story": "<b>Ped</b>igree comes from French <i>pied de grue</i>, \"crane's foot\", after the branching lines on family-tree charts.",
+      "zh": "<b>Ped</b>igree 来自法语 <i>pied de grue</i>（鹤脚），得名于家谱图上像鹤脚一样分叉的线条。"
+    },
+    "cad-fall": {
+      "story": "The Occident (the West) is where the sun \"falls\", from <i>occidere</i>, \"to fall, set\".",
+      "zh": "Occident（西方）是太阳“落下”的地方，来自 <i>occidere</i>（落下、日落）。"
+    },
+    "ori-rise": {
+      "story": "The <b>Ori</b>ent (the East) is where the sun rises, from <i>oriri</i>, \"to rise\".",
+      "zh": "<b>Ori</b>ent（东方）是太阳升起的地方，来自 <i>oriri</i>（升起）。"
+    },
+    "sci-know": {
+      "story": "\"Nice\" comes from Latin <i>nescius</i>, \"not knowing\", and once meant foolish before drifting to its modern sense.",
+      "zh": "Nice 来自拉丁语 <i>nescius</i>（不知道的）。它一度表示“愚蠢”，后来才逐渐演变为现代含义。"
+    },
+    "sed-sit": {
+      "story": "A pre<b>sid</b>ent is literally \"one who sits in front\", presiding over a meeting.",
+      "zh": "Pre<b>sid</b>ent 的字面意思是“坐在前面的人”，即主持会议的人。"
+    },
+    "cap-hold-take": {
+      "story": "Re<b>cip</b>e is Latin for \"take!\": the first word of a doctor's prescription, later used for cooking instructions.",
+      "zh": "Re<b>cip</b>e 在拉丁语中是命令式的“取用！”，原本是医生处方的开头，后来也用于烹饪说明。"
+    },
+    "sol-sun": {
+      "story": "The <b>sol</b>stice is when the sun seems to \"stand still\" (<i>sol</i> + <i>sistere</i>) before its path turns back.",
+      "zh": "<b>Sol</b>stice（至日）是太阳在运行轨迹折返之前看似“停住”的时候：<i>sol</i> 表示“太阳”，<i>sistere</i> 表示“使站住”。"
+    },
+    "sec-cut": {
+      "story": "An in<b>sect</b> is \"cut into\" segments: a Latin translation of Greek <i>entomon</i>, which gives us entomology.",
+      "zh": "In<b>sect</b> 指身体被“切分”成节的生物，是对希腊语 <i>entomon</i> 的拉丁语翻译；entomology（昆虫学）也来自这个希腊词。"
+    },
+    "tem-cut": {
+      "story": "An a<b>tom</b> is literally \"uncuttable\", the smallest possible piece. Atoms were later split anyway.",
+      "zh": "A<b>tom</b> 的字面意思是“不可切分的”，即最小的单位。尽管如此，人类后来仍然分裂了原子。"
+    },
+    "eco-house-household": {
+      "story": "<b>Eco</b>nomy was originally \"household management\" (Greek <i>oikos</i> \"house\" + <i>nemein</i> \"to manage, distribute\").",
+      "zh": "<b>Eco</b>nomy 最初表示“家务管理”：希腊语 <i>oikos</i> 表示“家”，<i>nemein</i> 表示“管理、分配”。"
+    },
+    "arch-ruler-chief": {
+      "story": "An <b>arch</b>itect is a \"chief builder\" (Greek <i>arkhi-</i> \"chief\" + <i>tektōn</i> \"builder\").",
+      "zh": "<b>Arch</b>itect 的字面意思是“首席建造者”：希腊语 <i>arkhi-</i> 表示“首席”，<i>tektōn</i> 表示“建造者”。"
+    },
+    "dem-people": {
+      "story": "An epi<b>dem</b>ic is a disease \"upon the people\", spreading through a population.",
+      "zh": "Epi<b>dem</b>ic 指疾病“在人群之上”，也就是在人群中传播。"
+    },
+    "phil-love-friendship": {
+      "story": "Philadelphia, \"the city of brotherly love\", is Greek <i>philos</i> \"loving\" + <i>adelphos</i> \"brother\".",
+      "zh": "Philadelphia（费城）意为“兄弟之爱的城市”，由希腊语 <i>philos</i>（爱的）和 <i>adelphos</i>（兄弟）组成。"
+    },
+    "tele-far-at": {
+      "story": "<b>Tele</b>vision mixes Greek <i>tele</i> with Latin <i>visio</i>, and early critics complained that the hybrid word was bad Greek and bad Latin.",
+      "zh": "<b>Tele</b>vision 混用了希腊语 <i>tele</i> 和拉丁语 <i>visio</i>。早期批评者曾抱怨，这种混合词既不是好希腊语，也不是好拉丁语。"
+    },
+    "hydr-water": {
+      "story": "<b>Hydr</b>ogen means \"water-maker\": burning it produces water.",
+      "zh": "<b>Hydr</b>ogen 的意思是“造水者”：氢燃烧会产生水。"
+    },
+    "oxy-sharp-acid": {
+      "story": "Lavoisier named <b>oxy</b>gen \"acid-maker\" because he wrongly believed every acid contained it.",
+      "zh": "拉瓦锡把 <b>oxy</b>gen 命名为“造酸者”，因为他错误地认为所有酸都含有氧。"
+    },
+    "mor-foolish-dull": {
+      "story": "An <b>oxy</b><b>mor</b>on, \"sharp-dull\", is itself an oxymoron.",
+      "zh": "<b>Oxy</b><b>mor</b>on 的字面意思是“尖锐—迟钝”；这个名称本身就是一个矛盾修辞。"
+    },
+    "fa-say-speak": {
+      "story": "An in<b>fa</b>nt is literally \"not speaking\", from <i>in-</i> + <i>fari</i>, \"to speak\".",
+      "zh": "In<b>fa</b>nt 的字面意思是“不会说话的”，由 <i>in-</i>（不）和 <i>fari</i>（说话）组成。"
+    },
+    "spir-breathe": {
+      "story": "<b>Spir</b>it first meant \"breath\". To in<b>spir</b>e was to breathe life (or an idea) into someone.",
+      "zh": "<b>Spir</b>it 最初表示“呼吸”。In<b>spir</b>e 曾表示“向某人注入生命或想法”，就像吹入一口气。"
+    },
+    "fil-thread": {
+      "story": "A <b>fil</b>e was originally a string or wire on which papers were hung to keep them in order (<i>filum</i>, \"thread\").",
+      "zh": "<b>Fil</b>e 最初指用来串起文件、使其有序的线或金属丝，来自 <i>filum</i>（线）。"
+    },
+    "can-dog": {
+      "story": "The Canary Islands were named <i>Insula Canaria</i>, \"Island of Dogs\", and the birds are named after the islands.",
+      "zh": "加那利群岛曾被称为 <i>Insula Canaria</i>，意为“犬岛”；canary（金丝雀）则是根据群岛得名的。"
+    },
+    "vers-turn": {
+      "story": "A <b>vers</b>e is a \"turning\", like a plough turning at the end of a row to start the next line.",
+      "zh": "<b>Vers</b>e 原意是“转弯”，就像犁耕到田垄尽头，转向下一行。"
+    },
+    "pen-almost": {
+      "story": "A <b>pen</b>insula is \"almost an island\" (<i>paene</i> + <i>insula</i>).",
+      "zh": "<b>Pen</b>insula 的意思是“几乎是岛”，由 <i>paene</i>（几乎）和 <i>insula</i>（岛）组成。"
+    },
+    "insul-island": {
+      "story": "<b>Insul</b>in is named after the islets of Langerhans, the \"little islands\" of cells in the pancreas that make it.",
+      "zh": "<b>Insul</b>in 得名于胰腺中的朗格汉斯岛（胰岛），即产生胰岛素的“小岛状”细胞群。"
+    },
+    "carn-flesh": {
+      "story": "<b>Carn</b>ival possibly comes from Italian <i>carnevale</i>, \"removing meat\": the feast before the meatless days of Lent. Other origins have been proposed.",
+      "zh": "<b>Carn</b>ival 可能来自意大利语 <i>carnevale</i>（去掉肉），指大斋期禁肉之前的节庆。不过，也有人提出其他词源解释。"
+    },
+    "medi-middle": {
+      "story": "The <b>Medi</b>terranean is the sea \"in the middle of the land\" (<i>medius</i> + <i>terra</i>).",
+      "zh": "<b>Medi</b>terranean 是“陆地中间的海”，由 <i>medius</i>（中间）和 <i>terra</i>（土地）组成。"
+    },
+    "alb-white": {
+      "story": "In Rome an <b>alb</b>um was a white tablet on which public notices were written.",
+      "zh": "在古罗马，<b>alb</b>um 指用来书写公告的白色板子。"
+    },
+    "dexter-right-hand": {
+      "story": "Latin <i>sinister</i> meant \"left\": the left side was considered unlucky, while <b>dexter</b>ity comes from the right hand.",
+      "zh": "拉丁语 <i>sinister</i> 表示“左边”；当时左侧被认为不吉利。与之相对，<b>dexter</b>ity（灵巧）来自“右手”。"
+    },
+    "ambi-both-on": {
+      "story": "<b>Ambi</b>tion comes from <i>ambire</i>, \"to go around\": Roman candidates went around canvassing for votes.",
+      "zh": "<b>Ambi</b>tion 来自 <i>ambire</i>（四处走动）：古罗马的候选人四处奔走拉票。"
+    },
+    "mon-alone-only": {
+      "story": "A <b>mon</b>k is \"one who lives alone\", from Greek <i>monachos</i>, \"solitary\".",
+      "zh": "<b>Mon</b>k 指“独居者”，来自希腊语 <i>monachos</i>（独自的）。"
+    },
+    "pater-father": {
+      "story": "A <b>patr</b>iot loves the <i>patria</i>, the \"fatherland\".",
+      "zh": "<b>Patr</b>iot 热爱的是 <i>patria</i>，即“祖国”，字面为“父辈之国”。"
+    },
+    "cur-care-for": {
+      "story": "A sine<b>cur</b>e is a job \"without care\", that pays without real duties. It was first a church post with no souls to care for.",
+      "zh": "Sine<b>cur</b>e 是“无需操心”的职位，即领取报酬却没有实际职责的闲职。它最初指没有牧灵职责的教会职位。"
+    },
+    "sangui-blood": {
+      "story": "<b>Sangui</b>ne means hopeful: blood was the humour believed to make people cheerful.",
+      "zh": "<b>Sangui</b>ne 表示“乐观的”。古代体液学说认为，血液会使人性情开朗。"
+    },
+    "mal-bad-wretched": {
+      "story": "<b>Mal</b>aria is Italian <i>mala aria</i>, \"bad air\": the disease was blamed on swamp air before mosquitoes were understood.",
+      "zh": "<b>Mal</b>aria 来自意大利语 <i>mala aria</i>（坏空气）。在人们了解蚊子的传播作用之前，疟疾曾被归咎于沼泽空气。"
+    },
+    "strat-army": {
+      "story": "<b>Strat</b>egy is literally \"generalship\", from Greek <i>stratēgos</i>, \"army leader\".",
+      "zh": "<b>Strat</b>egy 的字面意思是“统帅之术”，来自希腊语 <i>stratēgos</i>（军队的领导者）。"
+    },
+    "cidal-killing-destroying": {
+      "story": "Raphael Lemkin coined \"geno<b>cide</b>\" in 1944 from Greek <i>genos</i> \"race\" and Latin <i>-cidium</i> \"killing\".",
+      "zh": "拉斐尔·莱姆金于 1944 年用希腊语 <i>genos</i>（种族）和拉丁语 <i>-cidium</i>（杀害）造出 geno<b>cide</b>（种族灭绝）一词。"
+    },
+    "ops-eye": {
+      "story": "An aut<b>ops</b>y is literally \"seeing for oneself\" (Greek <i>autos</i> + <i>opsis</i>).",
+      "zh": "Aut<b>ops</b>y 的字面意思是“亲自看”，由希腊语 <i>autos</i>（自己）和 <i>opsis</i>（看）组成。"
+    },
+    "bi-two-twice": {
+      "story": "A biscuit is literally \"twice cooked\" (French <i>bis cuit</i>).",
+      "zh": "Biscuit 的字面意思是“烤过两次”，来自法语 <i>bis cuit</i>。"
+    },
+    "pre-before": {
+      "story": "<b>Pre</b>posterous literally means \"before-behind\" (<i>prae</i> + <i>posterus</i>), back to front.",
+      "zh": "<b>Pre</b>posterous 的字面意思是“前—后”，由 <i>prae</i> 和 <i>posterus</i> 组成，表示“前后颠倒”。"
+    },
+    "oct-eight": {
+      "story": "October was the eighth month in the old Roman calendar, which began in March. The same goes for September (seven), November (nine) and December (ten).",
+      "zh": "在以三月为年初的古罗马历法中，October 是第八个月。September（七）、November（九）和 December（十）的名称也有相同背景。"
+    },
+    "dec-ten-tenth": {
+      "story": "To <b>deci</b>mate first meant to kill one soldier in ten, a Roman punishment for mutiny.",
+      "zh": "<b>Deci</b>mate 最初指“每十名士兵处死一名”，是古罗马惩罚兵变的一种方式。"
+    },
+    "quint-five-fifth": {
+      "story": "<b>Quint</b>essence is the \"fifth essence\": the ether that ancient philosophers believed filled the heavens, beyond the four elements of earth, water, air and fire.",
+      "zh": "<b>Quint</b>essence 是“第五种本质”：古代哲学家认为，除了土、水、气、火四种元素，天界还充满第五种元素“以太”。"
+    },
+    "luc-bright-light": {
+      "story": "Lucifer means \"light-bearer\" (<i>lux</i> + <i>ferre</i>) and was originally a name for the morning star, Venus.",
+      "zh": "Lucifer 意为“带来光的人”，由 <i>lux</i>（光）和 <i>ferre</i>（携带）组成，最初是晨星（金星）的名称。"
+    },
+    "ver-true": {
+      "story": "A <b>ver</b>dict is literally a \"true saying\" (<i>vere dictum</i>).",
+      "zh": "<b>Ver</b>dict 的字面意思是“真实的话”，来自 <i>vere dictum</i>。"
+    }
+  },
+  "decode": {
+    "incredible": {
+      "literal": "not able to be believed",
+      "literal_zh": "不能被相信的",
+      "definition": "impossible to believe; amazing",
+      "definition_zh": "难以置信的；惊人的"
+    },
+    "benevolent": {
+      "literal": "wishing well",
+      "literal_zh": "怀有善意的",
+      "definition": "kind, well-meaning",
+      "definition_zh": "仁慈的；善意的"
+    },
+    "malevolent": {
+      "literal": "wishing ill",
+      "literal_zh": "怀有恶意的",
+      "definition": "wanting to harm others",
+      "definition_zh": "想伤害他人的；恶意的"
+    },
+    "biography": {
+      "literal": "writing about a life",
+      "literal_zh": "关于一生的书写",
+      "definition": "an account of someone's life",
+      "definition_zh": "传记；对某人生平的记述"
+    },
+    "autobiography": {
+      "literal": "writing about one's own life",
+      "literal_zh": "关于自己一生的书写",
+      "definition": "an account of a person's life written by that person",
+      "definition_zh": "自传；本人撰写的生平记述"
+    },
+    "telescope": {
+      "literal": "far-looker",
+      "literal_zh": "看远处的器具",
+      "definition": "an instrument for seeing distant objects",
+      "definition_zh": "望远镜；观察远处物体的仪器"
+    },
+    "microscope": {
+      "literal": "small-looker",
+      "literal_zh": "看微小事物的器具",
+      "definition": "an instrument for seeing very small objects",
+      "definition_zh": "显微镜；观察微小物体的仪器"
+    },
+    "philanthropy": {
+      "literal": "love of humankind",
+      "literal_zh": "对人类的爱",
+      "definition": "giving money or help to improve other people's lives",
+      "definition_zh": "慈善；捐助金钱或提供帮助以改善他人的生活"
+    },
+    "democracy": {
+      "literal": "rule by the people",
+      "literal_zh": "人民的统治",
+      "definition": "government by the people or their elected representatives",
+      "definition_zh": "民主；由人民或其选出的代表治理"
+    },
+    "autonomy": {
+      "literal": "self-law",
+      "literal_zh": "自己制定规则",
+      "definition": "the right or ability to govern oneself",
+      "definition_zh": "自治；自我治理的权利或能力"
+    },
+    "synchronize": {
+      "literal": "make together in time",
+      "literal_zh": "使时间一致",
+      "definition": "to make things happen at the same time",
+      "definition_zh": "使同步；使事情同时发生"
+    },
+    "chronology": {
+      "literal": "study of time",
+      "literal_zh": "对时间的研究",
+      "definition": "the order in which events happened",
+      "definition_zh": "事件发生的时间顺序"
+    },
+    "hydrophobia": {
+      "literal": "fear of water",
+      "literal_zh": "对水的恐惧",
+      "definition": "fear of water; also an old name for rabies, which makes swallowing painful",
+      "definition_zh": "恐水；也曾用来指吞咽疼痛的狂犬病"
+    },
+    "dehydrate": {
+      "literal": "make the water go away",
+      "literal_zh": "使水分离去",
+      "definition": "to remove water from",
+      "definition_zh": "使脱水；除去水分"
+    },
+    "transport": {
+      "literal": "carry across",
+      "literal_zh": "运送过去",
+      "definition": "to move from one place to another",
+      "definition_zh": "运输；从一处移到另一处"
+    },
+    "export": {
+      "literal": "carry out",
+      "literal_zh": "运送出去",
+      "definition": "to send goods to another country",
+      "definition_zh": "出口；把货物运往另一个国家"
+    },
+    "interrupt": {
+      "literal": "break in between",
+      "literal_zh": "在中间打断",
+      "definition": "to break into a conversation or activity",
+      "definition_zh": "打断谈话或活动"
+    },
+    "eruption": {
+      "literal": "a bursting out",
+      "literal_zh": "向外迸发",
+      "definition": "a sudden outburst (of a volcano or a rash)",
+      "definition_zh": "喷发；突然爆发，如火山喷发或出疹"
+    },
+    "contradict": {
+      "literal": "speak against",
+      "literal_zh": "说相反的话",
+      "definition": "to say the opposite of",
+      "definition_zh": "反驳；与……矛盾"
+    },
+    "predict": {
+      "literal": "say before",
+      "literal_zh": "事先说出",
+      "definition": "to say what will happen",
+      "definition_zh": "预测；说出将要发生的事"
+    },
+    "verdict": {
+      "literal": "a true saying",
+      "literal_zh": "真实的话",
+      "definition": "the decision of a jury",
+      "definition_zh": "裁决；陪审团的决定"
+    },
+    "inspect": {
+      "literal": "look into",
+      "literal_zh": "向内看",
+      "definition": "to examine closely",
+      "definition_zh": "检查；仔细查看"
+    },
+    "retrospect": {
+      "literal": "a looking back",
+      "literal_zh": "向后看",
+      "definition": "a review of past events",
+      "definition_zh": "回顾；审视过去的事件"
+    },
+    "manuscript": {
+      "literal": "written by hand",
+      "literal_zh": "用手写成的",
+      "definition": "a handwritten or original text",
+      "definition_zh": "手稿；手写文本或原稿"
+    },
+    "postscript": {
+      "literal": "written after",
+      "literal_zh": "在后面写的",
+      "definition": "a note added after the signature (P.S.)",
+      "definition_zh": "附言；签名之后补充的文字（P.S.）"
+    },
+    "circumference": {
+      "literal": "a carrying around",
+      "literal_zh": "围绕着携行",
+      "definition": "the distance around a circle",
+      "definition_zh": "圆周；圆周的长度"
+    },
+    "circumnavigate": {
+      "literal": "sail around",
+      "literal_zh": "航行一周",
+      "definition": "to sail all the way around",
+      "definition_zh": "环航；乘船绕行一整圈"
+    },
+    "conductor": {
+      "literal": "one who leads together",
+      "literal_zh": "把人带到一起的引导者",
+      "definition": "a person who directs an orchestra; something that carries heat or electricity",
+      "definition_zh": "指挥；导体，即传导热或电的物质"
+    },
+    "reduce": {
+      "literal": "lead back",
+      "literal_zh": "引回",
+      "definition": "to make smaller",
+      "definition_zh": "减少；使变小"
+    },
+    "abduct": {
+      "literal": "lead away",
+      "literal_zh": "带走",
+      "definition": "to take someone away by force",
+      "definition_zh": "绑架；强行带走某人"
+    },
+    "projectile": {
+      "literal": "able to be thrown forward",
+      "literal_zh": "可以向前投掷的",
+      "definition": "an object that is thrown or fired",
+      "definition_zh": "抛射物；被投掷或发射出去的物体"
+    },
+    "reject": {
+      "literal": "throw back",
+      "literal_zh": "扔回",
+      "definition": "to refuse to accept",
+      "definition_zh": "拒绝接受"
+    },
+    "dissect": {
+      "literal": "cut apart",
+      "literal_zh": "切开分离",
+      "definition": "to cut open in order to study",
+      "definition_zh": "解剖；切开以进行研究"
+    },
+    "bisect": {
+      "literal": "cut in two",
+      "literal_zh": "切成两半",
+      "definition": "to divide into two equal parts",
+      "definition_zh": "平分为两个相等部分"
+    },
+    "insecticide": {
+      "literal": "killer of the cut-into creatures",
+      "literal_zh": "杀死身体分节的生物之物",
+      "definition": "a chemical that kills insects",
+      "definition_zh": "杀虫剂；杀死昆虫的化学物质"
+    },
+    "genocide": {
+      "literal": "killing of a race",
+      "literal_zh": "对一个种族的杀害",
+      "definition": "the deliberate destruction of a whole people",
+      "definition_zh": "种族灭绝；蓄意毁灭一个民族或族群"
+    },
+    "monotheism": {
+      "literal": "belief in one god",
+      "literal_zh": "对唯一神的信仰",
+      "definition": "belief that there is only one God",
+      "definition_zh": "一神论；相信只有一位神"
+    },
+    "atheist": {
+      "literal": "one without a god",
+      "literal_zh": "没有神的人",
+      "definition": "a person who believes no god exists",
+      "definition_zh": "无神论者；认为神不存在的人"
+    },
+    "polygon": {
+      "literal": "many angles",
+      "literal_zh": "多个角",
+      "definition": "a flat shape with three or more straight sides",
+      "definition_zh": "多边形；由三条或更多直边围成的平面图形"
+    },
+    "pentagon": {
+      "literal": "five angles",
+      "literal_zh": "五个角",
+      "definition": "a five-sided shape",
+      "definition_zh": "五边形"
+    },
+    "octopus": {
+      "literal": "eight-foot",
+      "literal_zh": "八只脚",
+      "definition": "a sea animal with eight arms",
+      "definition_zh": "章鱼；有八条腕的海洋动物"
+    },
+    "tripod": {
+      "literal": "three-footed",
+      "literal_zh": "三只脚的",
+      "definition": "a three-legged stand",
+      "definition_zh": "三脚架"
+    },
+    "centipede": {
+      "literal": "hundred-footed",
+      "literal_zh": "一百只脚的",
+      "definition": "a many-legged creature (usually with far fewer than 100 legs, despite the name)",
+      "definition_zh": "蜈蚣；多足动物，名称虽有“百”，实际足数并不固定"
+    },
+    "bicycle": {
+      "literal": "two circles",
+      "literal_zh": "两个轮子",
+      "definition": "a two-wheeled vehicle",
+      "definition_zh": "自行车；双轮交通工具"
+    },
+    "thermometer": {
+      "literal": "heat-measurer",
+      "literal_zh": "测量热的器具",
+      "definition": "an instrument that measures temperature",
+      "definition_zh": "温度计；测量温度的仪器"
+    },
+    "hypothermia": {
+      "literal": "condition of being under heat",
+      "literal_zh": "热量低于正常的状态",
+      "definition": "dangerously low body temperature",
+      "definition_zh": "低体温；体温低至危险程度"
+    },
+    "hypodermic": {
+      "literal": "under the skin",
+      "literal_zh": "在皮肤之下",
+      "definition": "(a needle) injected beneath the skin",
+      "definition_zh": "皮下的；指用于皮下注射的针具等"
+    },
+    "epidermis": {
+      "literal": "upon the skin",
+      "literal_zh": "在皮肤之上",
+      "definition": "the outer layer of the skin",
+      "definition_zh": "表皮；皮肤的最外层"
+    },
+    "sympathy": {
+      "literal": "feeling with",
+      "literal_zh": "共同感受",
+      "definition": "sharing or understanding someone's sorrow",
+      "definition_zh": "同情；理解或分担他人的悲伤"
+    },
+    "apathy": {
+      "literal": "without feeling",
+      "literal_zh": "没有感受",
+      "definition": "lack of interest or concern",
+      "definition_zh": "冷漠；缺乏兴趣或关心"
+    },
+    "antipathy": {
+      "literal": "feeling against",
+      "literal_zh": "相对立的感受",
+      "definition": "a strong dislike",
+      "definition_zh": "反感；强烈的厌恶"
+    },
+    "empathy": {
+      "literal": "feeling in",
+      "literal_zh": "进入他人的感受",
+      "definition": "the ability to share another person's feelings",
+      "definition_zh": "共情；理解和体会他人感受的能力"
+    },
+    "telepathy": {
+      "literal": "feeling at a distance",
+      "literal_zh": "远距离感受",
+      "definition": "communication between minds without the senses",
+      "definition_zh": "心灵感应；不借助感官的心智交流这一概念"
+    },
+    "anonymous": {
+      "literal": "without a name",
+      "literal_zh": "没有名字的",
+      "definition": "of unknown name",
+      "definition_zh": "匿名的；姓名不详的"
+    },
+    "synonym": {
+      "literal": "together-name",
+      "literal_zh": "共同的名称",
+      "definition": "a word with the same meaning as another",
+      "definition_zh": "同义词；与另一个词意思相同的词"
+    },
+    "pseudonym": {
+      "literal": "false name",
+      "literal_zh": "假的名字",
+      "definition": "a name used instead of one's real name",
+      "definition_zh": "化名；代替真实姓名使用的名字"
+    },
+    "eulogy": {
+      "literal": "good words",
+      "literal_zh": "美好的话语",
+      "definition": "a speech praising someone who has died",
+      "definition_zh": "悼词；赞颂逝者的讲话"
+    },
+    "magnanimous": {
+      "literal": "great-souled",
+      "literal_zh": "胸怀宽广的",
+      "definition": "generous and forgiving",
+      "definition_zh": "宽宏大量的；慷慨且宽容的"
+    },
+    "equanimity": {
+      "literal": "evenness of soul",
+      "literal_zh": "心灵的平衡",
+      "definition": "calmness under pressure",
+      "definition_zh": "镇定；在压力下保持平静"
+    },
+    "unanimous": {
+      "literal": "of one soul",
+      "literal_zh": "同一个心意的",
+      "definition": "with everyone agreeing",
+      "definition_zh": "一致同意的"
+    },
+    "omnipotent": {
+      "literal": "all-powerful",
+      "literal_zh": "拥有一切力量的",
+      "definition": "having unlimited power",
+      "definition_zh": "全能的；拥有无限力量的"
+    },
+    "omniscient": {
+      "literal": "all-knowing",
+      "literal_zh": "知道一切的",
+      "definition": "knowing everything",
+      "definition_zh": "全知的"
+    },
+    "insomnia": {
+      "literal": "condition of no sleep",
+      "literal_zh": "没有睡眠的状态",
+      "definition": "inability to sleep",
+      "definition_zh": "失眠；无法入睡"
+    },
+    "dormitory": {
+      "literal": "place for sleeping",
+      "literal_zh": "睡觉的场所",
+      "definition": "a large room or building where many people sleep",
+      "definition_zh": "宿舍；供多人就寝的大房间或楼宇"
+    },
+    "auditorium": {
+      "literal": "place for hearing",
+      "literal_zh": "聆听的场所",
+      "definition": "a large hall for an audience",
+      "definition_zh": "礼堂；供观众使用的大厅"
+    },
+    "subterranean": {
+      "literal": "below the earth",
+      "literal_zh": "在大地之下",
+      "definition": "underground",
+      "definition_zh": "地下的"
+    },
+    "extraterrestrial": {
+      "literal": "beyond the earth",
+      "literal_zh": "在地球之外",
+      "definition": "from outside Earth",
+      "definition_zh": "地球以外的；来自地球之外的"
+    },
+    "benefactor": {
+      "literal": "one who does good",
+      "literal_zh": "行善的人",
+      "definition": "a person who gives help or money",
+      "definition_zh": "恩人；提供帮助或金钱的人"
+    },
+    "manufacture": {
+      "literal": "making by hand",
+      "literal_zh": "用手制造",
+      "definition": "to make goods, now usually by machine",
+      "definition_zh": "制造商品，现代通常使用机器"
+    },
+    "fidelity": {
+      "literal": "state of being faithful",
+      "literal_zh": "忠实的状态",
+      "definition": "faithfulness; accuracy",
+      "definition_zh": "忠诚；准确性；保真度"
+    },
+    "revive": {
+      "literal": "live again",
+      "literal_zh": "再次活过来",
+      "definition": "to bring back to life or strength",
+      "definition_zh": "使复活；使恢复活力"
+    },
+    "vivisection": {
+      "literal": "cutting the living",
+      "literal_zh": "切开活物",
+      "definition": "surgery on live animals for research",
+      "definition_zh": "活体解剖；为研究而对活体动物施行手术"
+    },
+    "survive": {
+      "literal": "live over (beyond)",
+      "literal_zh": "活得超过某个界限",
+      "definition": "to continue to live after something",
+      "definition_zh": "存活；经历某事后继续活着"
+    },
+    "intervene": {
+      "literal": "come between",
+      "literal_zh": "来到中间",
+      "definition": "to step in to change a situation",
+      "definition_zh": "介入；采取行动改变局面"
+    },
+    "advent": {
+      "literal": "a coming to",
+      "literal_zh": "到来",
+      "definition": "the arrival of something important",
+      "definition_zh": "重要事物的到来或出现"
+    },
+    "invisible": {
+      "literal": "not able to be seen",
+      "literal_zh": "不能被看见的",
+      "definition": "impossible to see",
+      "definition_zh": "不可见的"
+    },
+    "supervise": {
+      "literal": "oversee",
+      "literal_zh": "从上方察看",
+      "definition": "to watch over and direct",
+      "definition_zh": "监督；照看和指导"
+    },
+    "evident": {
+      "literal": "seen out (plainly)",
+      "literal_zh": "显露出来、看得清楚的",
+      "definition": "clearly seen or understood",
+      "definition_zh": "明显的；容易看见或理解的"
+    },
+    "advocate": {
+      "literal": "one called to (help)",
+      "literal_zh": "被叫来提供帮助的人",
+      "definition": "a person who speaks in support of someone or something",
+      "definition_zh": "拥护者；为某人或某事发声支持的人"
+    },
+    "dictator": {
+      "literal": "one who says (what happens)",
+      "literal_zh": "说了算的人",
+      "definition": "a ruler with total power",
+      "definition_zh": "独裁者；拥有全部统治权力的人"
+    },
+    "pathology": {
+      "literal": "study of disease",
+      "literal_zh": "对疾病的研究",
+      "definition": "the study of the causes and effects of disease",
+      "definition_zh": "病理学；研究疾病的原因和影响"
+    },
+    "psychology": {
+      "literal": "study of the mind",
+      "literal_zh": "对心智的研究",
+      "definition": "the scientific study of the mind and behaviour",
+      "definition_zh": "心理学；研究心智与行为的科学"
+    },
+    "geology": {
+      "literal": "study of the earth",
+      "literal_zh": "对大地的研究",
+      "definition": "the study of rocks and the earth's structure",
+      "definition_zh": "地质学；研究岩石和地球结构"
+    },
+    "geography": {
+      "literal": "earth-writing",
+      "literal_zh": "对大地的描写",
+      "definition": "the study of the earth's surface and its places",
+      "definition_zh": "地理学；研究地球表面及其区域"
+    },
+    "photograph": {
+      "literal": "light-drawing",
+      "literal_zh": "用光绘出的图像",
+      "definition": "a picture made by a camera",
+      "definition_zh": "照片；相机拍摄的图像"
+    },
+    "symphony": {
+      "literal": "sounding together",
+      "literal_zh": "共同发声",
+      "definition": "a long piece for full orchestra",
+      "definition_zh": "交响曲；为完整管弦乐队创作的大型乐曲"
+    },
+    "microphone": {
+      "literal": "small-sound (device)",
+      "literal_zh": "微小声音的装置",
+      "definition": "a device that picks up sound",
+      "definition_zh": "麦克风；拾取声音的装置"
+    },
+    "megaphone": {
+      "literal": "great-sound (device)",
+      "literal_zh": "放大声音的装置",
+      "definition": "a cone for making the voice louder",
+      "definition_zh": "扩音喇叭；使人声更响亮的锥形器具"
+    },
+    "chronic": {
+      "literal": "relating to time",
+      "literal_zh": "与时间有关的",
+      "definition": "lasting a long time (of an illness or problem)",
+      "definition_zh": "慢性的；指疾病或问题持续很久"
+    },
+    "hydroelectric": {
+      "literal": "water-electric",
+      "literal_zh": "水与电有关的",
+      "definition": "producing electricity from moving water",
+      "definition_zh": "水力发电的；利用流水发电"
+    },
+    "pericarditis": {
+      "literal": "inflammation around the heart",
+      "literal_zh": "心脏周围的炎症",
+      "definition": "inflammation of the sac around the heart",
+      "definition_zh": "心包炎；包围心脏的囊膜发炎"
+    },
+    "cardiology": {
+      "literal": "study of the heart",
+      "literal_zh": "对心脏的研究",
+      "definition": "the branch of medicine dealing with the heart",
+      "definition_zh": "心脏病学；研究和诊治心脏疾病的医学分支"
+    },
+    "tachycardia": {
+      "literal": "fast-heart condition",
+      "literal_zh": "心跳快的状态",
+      "definition": "an abnormally fast heart rate",
+      "definition_zh": "心动过速；心率异常增快"
+    },
+    "bradycardia": {
+      "literal": "slow-heart condition",
+      "literal_zh": "心跳慢的状态",
+      "definition": "an abnormally slow heart rate",
+      "definition_zh": "心动过缓；心率异常减慢"
+    },
+    "hepatitis": {
+      "literal": "inflammation of the liver",
+      "literal_zh": "肝脏的炎症",
+      "definition": "inflammation of the liver",
+      "definition_zh": "肝炎"
+    },
+    "gastroenterology": {
+      "literal": "study of the stomach and intestines",
+      "literal_zh": "对胃和肠的研究",
+      "definition": "the branch of medicine dealing with the digestive system",
+      "definition_zh": "胃肠病学；研究和诊治消化系统疾病的医学分支"
+    },
+    "nephrectomy": {
+      "literal": "removal of a kidney",
+      "literal_zh": "切除肾脏",
+      "definition": "surgical removal of a kidney",
+      "definition_zh": "肾切除术"
+    },
+    "hysterectomy": {
+      "literal": "removal of the womb",
+      "literal_zh": "切除子宫",
+      "definition": "surgical removal of the uterus",
+      "definition_zh": "子宫切除术"
+    },
+    "tonsillitis": {
+      "literal": "inflammation of the tonsils",
+      "literal_zh": "扁桃体的炎症",
+      "definition": "inflammation of the tonsils",
+      "definition_zh": "扁桃体炎"
+    },
+    "osteoarthritis": {
+      "literal": "bone and joint inflammation",
+      "literal_zh": "骨和关节的炎症",
+      "definition": "a disease that wears down the cartilage in joints",
+      "definition_zh": "骨关节炎；关节软骨逐渐磨损的疾病"
+    },
+    "hematology": {
+      "literal": "study of blood",
+      "literal_zh": "对血液的研究",
+      "definition": "the branch of medicine dealing with the blood",
+      "definition_zh": "血液学；研究血液及相关疾病的医学分支"
+    },
+    "anemia": {
+      "literal": "without-blood condition",
+      "literal_zh": "缺少血液的状态",
+      "definition": "a lack of red blood cells or hemoglobin",
+      "definition_zh": "贫血；红细胞或血红蛋白不足"
+    },
+    "leukemia": {
+      "literal": "white-blood condition",
+      "literal_zh": "白色血液的状态",
+      "definition": "a cancer of the blood-forming cells (white blood cells)",
+      "definition_zh": "白血病；造血细胞发生的癌症"
+    },
+    "hypoglycemia": {
+      "literal": "under-sugar blood condition",
+      "literal_zh": "血糖低于正常的状态",
+      "definition": "abnormally low blood sugar",
+      "definition_zh": "低血糖"
+    },
+    "neuralgia": {
+      "literal": "nerve pain",
+      "literal_zh": "神经疼痛",
+      "definition": "sharp pain along a nerve",
+      "definition_zh": "神经痛；沿神经出现的锐痛"
+    },
+    "myalgia": {
+      "literal": "muscle pain",
+      "literal_zh": "肌肉疼痛",
+      "definition": "pain in a muscle",
+      "definition_zh": "肌痛"
+    },
+    "analgesic": {
+      "literal": "without pain",
+      "literal_zh": "没有疼痛的",
+      "definition": "a painkiller",
+      "definition_zh": "镇痛药；止痛药"
+    },
+    "hemorrhage": {
+      "literal": "blood bursting forth",
+      "literal_zh": "血液涌出",
+      "definition": "heavy bleeding",
+      "definition_zh": "大出血；大量流血"
+    },
+    "diarrhea": {
+      "literal": "flowing through",
+      "literal_zh": "流穿过去",
+      "definition": "frequent loose bowel movements",
+      "definition_zh": "腹泻；频繁排出稀便"
+    },
+    "dyspepsia": {
+      "literal": "bad digestion",
+      "literal_zh": "消化不好",
+      "definition": "indigestion",
+      "definition_zh": "消化不良"
+    },
+    "dysphagia": {
+      "literal": "difficult-eating condition",
+      "literal_zh": "进食困难的状态",
+      "definition": "difficulty swallowing",
+      "definition_zh": "吞咽困难"
+    },
+    "carcinoma": {
+      "literal": "cancerous tumour",
+      "literal_zh": "癌性肿瘤",
+      "definition": "a cancer arising in the skin or the lining of organs",
+      "definition_zh": "癌；发生于皮肤或器官上皮组织的恶性肿瘤"
+    },
+    "melanoma": {
+      "literal": "black tumour",
+      "literal_zh": "黑色肿瘤",
+      "definition": "a cancer of the pigment cells of the skin",
+      "definition_zh": "黑色素瘤；皮肤色素细胞发生的癌症"
+    },
+    "oncology": {
+      "literal": "study of tumours",
+      "literal_zh": "对肿瘤的研究",
+      "definition": "the branch of medicine dealing with cancer",
+      "definition_zh": "肿瘤学；研究和诊治癌症的医学分支"
+    },
+    "leukocyte": {
+      "literal": "white cell",
+      "literal_zh": "白色细胞",
+      "definition": "a white blood cell",
+      "definition_zh": "白细胞"
+    },
+    "erythrocyte": {
+      "literal": "red cell",
+      "literal_zh": "红色细胞",
+      "definition": "a red blood cell",
+      "definition_zh": "红细胞"
+    },
+    "phagocyte": {
+      "literal": "eating cell",
+      "literal_zh": "进食的细胞",
+      "definition": "a cell that engulfs and digests bacteria and debris",
+      "definition_zh": "吞噬细胞；吞入并消化细菌和碎屑的细胞"
+    },
+    "thrombocytopenia": {
+      "literal": "lack of clot cells",
+      "literal_zh": "凝血细胞缺少",
+      "definition": "a low number of platelets in the blood",
+      "definition_zh": "血小板减少症；血液中血小板数量偏低"
+    },
+    "encephalitis": {
+      "literal": "inflammation of what's in the head",
+      "literal_zh": "头内之物的炎症",
+      "definition": "inflammation of the brain",
+      "definition_zh": "脑炎"
+    },
+    "hydrocephalus": {
+      "literal": "water-head",
+      "literal_zh": "有水的头",
+      "definition": "a build-up of fluid in the brain",
+      "definition_zh": "脑积水；脑内脑脊液异常积聚"
+    },
+    "meningitis": {
+      "literal": "inflammation of the membranes",
+      "literal_zh": "膜的炎症",
+      "definition": "inflammation of the membranes around the brain and spinal cord",
+      "definition_zh": "脑膜炎；包围脑和脊髓的膜发炎"
+    },
+    "otitis": {
+      "literal": "ear inflammation",
+      "literal_zh": "耳的炎症",
+      "definition": "inflammation of the ear",
+      "definition_zh": "耳炎"
+    },
+    "rhinoplasty": {
+      "literal": "nose reshaping",
+      "literal_zh": "鼻部整形",
+      "definition": "plastic surgery on the nose",
+      "definition_zh": "鼻整形术"
+    },
+    "ophthalmology": {
+      "literal": "study of the eye",
+      "literal_zh": "对眼的研究",
+      "definition": "the branch of medicine dealing with the eye",
+      "definition_zh": "眼科学；研究和诊治眼病的医学分支"
+    },
+    "dermatology": {
+      "literal": "study of the skin",
+      "literal_zh": "对皮肤的研究",
+      "definition": "the branch of medicine dealing with the skin",
+      "definition_zh": "皮肤病学"
+    },
+    "subcutaneous": {
+      "literal": "under the skin",
+      "literal_zh": "在皮肤之下",
+      "definition": "beneath the skin",
+      "definition_zh": "皮下的"
+    },
+    "intravenous": {
+      "literal": "within a vein",
+      "literal_zh": "在静脉之内",
+      "definition": "given into a vein",
+      "definition_zh": "静脉内的；经静脉给予的"
+    },
+    "thrombophlebitis": {
+      "literal": "clot and vein inflammation",
+      "literal_zh": "血栓与静脉炎症",
+      "definition": "inflammation of a vein caused by a blood clot",
+      "definition_zh": "血栓性静脉炎；与血栓形成有关的静脉炎症"
+    },
+    "arteriosclerosis": {
+      "literal": "artery-hardening condition",
+      "literal_zh": "动脉硬化的状态",
+      "definition": "hardening and thickening of the artery walls",
+      "definition_zh": "动脉硬化；动脉壁变硬、增厚"
+    },
+    "atherosclerosis": {
+      "literal": "gruel-hardening condition",
+      "literal_zh": "粥样物硬化的状态",
+      "definition": "artery disease caused by fatty deposits (plaques)",
+      "definition_zh": "动脉粥样硬化；脂肪性斑块沉积造成的动脉疾病"
+    },
+    "cyanosis": {
+      "literal": "blue condition",
+      "literal_zh": "呈蓝色的状态",
+      "definition": "a bluish skin colour from lack of oxygen",
+      "definition_zh": "发绀；缺氧引起的皮肤青紫"
+    },
+    "cholecystectomy": {
+      "literal": "removal of the bile bladder",
+      "literal_zh": "切除储存胆汁的囊",
+      "definition": "surgical removal of the gallbladder",
+      "definition_zh": "胆囊切除术"
+    },
+    "nephrolithiasis": {
+      "literal": "kidney-stone condition",
+      "literal_zh": "肾内结石的状态",
+      "definition": "kidney stones",
+      "definition_zh": "肾结石"
+    },
+    "hypertrophy": {
+      "literal": "over-growth",
+      "literal_zh": "过度生长",
+      "definition": "enlargement of an organ or tissue",
+      "definition_zh": "肥大；器官或组织增大"
+    },
+    "atrophy": {
+      "literal": "without nourishment",
+      "literal_zh": "缺少营养",
+      "definition": "wasting away of a body part",
+      "definition_zh": "萎缩；身体某部分逐渐缩小"
+    },
+    "hemiplegia": {
+      "literal": "half paralysis",
+      "literal_zh": "一半瘫痪",
+      "definition": "paralysis of one side of the body",
+      "definition_zh": "偏瘫；身体一侧瘫痪"
+    },
+    "paraplegia": {
+      "literal": "paralysis beside (the body's halves)",
+      "literal_zh": "身体下部的瘫痪（原文按 beside 拆解）",
+      "definition": "paralysis of the legs and lower body",
+      "definition_zh": "截瘫；双腿及身体下部瘫痪"
+    },
+    "apnea": {
+      "literal": "without breathing",
+      "literal_zh": "没有呼吸",
+      "definition": "a temporary stop in breathing",
+      "definition_zh": "呼吸暂停；呼吸暂时停止"
+    },
+    "dyspnea": {
+      "literal": "difficult breathing",
+      "literal_zh": "呼吸困难",
+      "definition": "shortness of breath",
+      "definition_zh": "呼吸困难；气短"
+    },
+    "endocrine": {
+      "literal": "secreting within",
+      "literal_zh": "向内部进行分泌",
+      "definition": "(glands) that release hormones directly into the blood",
+      "definition_zh": "内分泌的；指腺体把激素直接释放入血液"
+    },
+    "colonoscopy": {
+      "literal": "looking at the colon",
+      "literal_zh": "观察结肠",
+      "definition": "an examination of the large intestine with a camera",
+      "definition_zh": "结肠镜检查；用带摄像头的仪器检查大肠"
+    },
+    "biopsy": {
+      "literal": "viewing of the living",
+      "literal_zh": "查看活体组织",
+      "definition": "removal of a tissue sample for examination",
+      "definition_zh": "活组织检查；取出组织样本进行检查"
+    },
+    "autopsy": {
+      "literal": "seeing for oneself",
+      "literal_zh": "亲自看",
+      "definition": "an examination of a body to find the cause of death",
+      "definition_zh": "尸体解剖；检查遗体以确定死亡原因"
+    },
+    "diagnosis": {
+      "literal": "knowing through (and apart)",
+      "literal_zh": "透彻地辨别",
+      "definition": "identification of an illness",
+      "definition_zh": "诊断；识别疾病"
+    },
+    "prognosis": {
+      "literal": "knowing beforehand",
+      "literal_zh": "事先知道",
+      "definition": "the likely course of an illness",
+      "definition_zh": "预后；疾病可能的发展过程"
+    },
+    "craniotomy": {
+      "literal": "skull-cutting",
+      "literal_zh": "切开颅骨",
+      "definition": "a surgical opening of the skull",
+      "definition_zh": "开颅术；手术打开颅骨"
+    },
+    "psychiatry": {
+      "literal": "healing of the mind",
+      "literal_zh": "心智的治疗",
+      "definition": "the branch of medicine dealing with mental illness",
+      "definition_zh": "精神病学；研究和诊治精神疾病的医学分支"
+    },
+    "pediatrics": {
+      "literal": "child-healing",
+      "literal_zh": "儿童的治疗",
+      "definition": "the branch of medicine dealing with children",
+      "definition_zh": "儿科学；研究和诊治儿童疾病的医学分支"
+    },
+    "orthodontist": {
+      "literal": "one who straightens teeth",
+      "literal_zh": "使牙齿变直的人",
+      "definition": "a dentist who corrects the position of teeth",
+      "definition_zh": "正畸医师；矫正牙齿位置的牙医"
+    },
+    "gingivitis": {
+      "literal": "gum inflammation",
+      "literal_zh": "牙龈的炎症",
+      "definition": "inflammation of the gums",
+      "definition_zh": "牙龈炎"
+    },
+    "narcolepsy": {
+      "literal": "seizure by sleep",
+      "literal_zh": "被睡眠攫住",
+      "definition": "a disorder causing sudden attacks of sleep",
+      "definition_zh": "发作性睡病；引起突然入睡发作的疾病"
+    },
+    "homeostasis": {
+      "literal": "staying the same",
+      "literal_zh": "保持相同",
+      "definition": "the body's balancing of its internal conditions",
+      "definition_zh": "内稳态；机体维持内部条件平衡"
+    },
+    "lymphedema": {
+      "literal": "lymph swelling",
+      "literal_zh": "淋巴引起的肿胀",
+      "definition": "swelling caused by a build-up of lymph fluid",
+      "definition_zh": "淋巴水肿；淋巴液积聚造成的肿胀"
+    },
+    "intercostal": {
+      "literal": "between the ribs",
+      "literal_zh": "在肋骨之间",
+      "definition": "located between the ribs",
+      "definition_zh": "肋间的"
+    },
+    "keratosis": {
+      "literal": "horny condition",
+      "literal_zh": "角质化的状态",
+      "definition": "a growth of rough skin",
+      "definition_zh": "角化病；皮肤粗糙增生的一类病变"
+    },
+    "necrosis": {
+      "literal": "death condition",
+      "literal_zh": "死亡的状态",
+      "definition": "the death of body tissue",
+      "definition_zh": "坏死；身体组织死亡"
+    },
+    "psychosomatic": {
+      "literal": "mind-body",
+      "literal_zh": "心智与身体",
+      "definition": "(physical symptoms) caused or worsened by the mind",
+      "definition_zh": "心身的；身体症状由心理因素引起或加重"
+    },
+    "anesthesia": {
+      "literal": "without feeling",
+      "literal_zh": "没有感觉",
+      "definition": "loss of sensation (induced for surgery)",
+      "definition_zh": "麻醉；感觉丧失，如手术中诱导的无感觉状态"
+    },
+    "antipyretic": {
+      "literal": "against fever",
+      "literal_zh": "对抗发热",
+      "definition": "a medicine that reduces fever",
+      "definition_zh": "退热药；降低体温的药物"
+    },
+    "asymptomatic": {
+      "literal": "without symptoms",
+      "literal_zh": "没有症状的",
+      "definition": "showing no symptoms",
+      "definition_zh": "无症状的"
+    },
+    "monologue": {
+      "literal": "one speaking",
+      "literal_zh": "一个人说话",
+      "definition": "a long speech by one person",
+      "definition_zh": "独白；一个人的长篇讲话"
+    },
+    "geothermal": {
+      "literal": "relating to earth's heat",
+      "literal_zh": "与地球的热有关的",
+      "definition": "using heat from inside the earth",
+      "definition_zh": "地热的；利用地球内部热量的"
+    },
+    "pantheism": {
+      "literal": "belief that all is god",
+      "literal_zh": "相信万物皆神",
+      "definition": "the belief that God is everything and everywhere",
+      "definition_zh": "泛神论；认为神存在于万物之中的信仰"
+    },
+    "transcribe": {
+      "literal": "write across",
+      "literal_zh": "转写",
+      "definition": "to write out or copy in another form",
+      "definition_zh": "转录；抄写或转换形式记录"
+    },
+    "inscription": {
+      "literal": "something written on",
+      "literal_zh": "写在上面的东西",
+      "definition": "words carved or written on something",
+      "definition_zh": "铭文；刻写或书写在物体上的文字"
+    },
+    "prescription": {
+      "literal": "something written before",
+      "literal_zh": "预先写下的东西",
+      "definition": "a doctor's written order for medicine",
+      "definition_zh": "处方；医生开出的用药指示"
+    },
+    "deport": {
+      "literal": "carry away",
+      "literal_zh": "运送离开",
+      "definition": "to send someone out of a country",
+      "definition_zh": "驱逐出境"
+    },
+    "interject": {
+      "literal": "throw between",
+      "literal_zh": "投到中间",
+      "definition": "to break into a conversation with a remark",
+      "definition_zh": "插话；在谈话中突然插入一句"
+    },
+    "bankrupt": {
+      "literal": "broken bench",
+      "literal_zh": "破掉的长凳",
+      "definition": "unable to pay one's debts",
+      "definition_zh": "破产的；无力偿还债务的"
+    },
+    "extract": {
+      "literal": "draw out",
+      "literal_zh": "拉出来",
+      "definition": "to pull or take out",
+      "definition_zh": "提取；拔出；取出"
+    },
+    "convert": {
+      "literal": "turn completely",
+      "literal_zh": "完全转变",
+      "definition": "to change into something else",
+      "definition_zh": "转变；变成另一种事物"
+    },
+    "divert": {
+      "literal": "turn aside",
+      "literal_zh": "转向一旁",
+      "definition": "to change the direction of",
+      "definition_zh": "使改道；改变方向"
+    },
+    "transmit": {
+      "literal": "send across",
+      "literal_zh": "发送过去",
+      "definition": "to pass on from one place or person to another",
+      "definition_zh": "传送；从一处或一人传到另一处或另一人"
+    },
+    "emit": {
+      "literal": "send out",
+      "literal_zh": "发出来",
+      "definition": "to give off (light, heat, sound)",
+      "definition_zh": "发出光、热或声音等"
+    },
+    "malediction": {
+      "literal": "a speaking of evil",
+      "literal_zh": "说坏话",
+      "definition": "a curse",
+      "definition_zh": "诅咒"
+    },
+    "benediction": {
+      "literal": "a speaking of good",
+      "literal_zh": "说好话",
+      "definition": "a blessing",
+      "definition_zh": "祝福；祝祷"
+    },
+    "circumvent": {
+      "literal": "come around",
+      "literal_zh": "绕着走过来",
+      "definition": "to find a way around (a rule or obstacle)",
+      "definition_zh": "规避；绕过规则或障碍"
+    },
+    "provoke": {
+      "literal": "call forth",
+      "literal_zh": "唤起",
+      "definition": "to cause a reaction, especially anger",
+      "definition_zh": "激起反应，尤指愤怒"
+    },
+    "revoke": {
+      "literal": "call back",
+      "literal_zh": "召回",
+      "definition": "to cancel officially",
+      "definition_zh": "正式撤销"
+    },
+    "quadruped": {
+      "literal": "four-footed",
+      "literal_zh": "四只脚的",
+      "definition": "an animal that walks on four legs",
+      "definition_zh": "四足动物"
+    },
+    "biped": {
+      "literal": "two-footed",
+      "literal_zh": "两只脚的",
+      "definition": "an animal that walks on two legs",
+      "definition_zh": "两足动物"
+    },
+    "manicure": {
+      "literal": "hand care",
+      "literal_zh": "手部护理",
+      "definition": "a treatment for the hands and nails",
+      "definition_zh": "美甲；手和指甲的护理"
+    },
+    "biannual": {
+      "literal": "twice a year",
+      "literal_zh": "一年两次",
+      "definition": "happening twice a year",
+      "definition_zh": "每年发生两次的"
+    },
+    "endothermic": {
+      "literal": "heat going inside",
+      "literal_zh": "热进入内部",
+      "definition": "(a reaction) that absorbs heat",
+      "definition_zh": "吸热的；指吸收热量的反应"
+    },
+    "concentric": {
+      "literal": "sharing a centre",
+      "literal_zh": "共享中心的",
+      "definition": "(circles) with the same centre",
+      "definition_zh": "同心的；指多个圆具有同一圆心"
+    },
+    "monolingual": {
+      "literal": "one-tongued",
+      "literal_zh": "一种语言的",
+      "definition": "speaking only one language",
+      "definition_zh": "只使用一种语言的"
+    },
+    "geocentric": {
+      "literal": "earth-centred",
+      "literal_zh": "以地球为中心的",
+      "definition": "with the earth at the centre",
+      "definition_zh": "地心的；以地球为中心的"
+    },
+    "biodegradable": {
+      "literal": "able to be stepped down by living things",
+      "literal_zh": "能被生物逐步分解的",
+      "definition": "able to be broken down by bacteria",
+      "definition_zh": "可生物降解的；可被细菌等生物分解的"
+    },
+    "transgression": {
+      "literal": "a stepping across",
+      "literal_zh": "跨越过去",
+      "definition": "breaking a rule or law",
+      "definition_zh": "越轨；违反规则或法律"
+    },
+    "prospect": {
+      "literal": "a looking forward",
+      "literal_zh": "向前看",
+      "definition": "a possibility of something in the future",
+      "definition_zh": "前景；未来的可能性"
+    },
+    "spectator": {
+      "literal": "one who looks",
+      "literal_zh": "观看的人",
+      "definition": "a person watching an event",
+      "definition_zh": "观众；观看活动的人"
+    },
+    "circumspect": {
+      "literal": "looking around",
+      "literal_zh": "环顾四周的",
+      "definition": "careful and cautious",
+      "definition_zh": "谨慎的；小心周到的"
+    },
+    "improvise": {
+      "literal": "not foreseen",
+      "literal_zh": "未预见的",
+      "definition": "to make up on the spot without preparation",
+      "definition_zh": "即兴创作；未经准备而当场发挥"
+    },
+    "revise": {
+      "literal": "see again",
+      "literal_zh": "再次看",
+      "definition": "to look over and correct",
+      "definition_zh": "修订；检查并改正"
+    },
+    "inaudible": {
+      "literal": "not able to be heard",
+      "literal_zh": "不能被听见的",
+      "definition": "too quiet to be heard",
+      "definition_zh": "听不见的；声音太小而无法听见的"
+    },
+    "jurisdiction": {
+      "literal": "a speaking of the law",
+      "literal_zh": "宣说法律",
+      "definition": "the official power to make legal decisions",
+      "definition_zh": "司法管辖权；作出法律裁决的正式权力"
+    },
+    "hepatomegaly": {
+      "literal": "large liver",
+      "literal_zh": "肝脏增大",
+      "definition": "an enlarged liver",
+      "definition_zh": "肝肿大"
+    },
+    "cardiomegaly": {
+      "literal": "large heart",
+      "literal_zh": "心脏增大",
+      "definition": "an enlarged heart",
+      "definition_zh": "心脏扩大"
+    },
+    "arthroscopy": {
+      "literal": "viewing a joint",
+      "literal_zh": "观察关节",
+      "definition": "examining a joint with a small camera",
+      "definition_zh": "关节镜检查；用小型摄像器械检查关节"
+    },
+    "gastrectomy": {
+      "literal": "removal of the stomach",
+      "literal_zh": "切除胃",
+      "definition": "surgical removal of all or part of the stomach",
+      "definition_zh": "胃切除术；切除全部或部分胃"
+    },
+    "colectomy": {
+      "literal": "removal of the colon",
+      "literal_zh": "切除结肠",
+      "definition": "surgical removal of all or part of the colon",
+      "definition_zh": "结肠切除术；切除全部或部分结肠"
+    },
+    "hypotension": {
+      "literal": "under-stretching",
+      "literal_zh": "张力偏低",
+      "definition": "low blood pressure",
+      "definition_zh": "低血压"
+    },
+    "hematuria": {
+      "literal": "blood-urine condition",
+      "literal_zh": "尿中有血的状态",
+      "definition": "blood in the urine",
+      "definition_zh": "血尿"
+    },
+    "leukopenia": {
+      "literal": "lack of white (cells)",
+      "literal_zh": "白细胞缺少",
+      "definition": "a low white blood cell count",
+      "definition_zh": "白细胞减少症"
+    },
+    "encephalopathy": {
+      "literal": "disease of what's in the head",
+      "literal_zh": "头内之物的疾病",
+      "definition": "a disease of the brain",
+      "definition_zh": "脑病"
+    },
+    "endocarditis": {
+      "literal": "inflammation inside the heart",
+      "literal_zh": "心脏内部的炎症",
+      "definition": "inflammation of the heart's inner lining",
+      "definition_zh": "心内膜炎；心脏内层组织发炎"
+    },
+    "myocarditis": {
+      "literal": "heart muscle inflammation",
+      "literal_zh": "心脏肌肉的炎症",
+      "definition": "inflammation of the heart muscle",
+      "definition_zh": "心肌炎"
+    },
+    "intracranial": {
+      "literal": "within the skull",
+      "literal_zh": "在颅骨之内",
+      "definition": "inside the skull",
+      "definition_zh": "颅内的"
+    },
+    "transdermal": {
+      "literal": "across the skin",
+      "literal_zh": "穿过皮肤",
+      "definition": "(a drug) absorbed through the skin",
+      "definition_zh": "经皮的；指药物通过皮肤吸收"
+    },
+    "dermatitis": {
+      "literal": "skin inflammation",
+      "literal_zh": "皮肤的炎症",
+      "definition": "inflammation of the skin",
+      "definition_zh": "皮炎"
+    },
+    "otalgia": {
+      "literal": "ear pain",
+      "literal_zh": "耳部疼痛",
+      "definition": "earache",
+      "definition_zh": "耳痛"
+    },
+    "arthralgia": {
+      "literal": "joint pain",
+      "literal_zh": "关节疼痛",
+      "definition": "pain in a joint",
+      "definition_zh": "关节痛"
+    },
+    "rhinitis": {
+      "literal": "nose inflammation",
+      "literal_zh": "鼻部的炎症",
+      "definition": "inflammation of the inside of the nose",
+      "definition_zh": "鼻炎；鼻腔内部黏膜发炎"
+    },
+    "ophthalmoscope": {
+      "literal": "eye-viewer",
+      "literal_zh": "观察眼睛的器具",
+      "definition": "an instrument for examining the eye",
+      "definition_zh": "检眼镜；检查眼部的仪器"
+    },
+    "cytotoxic": {
+      "literal": "cell-poisoning",
+      "literal_zh": "对细胞有毒的",
+      "definition": "toxic to cells",
+      "definition_zh": "细胞毒性的；对细胞有毒害作用的"
+    },
+    "hepatotoxic": {
+      "literal": "liver-poisoning",
+      "literal_zh": "对肝脏有毒的",
+      "definition": "damaging to the liver",
+      "definition_zh": "肝毒性的；损伤肝脏的"
+    },
+    "pneumothorax": {
+      "literal": "air in the chest",
+      "literal_zh": "胸腔内有气体",
+      "definition": "a collapsed lung caused by air in the chest",
+      "definition_zh": "气胸；胸膜腔内积气而使肺萎陷"
+    },
+    "cholecystitis": {
+      "literal": "bile bladder inflammation",
+      "literal_zh": "储存胆汁的囊发炎",
+      "definition": "inflammation of the gallbladder",
+      "definition_zh": "胆囊炎"
+    },
+    "cholelithiasis": {
+      "literal": "bile-stone condition",
+      "literal_zh": "胆汁相关的结石状态",
+      "definition": "gallstones",
+      "definition_zh": "胆石症；胆结石"
+    },
+    "leukocytosis": {
+      "literal": "white-cell condition",
+      "literal_zh": "白细胞的状态",
+      "definition": "a high white blood cell count",
+      "definition_zh": "白细胞增多症"
+    },
+    "quadriplegia": {
+      "literal": "paralysis of four (limbs)",
+      "literal_zh": "四肢的瘫痪",
+      "definition": "paralysis of both arms and both legs",
+      "definition_zh": "四肢瘫痪"
+    },
+    "polyphagia": {
+      "literal": "much-eating condition",
+      "literal_zh": "大量进食的状态",
+      "definition": "excessive hunger",
+      "definition_zh": "多食；过度饥饿"
+    }
+  },
+  "glosses": {
+    "(adjective ending)": "（形容词词尾）",
+    "(adjective ending: fidelis)": "（形容词词尾：fidelis）",
+    "(condition)": "（状态）",
+    "(connecting vowel)": "（连接元音）",
+    "(noun ending)": "（名词词尾）",
+    "(one who is) …-ed": "处于……状态的人",
+    "(verb ending)": "（动词词尾）",
+    "able to be": "可以被……的",
+    "act of": "……的行为",
+    "act or result of": "……的行为或结果",
+    "again": "再次",
+    "ahead": "向前",
+    "air": "空气",
+    "angle": "角",
+    "aside": "向旁边",
+    "away": "离开",
+    "away, removing": "离开；去除",
+    "back": "向后；返回",
+    "bad": "坏",
+    "bad, difficult": "不好；困难",
+    "bad, ill": "坏；不良",
+    "befall, happen": "发生；降临",
+    "before": "在……之前",
+    "being": "处于……状态",
+    "belief in": "对……的信仰",
+    "believe": "相信",
+    "bench (Italian banca)": "长凳（意大利语 banca）",
+    "beside, abnormal": "旁侧；异常",
+    "bile": "胆汁",
+    "bladder": "膀胱；囊",
+    "blood condition": "血液状态",
+    "body": "身体",
+    "break": "打破",
+    "breathing": "呼吸",
+    "broken": "破损的",
+    "bursting forth": "涌出",
+    "call": "呼叫",
+    "care": "照料",
+    "carry": "携带；搬运",
+    "chest": "胸",
+    "circle, wheel": "圆；轮",
+    "clot": "凝块；血栓",
+    "come": "来",
+    "completely": "完全；彻底",
+    "condition": "状态",
+    "condition, disease": "状态；疾病",
+    "cut": "切",
+    "cutting": "切割",
+    "description": "描写",
+    "disease": "疾病",
+    "do": "做",
+    "down": "向下",
+    "draw": "拉；牵引",
+    "drawing": "绘画",
+    "drive (from agere)": "驱动（来自 agere）",
+    "electric": "电的",
+    "even": "平；均衡",
+    "faith": "信念；忠诚",
+    "far": "远",
+    "fatty deposit (gruel)": "脂肪沉积物（原意为粥）",
+    "feeling": "感觉",
+    "fever": "发热",
+    "flow": "流动",
+    "forth": "向外；向前",
+    "forward": "向前",
+    "full of, having": "充满……的；具有……的",
+    "god": "神",
+    "good, well": "好；良好",
+    "great": "大；巨大",
+    "hardening": "硬化",
+    "head": "头",
+    "healing": "治疗",
+    "hear": "听",
+    "horny tissue": "角质组织",
+    "in, into": "在……内；进入",
+    "instrument for looking": "观察用的仪器",
+    "joint": "关节",
+    "killing": "杀害",
+    "knowing": "知道",
+    "lack": "缺少",
+    "language": "语言",
+    "large": "大",
+    "law": "法律",
+    "lead": "引导",
+    "life, living tissue": "生命；活体组织",
+    "live": "活；生存",
+    "living things": "生物",
+    "look": "看",
+    "love": "爱",
+    "make": "制造；使成为",
+    "make, cause": "使成为；使发生",
+    "make, do": "制造；做",
+    "measurer": "测量的器具",
+    "much": "多；大量",
+    "muscle": "肌肉",
+    "not": "不",
+    "nourishment": "营养",
+    "numbness, sleep": "麻木；睡眠",
+    "on": "在……之上",
+    "one": "一",
+    "one who": "做……的人",
+    "one, alone": "一；单独",
+    "out": "向外",
+    "out, clearly": "显露；清楚地",
+    "over, beyond": "超过；越过",
+    "over, excessive": "超过；过度",
+    "pain": "疼痛",
+    "paralysis": "瘫痪",
+    "place for": "……的场所",
+    "poison": "毒",
+    "powerful": "有力量的",
+    "race, people": "种族；民族",
+    "relating to": "与……有关的",
+    "rib": "肋骨",
+    "rule": "统治",
+    "same, similar": "相同；相似",
+    "say": "说",
+    "secrete": "分泌",
+    "see": "看见",
+    "seeing": "看；观察",
+    "seizure": "发作；攫取",
+    "self": "自己",
+    "soul, mind": "心灵；心智",
+    "speech": "讲话",
+    "standing still": "保持不动",
+    "state of": "……的状态",
+    "state or act of": "……的状态或行为",
+    "state or quality of": "……的状态或性质",
+    "step": "迈步",
+    "stone": "石头",
+    "straight": "直",
+    "stretching": "伸展；张力",
+    "study of": "对……的研究",
+    "study of, account of": "对……的研究或记述",
+    "study, practice": "研究；实践",
+    "through": "穿过；透彻",
+    "throw": "投；掷",
+    "to, toward": "到；朝向",
+    "together": "一起；共同",
+    "tonsils": "扁桃体",
+    "tumour": "肿瘤",
+    "under": "在……之下",
+    "urine": "尿",
+    "viewing": "观察",
+    "wish, will": "愿望；意愿",
+    "with, together": "与……一起；共同",
+    "without": "没有",
+    "words, speech": "词语；言语",
+    "write": "写",
+    "writing, recording": "书写；记录",
+    "year": "年"
+  }
+}
