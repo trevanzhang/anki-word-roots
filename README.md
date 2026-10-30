@@ -8,15 +8,17 @@
 
 ## 获取与导入
 
-请选择 **`Word_Roots_zh-CN.apkg`**，导入后的牌组名称为 **Word Roots 中文**。
+**[直接下载中文版牌组：Word_Roots_zh-CN.apkg](https://github.com/trevanzhang/anki-word-roots/releases/latest/download/Word_Roots_zh-CN.apkg)**
 
-1. 查看本仓库的 [Releases](https://github.com/trevanzhang/anki-word-roots/releases)，如有中文版发布，下载其中的 `Word_Roots_zh-CN.apkg`。
-2. 暂无发布时，打开 [Build 工作流](https://github.com/trevanzhang/anki-word-roots/actions/workflows/build.yml)，选择主分支 `main` 最近一次成功的构建，在页面底部 **Artifacts** 下载 `Word_Roots` 压缩包。GitHub 工作流附件通常需要登录后下载。
-3. 解压后，在桌面版 Anki 中选择 **文件 → 导入**，打开 `Word_Roots_zh-CN.apkg`，再通过 Anki 同步到手机。
+1. 点击上面的链接下载 `.apkg` 文件；也可到 [Releases 发布页](https://github.com/trevanzhang/anki-word-roots/releases/latest) 查看版本说明、下载卡片预览和使用说明。
+2. 在桌面版 Anki 中选择 **文件 → 导入**，打开 `Word_Roots_zh-CN.apkg`。
+3. 导入后的牌组名称为 **Word Roots 中文**，可通过 Anki 同步到手机。
 
-构建附件同时包含中英文两版：带 `zh-CN` 的文件是中文版，`Word_Roots.apkg` 是英文原版。`Word_Roots_zh-CN.html` 可用浏览器打开，查看全部卡片正反面。也可以按下文的[本地生成](#本地生成)步骤自行构建。
+发布附件中的 `Word_Roots_zh-CN.html` 可用浏览器打开，查看全部卡片正反面。`SHA256SUMS.txt` 提供下载文件的校验值。
 
 中文版使用独立的牌组 ID、笔记类型 ID 和笔记 GUID，可与英文版同时存在；导入中文版不会自动迁移英文版的学习进度。后续中文版更新应保留这些标识。
+
+需要尚未发布的开发构建时，可从 [Build 工作流](https://github.com/trevanzhang/anki-word-roots/actions/workflows/build.yml) 中主分支最近一次成功构建的 **Artifacts** 下载 `Word_Roots` 压缩包（通常需登录 GitHub）。构建附件包含中英文两版，带 `zh-CN` 的文件是中文版；也可按[本地生成](#本地生成)步骤自行构建。
 
 ## 汉化范围
 
