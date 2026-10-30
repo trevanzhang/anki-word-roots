@@ -1,5 +1,7 @@
 # Contributing
 
+中文翻译的编辑、校对和上游同步见 [汉化维护说明](LOCALIZATION.md)。下面保留原版内容规范。
+
 Thanks for helping! Seen a wrong meaning, a false etymology or a missing root?
 [Open an issue](https://github.com/jupsh/anki-word-roots/issues). Pull requests are welcome too.
 

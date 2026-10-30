@@ -1,7 +1,8 @@
 """Build the Word Roots Anki deck.
 
-    uv run python word_roots/build.py            # -> dist/Word_Roots.apkg
-    uv run python word_roots/build.py --html X   # also write an HTML preview of every note
+    uv run python word_roots/build.py              # -> dist/Word_Roots_zh-CN.apkg
+    uv run python word_roots/build.py --lang en    # -> dist/Word_Roots.apkg
+    uv run python word_roots/build.py --html X     # preview every question and answer
 
 Content lives in word_roots/data/:
   morphemes.csv  one row per prefix, root or suffix, in study order
@@ -17,6 +18,11 @@ import re
 from pathlib import Path
 
 import genanki
+
+try:  # supports both direct execution and imports in tests
+    from .localize import Locale
+except ImportError:
+    from localize import Locale
 
 HERE = Path(__file__).parent
 DATA = HERE / "data"
@@ -133,11 +139,23 @@ DECK_DESCRIPTION = (
     "roots, suffixes and prefixes</i> (CC BY-SA 4.0); this deck is shared under the same license."
 )
 
+ZH_DESCRIPTION = (
+    "希腊语和拉丁语词根、前缀与后缀的简体中文对照版。先学 123 个核心词素，再逐步扩展；"
+    "通过熟悉的英文例词回忆含义，再用拆词卡练习。<b>评分：</b>记住核心含义即可，"
+    "无需逐字复述或背诵词源故事。<b>顺序：</b>新卡片收集顺序选择“位置升序”"
+    "（Ascending position），排序选择“按收集顺序”（Order gathered）。"
+    "可暂停 <code>tag:WR::Medical</code> 下的专业医学词汇。"
+    "<b>说明：</b>构词直译仅解释历史构词关系，不替代现代词义，也不表示所有词都能按字面猜出。"
+    "中文是对英文学习材料的翻译，不是独立的词源考证或医学审定。"
+    "原版：jupsh/anki-word-roots；中文分支：trevanzhang/anki-word-roots。"
+    "原始数据改编自 Wikipedia 的希腊语、拉丁语及医学词根列表；本译作继续使用 CC BY-SA 4.0。"
+)
+
 
 # --------------------------------------------------------------------------- helpers
 
 def read(name):
-    with (DATA / name).open(newline="") as fh:
+    with (DATA / name).open(encoding="utf-8", newline="") as fh:
         return list(csv.DictReader(fh))
 
 
@@ -176,26 +194,30 @@ def parse_parts(d, index):
     return parts
 
 
-def story_html(row):
-    link = f' <a class="src" href="{html.escape(row["source"])}">source</a>' if row.get("source") else ""
-    return row["story"] + link
+def story_html(row, locale=None):
+    locale = locale or Locale()
+    label = "来源" if locale.chinese else "source"
+    link = f' <a class="src" href="{html.escape(row["source"], quote=True)}">{label}</a>' if row.get("source") else ""
+    return locale.story(row) + link
 
 
-def decode_fields(d, morphemes, index):
+def decode_fields(d, morphemes, index, locale=None):
     """A decode note's fields, and the study position of the last morpheme it uses."""
+    locale = locale or Locale()
     rows, last = [], 0
     for seg, mid, gloss in parse_parts(d, index):
         if mid:
             last = max(last, index[mid])
             meaning = morphemes[index[mid]]["meaning"]
             root = (f'<div class="rootm">{html.escape(morphemes[index[mid]]["forms"])} '
-                    f'{html.escape(meaning)}</div>') if gloss and gloss != meaning else ""
+                    f'{locale.meaning(morphemes[index[mid]])}</div>') if gloss and gloss != meaning else ""
+            explanation = locale.gloss(gloss) if gloss else locale.meaning(morphemes[index[mid]])
             rows.append(f'<tr><td class="seg">{html.escape(seg)}</td>'
-                        f'<td>{html.escape(gloss or meaning)}{root}</td></tr>')
+                        f'<td>{explanation}{root}</td></tr>')
         else:
             rows.append(f'<tr><td class="plain">{html.escape(seg)}</td>'
-                        f'<td class="plain-gloss">{html.escape(gloss)}</td></tr>')
-    fields = [d["word"], "".join(rows), html.escape(d["literal"]), html.escape(d["definition"]),
+                        f'<td class="plain-gloss">{locale.gloss(gloss)}</td></tr>')
+    fields = [d["word"], "".join(rows), locale.decode_text(d, "literal"), locale.decode_text(d, "definition"),
               "y" if d["medical"] else ""]
     return fields, last
 
@@ -278,15 +300,23 @@ def validate(morphemes, stories, decode, index):
     check_highlights(morphemes, decode, index)
 
 
-def build(html_out=None, only=None):
+def build(html_out=None, only=None, language="zh-CN"):
+    locale = Locale(language)
     morphemes = read("morphemes.csv")
     story_rows = read("stories.csv")
-    stories = {r["id"]: story_html(r) for r in story_rows}
     decode = read("decode.csv")
     index = {m["id"]: i for i, m in enumerate(morphemes)}
     validate(morphemes, story_rows, decode, index)
+    locale.validate(morphemes, story_rows, decode)
+    stories = {r["id"]: story_html(r, locale) for r in story_rows}
+    root_model, decode_model = locale.models(ROOT_MODEL, DECODE_MODEL)
+    name = "Word Roots 中文" if locale.chinese else DECK_NAME
+    description = ZH_DESCRIPTION if locale.chinese else DECK_DESCRIPTION
+    filename = "Word_Roots_zh-CN.apkg" if locale.chinese else "Word_Roots.apkg"
+    guid_root, guid_decode = (("wr-zh-CN", "wr-decode-zh-CN") if locale.chinese
+                             else ("wr", "wr-decode"))
 
-    deck = genanki.Deck(deck_id(DECK_NAME), DECK_NAME, description=DECK_DESCRIPTION)
+    deck = genanki.Deck(deck_id(name), name, description=description)
     notes, preview = [], []
 
     for i, m in enumerate(morphemes):
@@ -294,8 +324,11 @@ def build(html_out=None, only=None):
             continue
         kind = m["kind"].capitalize()
         lang = m["language"] or "Latin/Greek"
-        fields = [html.escape(m["forms"]), html.escape(m["meaning"]), m["kind"], m["kind"], lang,
-                  html.escape(m["origin"]), word_list(m["front"]),
+        display_kind = {"root": "词根", "prefix": "前缀", "suffix": "后缀"}[m["kind"]] if locale.chinese else m["kind"]
+        display_lang = {"Latin": "拉丁语", "Greek": "希腊语", "English": "英语", "Latin/Greek": "拉丁语／希腊语", "Latin and Greek": "拉丁语与希腊语"}.get(lang, lang) if locale.chinese else lang
+        origin = ("词源原文：" if locale.chinese else "") + m["origin"]
+        fields = [html.escape(m["forms"]), locale.meaning(m), display_kind, m["kind"], display_lang,
+                  html.escape(origin), word_list(m["front"]),
                   word_list(m["more"]) if m["more"] else "", stories.get(m["id"], ""),
                   "y" if m["medical"] == "y" else ""]
         tags = [f"WR::{kind}", f"WR::{lang.replace(' ', '_').replace('/', '_')}"]
@@ -307,57 +340,70 @@ def build(html_out=None, only=None):
             tags.append("WR::Medical_Related")
         if m["id"] in stories:
             tags.append("WR::Story")
-        notes.append((i * 10, genanki.Note(model=ROOT_MODEL, fields=fields, tags=tags,
-                                           guid=genanki.guid_for("wr", m["id"]))))
+        notes.append((i * 10, genanki.Note(model=root_model, fields=fields, tags=tags,
+                                           guid=genanki.guid_for(guid_root, m["id"]))))
         preview.append(("root", fields))
 
     for d in decode:
         if only and not re.search(only, d["word"], re.I):
             continue
-        fields, last = decode_fields(d, morphemes, index)
+        fields, last = decode_fields(d, morphemes, index, locale)
         tags = ["WR::Decode"] + (["WR::Medical"] if d["medical"] else [])
         notes.append(((last + DECODE_DELAY) * 10 + 5,
-                      genanki.Note(model=DECODE_MODEL, fields=fields, tags=tags,
-                                   guid=genanki.guid_for("wr-decode", d["word"]))))
+                      genanki.Note(model=decode_model, fields=fields, tags=tags,
+                                   guid=genanki.guid_for(guid_decode, d["word"]))))
         preview.append(("decode", fields))
 
     for due, (_, note) in enumerate(sorted(notes, key=lambda x: x[0]), 1):
         note.due = due
         deck.add_note(note)
 
-    out = (ROOT / "build" if only else DIST) / "Word_Roots.apkg"  # partial builds stay out of dist/
+    out = (ROOT / "build" if only else DIST) / filename  # partial builds stay out of dist/
     out.parent.mkdir(parents=True, exist_ok=True)
     genanki.Package(deck).write_to_file(out)
     n_root = sum(1 for k, _ in preview if k == "root")
     print(f"wrote {out}  ({n_root} morphemes, {len(preview) - n_root} decode words, "
           f"{sum(1 for k, f in preview if k == 'root' and f[8])} stories)")
     if html_out:
-        write_preview(Path(html_out), preview)
+        write_preview(Path(html_out), preview, root_model, decode_model, language)
+    return out
 
 
-def write_preview(path, preview):
-    """Static HTML of every note's back, for proofreading."""
+def render_template(template, fields):
+    """Render the simple Anki fields/conditionals used by these models for preview."""
+    template = re.sub(r"{{#(\w+)}}(.*?){{/\1}}",
+                      lambda m: m[2] if fields.get(m[1]) else "", template, flags=re.S)
+    return re.sub(r"{{(\w+)}}", lambda m: fields[m[1]], template)
+
+
+def write_preview(path, preview, root_model, decode_model, language):
+    """Preview the actual model templates, including both question and answer."""
+    chinese = language == "zh-CN"
+    title = "Word Roots 中文 · 卡片预览" if chinese else "Word Roots · Card preview"
+    front, back = ("正面", "背面") if chinese else ("Front", "Back")
     blocks = []
-    for kind, f in preview:
-        if kind == "root":
-            morpheme, meaning, kname, kclass, lang, origin, words, more, story, med = f
-            blocks.append(
-                f'<div class="wrap {kclass}" style="border-bottom:6px solid #ddd">'
-                f'<div class="label">{lang} {kname}{" · medical" if med else ""}</div>'
-                f'<div class="words">{words}</div><hr id="answer"><div class="meaning">{meaning}</div>'
-                f'<div class="forms">{morpheme}</div><div class="origin">{origin}</div>'
-                + (f'<div class="more">{more}</div>' if more else "")
-                + (f'<div class="story">{story}</div>' if story else "") + "</div>")
-        else:
-            word, parts, literal, definition, med = f
-            blocks.append(
-                f'<div class="wrap decode" style="border-bottom:6px solid #ddd">'
-                f'<div class="label">Decode{" · medical" if med else ""}</div>'
-                f'<div class="word">{word}</div><hr id="answer"><table class="parts">{parts}</table>'
-                f'<div class="literal">“{literal}”</div><div class="definition">{definition}</div></div>')
+    for number, (kind, values) in enumerate(preview, 1):
+        model = root_model if kind == "root" else decode_model
+        fields = dict(zip((f["name"] for f in model.fields), values))
+        template = model.templates[0]
+        question = render_template(template["qfmt"], fields)
+        answer = render_template(template["afmt"], fields)
+        blocks.append(f'<article class="preview-note" id="note-{number}">'
+                      f'<section><h2>{number} · {front}</h2>{question}</section>'
+                      f'<section><h2>{back}</h2>{answer}</section></article>')
+    preview_css = """
+.preview-note { max-width: 1300px; margin: 20px auto; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.preview-note section { min-width: 0; border: 1px solid #d1d5db; border-radius: 8px; }
+.preview-note h2 { font-size: 14px; color: #6b7280; text-align: left; margin: 12px 16px 0; }
+h1 { font-size: 24px; margin: 24px 16px; }
+@media (max-width: 720px) { .preview-note { grid-template-columns: 1fr; margin: 16px 8px; } }
+"""
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("<!doctype html><html><head><meta charset='utf-8'>"
-                    f"<style>{CSS}</style></head><body class='card'>" + "".join(blocks) + "</body></html>")
+    path.write_text(f'<!doctype html><html lang="{"zh-Hans" if chinese else "en"}"><head>'
+                    '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
+                    f'<title>{title}</title><style>{root_model.css}{preview_css}</style></head>'
+                    f'<body class="card"><h1>{title}</h1>' + "".join(blocks) + "</body></html>",
+                    encoding="utf-8")
     print(f"preview: {path}")
 
 
@@ -365,5 +411,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--html", help="write an HTML preview to this path")
     ap.add_argument("--only", help="only build entries matching this regex (for testing)")
+    ap.add_argument("--lang", choices=("en", "zh-CN"), default="zh-CN", help="deck language (default: zh-CN)")
     args = ap.parse_args()
-    build(args.html, args.only)
+    build(args.html, args.only, args.lang)
