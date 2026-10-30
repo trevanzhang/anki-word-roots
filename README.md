@@ -1,20 +1,38 @@
-# Word Roots 中文：英语词根词缀 Anki 牌组
+# Word Roots 简体中文版
 
-以简体中文学习英语中的希腊语、拉丁语词根、前缀和后缀。通过熟悉的英文例词回忆含义，再用完整单词练习拆解。
+**面向中文使用者的英语词根词缀 Anki 牌组，共 922 张卡片，中文释义为主、英文对照为辅。** 通过熟悉的英文例词认识希腊语、拉丁语词根，再用完整单词练习拆解。
 
-本项目基于 [jupsh/anki-word-roots](https://github.com/jupsh/anki-word-roots) 汉化，保留英文释义、词源原文和来源链接，方便对照核查。[English / 原版说明](README.en.md)
+这是 [jupsh/anki-word-roots](https://github.com/jupsh/anki-word-roots) 的**简体中文汉化分支**，由 [trevanzhang/anki-word-roots](https://github.com/trevanzhang/anki-word-roots) 维护。默认构建和下文使用说明均以中文版为主；英文例词、词源原文和来源链接保留，方便对照核查。
+
+[获取中文版](#获取与导入) · [卡片示例](#卡片示例) · [学习建议](#建议的学习方式) · [汉化维护说明](LOCALIZATION.md) · [上游原版说明（英文存档）](README.en.md)
+
+## 获取与导入
+
+请选择 **`Word_Roots_zh-CN.apkg`**，导入后的牌组名称为 **Word Roots 中文**。
+
+1. 查看本仓库的 [Releases](https://github.com/trevanzhang/anki-word-roots/releases)，如有中文版发布，下载其中的 `Word_Roots_zh-CN.apkg`。
+2. 暂无发布时，打开 [Build 工作流](https://github.com/trevanzhang/anki-word-roots/actions/workflows/build.yml)，选择主分支 `main` 最近一次成功的构建，在页面底部 **Artifacts** 下载 `Word_Roots` 压缩包。GitHub 工作流附件通常需要登录后下载。
+3. 解压后，在桌面版 Anki 中选择 **文件 → 导入**，打开 `Word_Roots_zh-CN.apkg`，再通过 Anki 同步到手机。
+
+构建附件同时包含中英文两版：带 `zh-CN` 的文件是中文版，`Word_Roots.apkg` 是英文原版。`Word_Roots_zh-CN.html` 可用浏览器打开，查看全部卡片正反面。也可以按下文的[本地生成](#本地生成)步骤自行构建。
+
+中文版使用独立的牌组 ID、笔记类型 ID 和笔记 GUID，可与英文版同时存在；导入中文版不会自动迁移英文版的学习进度。后续中文版更新应保留这些标识。
 
 ## 汉化范围
 
 | 内容 | 数量 | 显示方式 |
 |---|---:|---|
 | 词根、前缀、后缀 | 700 | 中文含义为主，英文释义在下方 |
-| 核心词根词缀 | 123 | 保留 `WR::Core` 标签和学习顺序 |
+| 其中：核心词根词缀 | 123 | 包含在上述 700 条中，保留 `WR::Core` 标签和学习顺序 |
 | 拆词练习 | 222 | 各部分含义、构词直译、现代词义均有中文对照 |
 | 词源故事 | 77 | 中文译文、英文原文和来源链接 |
 | 卡片界面 | 两种卡片 | 中文提示、分类、医学标记与学习说明 |
 
 英文例词及高亮保持原样；拉丁语、希腊语词源原文保留。例词列表不额外添加逐词中文释义，练习重点仍是识别词素。拆词卡提供完整单词的中文含义。
+
+700 张词根词缀卡加上 222 张拆词卡，共 922 张；77 个词源故事附在相应词根卡背面，不另计为卡片。
+
+## 卡片示例
 
 词根卡的正反面：
 
@@ -27,14 +45,6 @@
 手机宽度的深色模式：[查看词源故事示例](doc/zh-mobile-dark.png)。这些是生成模板的浏览器预览截图，具体 Anki 客户端的字体可能略有差异。
 
 **请区分“构词直译”和“现代词义”。** 历史构词关系不表示现代词义一定能由各部分直接推导。中文是对原版学习材料的翻译，不是对全部词源的独立审定。有关古代医学的故事描述历史观念。
-
-## 获取与导入
-
-文件名为 **`Word_Roots_zh-CN.apkg`**。如果本 fork 的 [Releases](https://github.com/trevanzhang/anki-word-roots/releases) 还没有发布中文版，可从成功的 [Build 工作流](https://github.com/trevanzhang/anki-word-roots/actions/workflows/build.yml) 下载 `Word_Roots` 附件，或按下文在本地生成。GitHub 工作流附件通常需要登录后下载。
-
-在桌面版 Anki 中选择 **文件 → 导入**，打开 `.apkg` 文件，再通过 Anki 同步到手机。
-
-中文版的牌组名称为 **Word Roots 中文**。它使用独立的牌组 ID、笔记类型 ID 和笔记 GUID，可与英文版同时存在；导入中文版不会自动迁移英文版的学习进度。后续中文版更新应保留这些标识。
 
 ## 建议的学习方式
 
